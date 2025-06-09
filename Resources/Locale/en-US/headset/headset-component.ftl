@@ -2,7 +2,7 @@
 chat-radio-message-wrap = [color={$color}][font={$fontType} size={$fontSize}]{$channel} [bold]{$name}[/bold] {$verb}, "{$message}"[/font][/color]
 chat-radio-message-wrap-bold = [color={$color}][font={$fontType} size={$fontSize}]{$channel} [bold]{$name}[/bold] {$verb}, [bold]"{$message}"[/bold][/font][/color]
 
-examine-headset-default-channel = Use {$prefix} for the default channel ([color={$color}]{$channel}[/color]).
+examine-headset-default-channel = Використовуйте {$prefix} для стандартного каналу ([color={$color}]{$channel}[/color]).
 
 chat-radio-common = Common
 chat-radio-centcom = CentComm
