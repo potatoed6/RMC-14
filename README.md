@@ -2,7 +2,7 @@
 
 ## Вітаємо на сторінці білду сервера Січі!
 
-### Rouny's Marine Corps 14 (Корпус МорПіхоти Руні 14) - це асиметрична ПВП-гра що працює на рушії [Robust Toolbox](https://github.com/space-wizards/RobustToolbox).
+### Rouny's Marine Corps 14 (Корпус МорПіхоти Руні 14) - це асиметрична ПВП-гра що працює на рушії [Robust Toolbox](https://github.com/space-wizards/RobustToolbox). Натхненням для нього стали [CMSS13](https://github.com/cmss13-devs/cmss13), [Space Station 13](https://spacestation13.com/).
 
 ***Цей форк містить в собі частковий переклад [Корпусу МорПіхоти Руні 14 (РМС)](https://github.com/RMC-14/RMC-14) українською мовою, плюс часткові локальні зміни під потреби сервера Січі. Сам сервер можете знайти у лаунчері гри, а також завітайте до нашого [ДС сервера](https://discord.gg/qKNsBbV22F)!***
 

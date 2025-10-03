@@ -1,4 +1,5 @@
 rmc-announcement-author = Командування
+rmc-announcement-author-shipside = Command Ship
 rmc-announcement-author-highcommand = Вище Командування
 rmc-announcement-message = [font size=16][bold][color=#CECECE]Оголошення {$author}[/color][/bold][/font][font size=16][color=red]
 
@@ -57,3 +58,5 @@ rmc-announcement-ares-command = [color=#CECECE][font size=16][bold]ARES v3.2[/bo
 rmc-announcement-unidentified-lifesigns = [color=#CECECE][font size=16][bold]Невідомі життєві сигнали[/bold][/font][/color][color=red][font size=16][bold]
 
     Виявлено невідомі життєві сигнали ({$count}) на борту шатла {$name}. Рекомендація: заблокувати всі зовнішні входи, включно з вентиляційними та технічними каналами.[/bold][/font][/color]
+
+rmc-announcement-shipside-header = Please write a message to announce to the crew

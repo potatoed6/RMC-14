@@ -26,11 +26,15 @@ rmc-squad-info-ChiefMedicalOfficer = Головний Лікар
 rmc-squad-info-SeniorEnlistedAdvisor = Інструктор
 rmc-squad-info-Quartermaster = Квартирмейстер
 rmc-squad-info-MilitaryWarden = Військовий Наглядач
+rmc-squad-info-SectionSergeant = Section Sergeant
+rmc-squad-info-PVESquadLeader = Squad Leader
 rmc-squad-info-SquadLeader = Лідер Загону
 rmc-squad-info-FireteamLeader = Лідер Вогневої Групи
 rmc-squad-info-Rifleman = Стрілець
 
 rmc-squad-info-DirectorPmc = Директор
+rmc-squad-info-LeaderPmcPVE = Force Leader
+rmc-squad-info-TeamLeaderPmcPVE = Team Leader
 rmc-squad-info-LeaderPmc = Лідер Команди
 rmc-squad-info-CorporateLiaison = Представник Корпорації
 

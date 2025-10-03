@@ -4,6 +4,7 @@
                                              Вам абсолютно [color=red]ЗАБОРОНЕНО[/color] пам'ятати та називати ім'я, заняття, тощо зі свого минулого персонажа.
 
 rmc-ghost-role-information-clf-description = Забезпечте вигнання морпіхів з цього простору заради вільних колоній!
+rmc-ghost-role-information-clf-pve-description = Follow any orders from command and carry them out to the best of your abillity. For the free colonies!
 
 rmc-ghost-role-clf-cell-commander = Командир Ячейки ФВК (Ворожі)
 rmc-clf-cell-commander = Командир Ячейки ФВК
@@ -24,3 +25,19 @@ rmc-job-prefix-clf-medic = МЕД
 rmc-ghost-role-clf-specialist = Спеціаліст ФВК (Ворожі)
 rmc-clf-specialist = Спеціаліст ФВК
 rmc-job-prefix-clf-specialist = СПЦ
+
+rmc-ghost-role-clf-pve-commander = CLF Commander (PVE)
+rmc-job-name-clf-pve-commander = CLF Commander
+rmc-job-prefix-clf-pve-commander = CMDR
+
+rmc-ghost-role-clf-pve-doctor = CLF Doctor (PVE)
+rmc-job-name-clf-pve-doctor = CLF Doctor
+rmc-job-prefix-clf-pve-doctor = Doc
+
+rmc-ghost-role-clf-pve-heavy-gunner = CLF Heavy Gunner (PVE)
+rmc-job-name-clf-pve-heavy-gunner = CLF Heavy Gunner
+rmc-job-prefix-clf-pve-heavy-gunner = Hvy. Gnr.
+
+rmc-ghost-role-clf-pve-standard = CLF Standard (PVE)
+rmc-job-name-clf-pve-standard = CLF Standard
+rmc-job-prefix-clf-pve-standard = GRL

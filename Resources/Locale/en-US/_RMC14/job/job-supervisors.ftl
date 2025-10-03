@@ -12,3 +12,7 @@ cm-job-supervisors-ce = Головний Інженер
 cm-job-supervisors-sl = Теперішній Лідер Загону
 cm-job-supervisors-staff = Адміністрація Серверу
 cm-job-supervisors-nobody = НІХТО, ви самі по собі.
+cm-job-supervisors-colonists = the sapient colonists
+cm-job-supervisors-secserg = the Section Sergeant
+cm-job-supervisors-platco = the Platoon Commander
+cm-job-supervisors-company-command = Company Command
