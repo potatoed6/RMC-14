@@ -1,9 +1,9 @@
-﻿# This is for boxes of loose rounds, not magazines.
+# This is for boxes of loose rounds, not magazines.
 
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateBoxShellsShotgunSlugs
-  name: Shell box (100x slug shells)
+  name: Коробка набоїв (100 шт. кулевих набоїв)
   components:
   - type: StorageFill
     contents:
@@ -13,7 +13,7 @@
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateBoxShellsShotgunBuckshot
-  name: Shell box (100x buckshot shells)
+  name: Коробка набоїв (100 шт. картечних набоїв)
   components:
   - type: StorageFill
     contents:
@@ -23,7 +23,7 @@
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateBoxShellsShotgunFlechette
-  name: Shell box (100x flechette shells)
+  name: Коробка набоїв (100 шт. флешетних набоїв)
   components:
   - type: StorageFill
     contents:
@@ -33,7 +33,7 @@
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateBoxShellsShotgunBreaching
-  name: Shell box (120x breaching shells)
+  name: Коробка набоїв (120 шт. пробивних набоїв)
   components:
   - type: StorageFill
     contents:
@@ -43,7 +43,7 @@
 - type: entity
   parent: RMCCrateAmmo
   id: RMCCrateBoxAmmo458
-  name: .458 bullets box (.458 x 300)
+  name: Коробка набоїв .458 (.458 297 шт.)
   components:
   - type: StorageFill
     contents:

@@ -1,3 +1,3 @@
-﻿cm-xeno-name = Xenonid
-cm-xeno-description = You are a Xenonid, co-operate with your hive to thrive!
-cm-xeno-rules = You are a Xenonid, smack, slash, and wack!
+cm-xeno-name = Ксеноїд
+cm-xeno-description = Ви є ксеноїдом, допомагайте вулику щоб розвиватися!
+cm-xeno-rules = Ви ксеноїд, бийте, рубайте і трощіть!

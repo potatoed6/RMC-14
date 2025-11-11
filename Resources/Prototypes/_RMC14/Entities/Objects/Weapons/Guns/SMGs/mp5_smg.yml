@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseWeaponSMG
-  name: MP5 submachinegun
+  name: MP5 пістолет-кулемет
   id: WeaponSMGMP5
-  description: A German design, this was one of the most widely used submachine guns in the world. It's still possible to find this firearm in the hands of collectors or gun fanatics.
+  description: Німецька розробка, яка була одним із найпоширеніших пістолетів-кулеметів у світі. І досі цю вогнепальну зброю можна зустріти в руках колекціонерів або шанувальників стрілецької справи.
   suffix: Filled
   components:
   - type: Sprite
@@ -67,7 +67,9 @@
           - RMCAttachmentBarrelCharger
           - RMCAttachmentExtendedBarrel
           - RMCAttachmentRecoilCompensator
+          - RMCAttachmentExtendedCompensator
           - RMCAttachmentSuppressor
+          - RMCAttachmentSuppressorCompact
           - RMCM5Bayonet
       rmc-aslot-rail:
         whitelist:
@@ -75,6 +77,7 @@
           - RMCAttachmentRailFlashlight
           - RMCAttachmentMagneticHarness
           - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS5MicroRedDotSight
           - RMCAttachmentS6ReflexSight
           - RMCAttachmentS42xTelescopicMiniscope
       rmc-aslot-underbarrel:
@@ -85,6 +88,7 @@
           - RMCAttachmentLaserSight
           - RMCAttachmentBipod
           - RMCAttachmentM203GrenadeLauncher
+          - RMCAttachmentExtinguisher
         random:
         - RMCAttachmentM203GrenadeLauncher
   - type: AttachableHolderVisuals
@@ -96,10 +100,10 @@
     multiplier: 1.2
 
 - type: entity
-  parent: BaseMagazineRifle
+  parent: CMMagazineRifleBase
   id: CMMagazineSMGMP5
-  name: "MP5 magazine (9mm)"
-  description: "A 9mm magazine for the MP5."
+  name: "MP5 магазин (9 мм)"
+  description: "Магазин з 9-мм набоями для MP5."
   components:
   - type: Tag
     tags:
@@ -129,8 +133,8 @@
 - type: entity
   parent: CMCartridge10x20mm
   id: CMCartridge9mmSMG
-  name: cartridge (9mm SMG)
-  description: A 9mm cartridge for the mp5 submachinegun.
+  name: набій (9 мм ПК)
+  description: 9-мм набій для пістолета-кулемета MP5.
   components:
   - type: Tag
     tags:
@@ -142,6 +146,7 @@
 - type: entity
   parent: Bullet10x20mm
   id: CMBullet9mmSMG #Yes it does use a seperate type of 9mm thats mechanically identical to 10x20mm for some reason
+  categories: [ HideSpawnMenu ]
 
 - type: Tag
   id: CMMagazineSMGMP5

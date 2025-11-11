@@ -1,0 +1,53 @@
+- type: entity
+  abstract: true
+  parent: RMCCassetteTapeBase
+  id: RMCSichCassetteTapeBase
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/Devices/cassette_player.rsi
+
+# Січ
+
+- type: entity
+  parent: RMCSichCassetteTapeBase
+  id: RMCSichCassetteTape
+  name: запальна касета
+  description: Касета з композиціями, під які ваша смерть буде виглядати красиво. Спеціально для українського полку КМПОН!
+  components:
+  - type: Sprite
+    state: cassette_hellfire
+  - type: CassetteTape
+    songs:
+    - /Audio/_Sich/Jukebox/californiaDream.ogg
+    - /Audio/_Sich/Jukebox/fortunaSon.ogg
+    - /Audio/_Sich/Jukebox/welcomeToTheJungle.ogg
+    - /Audio/_Sich/Jukebox/thisfire.ogg
+    - /Audio/_Sich/Jukebox/sevenNationArmy.ogg
+    - /Audio/_Sich/Jukebox/paranoid.ogg
+    - /Audio/_Sich/Jukebox/paintInBlack.ogg
+
+- type: entity
+  parent: RMCSichCassetteTapeBase
+  id: RMCSichCassetteTapeManSoldWorld
+  name: касета продавшого світ
+  description: Касета від того, хто продав світ. Спеціально для українського полку КМПОН!
+  components:
+  - type: Sprite
+    state: cassette_who_sold_world
+  - type: CassetteTape
+    songs:
+    - /Audio/_Sich/Jukebox/theManWhoSoldTheWorld.ogg
+
+
+- type: entity
+  parent: RMCSichCassetteTapeBase
+  id: RMCSichCassetteTapeUa
+  name: українська касета
+  description: Касета з збірником українських композицій. Спеціально для українського полку КМПОН!
+  components:
+  - type: Sprite
+    state: cassette_ua
+  - type: CassetteTape
+    songs:
+    - /Audio/_Sich/Jukebox/dkEnergetikStreetEast.ogg
+    - /Audio/_Sich/Jukebox/shubenuk.ogg

@@ -4,16 +4,6 @@
   start: start
   graph:
     - node: start
-      edges:
-        - to: RailLight
-          steps:
-            - tag: Flashlight
-              name: ліхтар
-              icon:
-                sprite: _RMC14/Objects/Tools/Light/flashlight.rsi
-                state: flashlight
-              doAfter: 1
-              
     - node: RailLight
       entity: RMCAttachmentRailFlashlight
       edges:
@@ -24,3 +14,8 @@
 
     - node: Flashlight
       entity: RMCFlashlight
+      edges:
+        - to: RailLight
+          steps:
+            - tool: Screwing
+              doAfter: 1

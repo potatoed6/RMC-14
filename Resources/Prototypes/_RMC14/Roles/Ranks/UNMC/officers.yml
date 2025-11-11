@@ -45,3 +45,15 @@
   name: Другий Лейтенант
   prefix: 2 Л-т.
   paygrade: O1
+
+- type: rank
+  id: RMCRankChiefWarrantOfficer
+  name: Старший Ворент-Офіцер
+  prefix: СВорОф.
+  paygrade: O0-2
+
+- type: rank
+  id: RMCRankWarrantOfficer
+  name: Ворент-Офіцер
+  prefix: ВорОф.
+  paygrade: O0-1

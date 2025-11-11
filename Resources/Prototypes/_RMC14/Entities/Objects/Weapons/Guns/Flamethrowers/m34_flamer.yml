@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: [ CMBaseWeaponGun, BaseItem, RMCBaseAttachableHolder ]
   id: RMCWeaponFlamer
-  name: M34 incinerator unit
-  description: M34 incinerator unit has proven to be one of the most effective weapons at clearing out soft-targets. This is a weapon to be feared and respected as it is quite deadly.
+  name: M34 вогнемет
+  description: M34 - один з найефективніших вогнеметів для знищення легкозаймистих цілей. Це зброя, яку бояться й поважають - настільки вона смертоносна.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Flamethrower/m34.rsi
@@ -91,6 +91,22 @@
         enum.RMCIgniterVisuals.Ignited:
           True: { visible: true }
           False: { visible: false }
+  - type: Tag
+    tags:
+    - RMCWeaponIncineratorM34
+  - type: RMCNameItemOnVend
+    item: PrimaryGun
+
+- type: entity
+  parent: RMCWeaponFlamer
+  id: RMCWeaponFlamerPVE
+  suffix: PVE
+  components:
+  - type: Gun
+    fireRate: 2
+
+- type: Tag
+  id: RMCWeaponIncineratorM34
 
 - type: entity
   parent: RMCWeaponFlamer
@@ -112,8 +128,8 @@
 - type: entity
   parent: BaseItem
   id: RMCTankFlamer
-  name: incinerator tank
-  description: A fuel tank used to store fuel for use in the M34 incinerator unit. Handle with care.
+  name: паливний бак
+  description: Бак з пальним для вогнемета M34. Використовується виключно для її заправки. Поводьтесь обережно.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/flamethrower.rsi
@@ -148,12 +164,20 @@
     maxFillLevels: 2
     fillBaseName: flametank_custom_strip
   - type: Appearance
+  - type: SolutionStorageFillable
+    solution: rmc_flamer_tank
+  - type: Tag
+    tags:
+    - RMCTankFlamer
+
+- type: Tag
+  id: RMCTankFlamer
 
 - type: entity
   parent: RMCGunCaseBase
   id: RMCCaseFlamer
-  name: M34 incinerator case
-  description: A gun case containing the M34 incinerator unit. It does come loaded, but you'll still have to find extra tanks as you go.
+  name: набір вогнемета М34
+  description: Зброя комплектується вогнеметом M34 та баком з пальним. Постачається зарядженою, але додаткові баки доведеться шукати самостійно.
   components:
   - type: Storage
     maxItemSize: Huge

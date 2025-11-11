@@ -23,7 +23,7 @@
 - type: entity
   parent: RMCBaseAirBurstGrenade
   id: RMC40MMGrenadeM74AGMF
-  name: М74 ПВГ-О 40мм осколкова граната
+  name: М74 ПВГ-О 40 мм осколкова граната
   description: M74 - Повітряно-Вибухова Граната - Осколкова. Цією гранатою слід стріляти з гранатомета. Трохи пролетівши розсіює перед собою рій смертоносних осколків так, щоб вражати великі цілі. Надсмертоносна при прямому попаданні.
   components:
   - type: Tag
@@ -42,7 +42,7 @@
 - type: entity
   parent: RMC40MMGrenadeM74AGMF
   id: RMC40MMGrenadeM74AGMI
-  name: М74 ПВГ-З 40мм запалювальна граната
+  name: М74 ПВГ-З 40 мм запалювальна граната
   description: M74 - Повітряно-Вибухова Граната - Запалювальна. Цією гранатою слід стріляти з гранатомета. Запалює підлогу після влучання. Розсіює перед собою рій смертоносних розпечених осколків. Надсмертоносна при прямому попаданні.
   components:
   - type: Sprite
@@ -62,7 +62,7 @@
 - type: entity
   parent: RMC40MMGrenadeM74AGMF
   id: RMCHornetShellM74AGMS
-  name: М74 ПВГ-К 40мм Шершень
+  name: М74 ПВГ-К 40 мм Шершень
   description: Ідентична M74 ПВГ-О, лиш окрім того моменту, що замість шрапнелі вистрілює кулями калібру .22дг. Одним словом - картеч, але на непоганій відстані.
   components:
   - type: Sprite
@@ -109,7 +109,7 @@
 - type: entity
   parent: RMC40MMGrenadeM74AGMF
   id: RMC40MMGrenadeM74AGMS
-  name: М74 ПВГ-Д 40мм димова граната
+  name: М74 ПВГ-Д 40 мм димова граната
   description: M74 - Повітряно-Вибухова Граната - Димова. Вистрілюється з гранатомету. Детонуючи, випускає нешкідливу хмару диму.
   components:
   - type: Sprite
@@ -166,7 +166,7 @@
 - type: entity
   parent: RMCBaseAirBurstProjectile
   id: RMCAirBurstProjectileFrag
-  name: М74 ПВГ-О 40мм граната
+  name: М74 ПВГ-О 40 мм граната
   categories: [ HideSpawnMenu ]
   components:
   - type: ProjectileGrenade
@@ -181,7 +181,7 @@
 - type: entity
   parent: RMCBaseAirBurstProjectile
   id: RMCAirBurstProjectileIncendiary
-  name: М74 ПВГ-О 40мм граната
+  name: М74 ПВГ-О 40 мм граната
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -203,7 +203,7 @@
 - type: entity
   parent: RMCBaseAirBurstProjectile
   id: RMCAirBurstProjectileHornet
-  name: М74 ПВГ-К 40мм шершень
+  name: М74 ПВГ-К 40 мм шершень
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -253,7 +253,7 @@
 - type: entity
   parent: RMCBaseAirBurstProjectile
   id: RMCAirBurstProjectileSmoke
-  name: М74 ПВГ-Д 40мм граната
+  name: М74 ПВГ-Д 40 мм граната
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -313,10 +313,28 @@
     radius: 2.0
     energy: 7.0
   - type: IgniteOnProjectileHit
-    intensity: 2
+    duration: 2
+  - type: Fixtures
+    fixtures:
+      projectile:
+        hard: false
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.45,0.15,0.15"
+        mask:
+        - Impassable
+        - BulletImpassable
 
 - type: entity
   parent: RMCBaseBullet
+  id: RMCBaseAirburstRound
+  categories: [ HideSpawnMenu ]
+  abstract: true
+  components:
+  - type: PreventCollideWithDead
+
+- type: entity
+  parent: RMCBaseAirburstRound
   id: RMCHornetRound
   name: .22 патрон шершня
   categories: [ HideSpawnMenu ]
@@ -338,7 +356,7 @@
     amount: 25
 
 - type: entity
-  parent: RMCBaseBullet
+  parent: RMCBaseAirburstRound
   id: RMCShrapnelJagged
   name: зазубрена шрапнель
   categories: [ HideSpawnMenu ]
@@ -358,9 +376,12 @@
   - type: CMArmorPiercing
     amount: 10
   - type: RMCStunOnHit
-    maxRange: 10
-    stunTime: 0
-    slowTime: 0.8
+    stuns:
+    - whitelist:
+        minMobSize: VerySmallXeno
+      maxRange: 10
+      stunTime: 0
+      slowTime: 0.8
   - type: RMCProjectileAccuracy
     accuracy: 100
     thresholds:
@@ -368,7 +389,7 @@
       falloff: 33
 
 - type: entity
-  parent: RMCBaseBullet
+  parent: RMCBaseAirburstRound
   id: RMCShrapnelIncendiary
   name: розпечена шрапнель
   categories: [ HideSpawnMenu ]
@@ -423,15 +444,18 @@
     soundHit:
       path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
   - type: RMCStunOnHit
-    maxRange: 10
-    stunTime: 1.6
-    slowTime: 4
-    knockBackPowerMin: 1
-    knockBackPowerMax: 3
-    knockBackSpeed: 5
-    forceKnockBack: true
-    slowsEffectBigXenos: true
-    dazeTime: 3.4
+    stuns:
+    - whitelist:
+        minMobSize: VerySmallXeno
+      maxRange: 10
+      stunTime: 1.6
+      slowTime: 4
+      knockBackPowerMin: 1
+      knockBackPowerMax: 3
+      knockBackSpeed: 5
+      forceKnockBack: true
+      slowsEffectBigXenos: true
+      dazeTime: 3.4
   - type: RMCProjectileAccuracy
     accuracy: 100
     thresholds:

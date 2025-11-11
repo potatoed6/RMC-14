@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: [ CMBaseWeaponRifleNoDualWieldPenalty, RMCBaseAttachableHolder, RMCBaseWeaponMagazineVisuals ]
-  name: XM51 штурмовий дробовик
+  name: ТМД-51 штурмовий дробовик
   id: RMCWeaponShotgunXM51
-  description: Експериментальна модель дробовика, що проходить випробування. Заснована на оригінальній цивільній та CMB версіях, XM51 — це дробовик з магазинним заряджанням та помповим механізмом. Він використовує спеціальні 16 каліброві бронебійні патрони, які ефективні для пробивання стін і дверей. Користувачам рекомендується не використовувати зброю проти м'яких або броньованих цілей через низьку ефективність снарядів.
+  description: "Тестова модель дробовика, що наразі проходить випробування. Створений на основі оригінальних цивільних та CMB версій, ТМД-51 — це дробовик із комбінованим заряджанням, що поєднує магазинну подачу та помповий механізм. Використовує спеціальні пробивні набої 16 калібру, ефективні для пробивання стін і дверей. Не рекомендується застосовувати проти м’яких або броньованих цілей через низьку пробивну здатність набоїв."
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/xm51.rsi
@@ -18,7 +18,8 @@
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
   - type: Gun
-    shotsPerBurst: 1
+    burstCooldown: 1.5
+    shotsPerBurst: 2
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -34,6 +35,14 @@
     scatterWielded: 10
     scatterUnwielded: 30
     baseFireRate: 0.625
+    burstFireRateMultiplier: 25
+    modifiers:
+      Burst:
+        fireDelay: 0.1665
+        maxScatterModifier: 10
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 6
   - type: RMCExtraProjectilesDamageMods
     damageMultiplier:  0.18
   - type: RMCWeaponAccuracy
@@ -75,6 +84,7 @@
           - RMCAttachmentAngledGrip
           - RMCAttachmentGyroscopicStabilizer
           - RMCAttachmentFlashlightGrip
+          - RMCAttachmentExtinguisher
   - type: AttachableHolderVisuals
     offsets:
       rmc-aslot-barrel: 0.75, 0.00
@@ -85,6 +95,7 @@
     tags:
     - RMCWeaponShotgun
     - RMCWeaponShotgunXM51
+    - RMCXM51StockBurst
   - type: GunDamageMultipliers
     multipliers:
       Turf: 30
@@ -101,6 +112,8 @@
     rsi:
       sprite: _RMC14/Interface/MousePointer/shotgun_mouse.rsi
       state: all
+  - type: RMCGunChamber
+    enabled: false
 
 - type: Tag
   id: RMCWeaponShotgunXM51

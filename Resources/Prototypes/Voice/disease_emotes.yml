@@ -13,8 +13,8 @@
     components:
     - Vocal
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-cough"]
   chatTriggers:
     - cough
@@ -26,6 +26,18 @@
     - cough!
     - coughs!
     - coughed!
+    - кашляє # Це та все нижче (до кінця прототипу) - з білду Січі. Варіанти у множині для відповідного займеника
+    - кашляють
+    - прокашлюється
+    - прокашлюються
+    - закашлюється
+    - закашлюються
+    - кахикає
+    - кахикають
+    - бухикає
+    - бухикають
+    - покашлює
+    - покашлюють
 
 - type: emote
   id: CatMeow
@@ -60,12 +72,16 @@
     components:
     - Vocal
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-yawn"]
   chatTriggers:
     - yawn
     - yawns
+    - зіває # Це та все нижче (до кінця прототипу) - з білду Січі.
+    - зівають
+    - позіхає
+    - позіхають
 
 - type: emote
   id: Snore

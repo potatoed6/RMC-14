@@ -4,25 +4,6 @@
   name: cm-job-name-senior-enlisted-advisor
   description: cm-job-description-senior-enlisted-advisor
   playTimeTracker: CMJobSeniorEnlistedAdvisor
-  requirements:
-  - !type:DepartmentTimeRequirement
-    department: CMSquad
-    time: 54000 # 15 hours
-  - !type:TotalJobsTimeRequirement
-    group: CMJobsEngineering
-    time: 36000 # 10 hours
-  - !type:DepartmentTimeRequirement
-    department: CMMilitaryPolice
-    time: 54000 # 15 hours
-  - !type:TotalJobsTimeRequirement
-    group: CMJobsMedical
-    time: 54000 # 15 hours
-  - !type:DepartmentTimeRequirement
-    department: CMCommand
-    time: 54000 # 15 hours
-  - !type:DepartmentTimeRequirement
-    department: CMRequisitions
-    time: 36000 # 10 hours
   ranks: # TODO Selectable Ranks for SEA
     RMCRankSergeantMajor:
     - !type:RoleTimeRequirement
@@ -35,11 +16,11 @@
     RMCRankGunnerySergeant: []
   startingGear: CMGearSeniorEnlistedAdvisor
   icon: "CMJobIconSEA"
-  requireAdminNotify: true
   joinNotifyCrew: true
   latejoinArrivalSound:
     path: /Audio/_RMC14/Announcements/ARES/attention_jingle.ogg
-  supervisors: cm-job-supervisors-co
+  marineAuthorityLevel: 5
+  supervisors: rmc-job-supervisors-commander
   whitelisted: true
   accessGroups:
   - MarineMain
@@ -68,6 +49,7 @@
         RMCSkillVehicles: 2
     - type: MarineOrders
     - type: CMVendorUser
+      id: CMSeniorEnlistedAdvisor
       points: 45
     - type: RMCPointing
     - type: JobPrefix
@@ -77,11 +59,12 @@
     - type: CommandAccent
     - type: TacticalMapIcon
       icon:
-        sprite: _RMC14/Interface/map_blips.rsi
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: sea
       background:
-        sprite: _RMC14/Interface/map_blips.rsi
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: background_medical
+    - type: RMCTrackable
 
 - type: startingGear
   id: CMGearSeniorEnlistedAdvisor

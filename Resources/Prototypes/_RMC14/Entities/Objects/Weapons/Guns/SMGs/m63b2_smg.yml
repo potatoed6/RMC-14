@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseWeaponSMG
-  name: M63B2 submachine gun
+  name: M63B2 пістолет-кулемет
   id: RMCWeaponSMGM63B2
-  description: A modified version M63 submachinegun, re-engineered for better weight, handling and accuracy. Given only to elite units.
+  description: Модифікована версія пістолета-кулемета M63, перепроєктована з метою зменшення ваги, покращення керованості та підвищення точності. Використовується виключно елітними підрозділами.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/m63b2.rsi
@@ -78,6 +78,7 @@
           - RMCAttachmentRailFlashlight
           - RMCAttachmentMagneticHarness
           - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS5MicroRedDotSight
           - RMCAttachmentS6ReflexSight
           - RMCAttachmentS42xTelescopicMiniscope
       rmc-aslot-stock:

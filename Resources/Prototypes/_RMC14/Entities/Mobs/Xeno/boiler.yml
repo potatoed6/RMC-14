@@ -7,8 +7,8 @@
   - RMCXenoCommendationReceiver
   - RMCXenoMobCollision
   id: CMXenoBoiler
-  name: Boiler
-  description: A huge, grotesque xenonid covered in glowing, oozing acid slime.
+  name: Бойлер
+  description: Величезний та потворний ксеноїд, вкритий світним пульсуючим кислотним слизом.
   components:
   - type: GuideHelp
     guides:
@@ -27,6 +27,7 @@
         mask:
         - MobMask
         - BarbedBarricade
+        - BarricadeImpassable
         layer:
         - MobLayer
       fix2:
@@ -62,7 +63,7 @@
     - ActionXenoDevolve
     tier: 3
     hudOffset: -0.15,0.05
-    unlockAt: 900 # 15 minutes
+    unlockAt: 1200 # 900 (15 minutes) in RMC. 20 хвилин, зміна білду Січі
   - type: XenoHeavy
   - type: XenoDevolve
     devolvesTo:
@@ -104,6 +105,8 @@
     chance: 0.25
     stunMin: 3
     stunMax: 4
+  - type: AcidBloodSplash
+    isActivateSplashOnGib: false
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 3.5
@@ -147,7 +150,7 @@
     prefix: boiler
   - type: TacticalMapIcon
     icon:
-      sprite: _RMC14/Interface/map_blips.rsi
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: boiler
   - type: Flammable
     damage: #per second, scales with number of fire 'stacks'
@@ -156,3 +159,7 @@
   - type: XenoToggleChargingKnockback
     enabled: false
   - type: XenoToggleChargingStop
+  - type: FixedIdentity
+    name: cm-job-name-xeno-boiler
+  - type: RMCActionOrder
+    id: CMXenoBoiler

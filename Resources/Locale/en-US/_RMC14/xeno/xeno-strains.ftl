@@ -1,143 +1,161 @@
 rmc-xeno-strain-specialized-into = It has specialized into {INDEFINITE($strain)} {$strain}.
 
-rmc-xeno-dancer-name = Dancer
-rmc-xeno-dancer-description = You trade your spit, acid ball, acid spray, corrosive acid, dash, and a small bit of armor for high single-target damage.
-   You gain the ability to:
-   - Break walls and other simple structures with your slash attack.
-   - Cause enemies to be marked on slash and tail stab hits which effects your other abilities.
-   - Impale an enemy for your base slash damage and pierce some armor, hitting twice on marked.
-   - Trip an enemy to disarm them, or stun them if marked.
-   - Gain a temporary speed boost thats doubled around your enemies.
-rmc-xeno-dancer-popup = A performance fit for a Queen, this one will become my instrument of death.
+rmc-xeno-dancer-name = Танцюрист
+rmc-xeno-dancer-description = Ви жертвуєте плювком, кислотною кулею, розбризкуванням кислоти, їдкою кислотою, ривком і частиною броні задля високої шкоди по одній цілі.
+   Ви отримуєте можливість:
+   - Ламати стіни та інші прості конструкції ударами кігтями.
+   - Позначати ворогів при ударах кігтями та при проколюванням хвостом - це впливає на інші твої здібності.
+   - Проколоти ворога, завдаючи базову шкоду кігтями й пробиваючи частину броні; по позначених цілях удар завдає шкоди двічі.
+   - Змахнути хвостом по ворогу, щоб вибити зброю або оглушити, якщо він позначений.
+   - Отримувати тимчасове прискорення, яке подвоюється поблизу ворогів.
+rmc-xeno-dancer-popup = Цей виступ є гідний Королеви та стане моїм інструментом смерті.
 
-rmc-xeno-oppressor-name = Oppressor
-rmc-xeno-oppressor-description = You trade your tail stab, spit, acid ball, acid spray, corrosive acid, dash, and a small bit of your slash damage and speed for higher explosive resistance and abilities to manipulate the battlefield.
-   You gain the ability to:
-   - Break walls and other simple structures with your slash attack.
-   - Do extra damage with your slash on downed, immobile, or slowed foes.
-   - Seize an enemy with your tail to pull them in, or Abduct a line of foes.
-   - Lash the foes in front of you pushing them back and slowing them.
-   - Punch an enemy, knocking them back, or rooting and piercing armor instead if they're downed, immobile, or slowed.
-rmc-xeno-oppressor-popup = My reach is endless, this one will pull down the heavens.
+rmc-xeno-oppressor-name = Гнобитель
+rmc-xeno-oppressor-description = Ви жертвуєте ударом хвостом, плювком, кислотною кулею, розбризкуванням кислоти, їдкою кислотою, ривком, а також частиною шкоди від кігтів і швидкості задля вищого опору вибухам і контролю поля бою.
+   Ви отримуєте можливість:
+   - Ламати стіни та інші прості конструкції ударами кігтями.
+   - Завдавати додаткової шкоди кігтями по поваленим, нерухомим або сповільненим ворогам.
+   - Хапати ворога хвостом і підтягувати до себе, або захоплювати кількох ворогів в лінії.
+   - Хльостати ворогів перед собою, відкидаючи їх назад і сповільнюючи.
+   - Пробивати ворога ударом, який відкидає його, або, якщо ворог повалений/нерухомий/сповільнений - знерухомлює його й пробиває броню.
+rmc-xeno-oppressor-popup = Моє охоплення безмежне — це зірве самі небеса.
 
-rmc-xeno-vanguard-name = Vanguard
-rmc-xeno-vanguard-description = You trade your spit, acid ball, acid spray, corrosive acid, and some health for a strong one hit shield that recharges out of combat.
-   You gain the ability to:
-   - Break walls and other simple structures with your slash attack.
-   - Pierce through enemies in a line, recharging your shield if you hit at least 2.
-   - Blitz to get into a group of enemies and use it again to hit all around you, recharging your shield if you hit at least 1.
-   - Cleave an enemy either flinging them or rooting them in place, both stronger with your shield up.
-rmc-xeno-vanguard-popup = Fearless you are born, fearless you serve, fearless you die. This one will become my Vanguard.
+rmc-xeno-vanguard-name = Авангард
+rmc-xeno-vanguard-description = Ви жертвуєте плювком, кислотною кулею, розбризкуванням кислоти, їдкою кислотою та частиною здоров'я задля потужного одноразового щита, що відновлюється поза боєм.
+   Ви отримуєте можливість:
+   - Ламати стіни та інші прості конструкції ударами кігтями.
+   - Пронизувати ворогів у лінії; якщо вражаєш щонайменше двох - щит відновлюється.
+   - Здійснювати блискавичний удар - мчишся у групу ворогів; при повторному використанні - удар по всіх навколо. Якщо вражаєш бодай одного - щит заряджається.
+   - Здійснити спеціальну атаку, яка або відкидає ворога, або знерухомлює його на місці - ефекти посилюються, якщо щит активний.
+rmc-xeno-vanguard-popup = Безстрашними ми народилися, безстрашно служимо, безстрашно помремо. Це стане моїм Авангардом.
 
-rmc-xeno-valkyrie-name = Valkyrie
-rmc-xeno-valkyrie-description = You trade your tail stab, spit, acid ball, acid spray, and some speed to gain some armor and frontline support abilities.
-   You gain the ability to:
-   - Break the strongest of walls and other reinforced structures with your slash attack, and emit strong pheromones.
-   - Extinguish friend or capture alike with your tail, or knock away explosives and down enemies with your High Gallop.
-   - Heal you and your allies for every slash, gaining fury, then enrage yourself and ally for more armor and healing.
-   - Rejuvenate a group all at once with a rallying shriek, removing their ailments.
-   - Retrieve endangered, knocked-down or resting allies and pull them to your location.
-rmc-xeno-valkyrie-popup = This one will deny her sisters' deaths until they earn it. Fight or be forgotten.
+rmc-xeno-valkyrie-name = Валькірія
+rmc-xeno-valkyrie-description = Ви жертвуєте ударом хвостом, плювком, кислотною кулею, розбризкуванням кислоти та частиною швидкості задля міцнішої броні й здібностей підтримки на передовій.
+   Ви отримуєте можливість:
+   - Ламати навіть укріплені стіни та конструкції ударами кігтями, випускаючи потужні феромони.
+   - Гасити союзників або захоплених, використовуючи хвіст; або ж відштовхувати вибухівку та повалених ворогів завдяки 'Шаленому галопу'.
+   - Лікувати себе та союзників з кожного удару кігтями, накопичуючи лють, а потім використовувати її для надання броні або прискорення союзникам.
+   - Очистити союзників довкола за допомогою крика від негативних ефектів та оглушення, з більшим радіусом при високій люті.
+   - Притягувати нерухомих або повалених союзників до себе з невеликою затримкою.
+rmc-xeno-valkyrie-popup = Ми не визнаємо смерті своїх сестер, доки ті не заслужать гідно померти. Бийтеся — або зникніть в забутті.
 
-rmc-xeno-gardener-name = Gardener
-rmc-xeno-gardener-description = You trade your choice of resin secretions, corrosive acid, and ability to transfer plasma for a tiny bit of extra health regeneration on weeds and several new abilities.
-  You gain the ability to:
-  - Plant up to six potent resin fruits for your sisters at the cost of a bit of your health for each fruit you shape.
-  - Plant hardier weeds.
-  Your Resin Surge allows you to:
-  - Create patches of sticky resin.
-  - Temporarily reinforce structures with your plasma.
-  - Build short-lived walls
-  - Speed up the growth of your fruits.
-rmc-xeno-gardener-popup = The glory of gardening: hands in the weeds, head in the dark, heart with resin.
+rmc-xeno-gardener-name = Садівник
+rmc-xeno-gardener-description = Ви жертвуєте будівництом смолистих структур та слабкою їдкою кислотою задля трохи вищої регенерації здоров'я на траві і нових здібностей.
+  Ви отримуєте можливість:
+  - Висаджувати до шести потужних смолистих фруктів для сестер, витрачаючи частину свого здоров'я на кожен.
+  - Висаджувати витривалу траву.
+  - Підняття фруктів і годування ними сестер у два рази швидше.
+  Ваша 'Хвиля Смоли' дозволяє:
+  - Створювати липкі ділянки зі смоли.
+  - Тимчасово зміцнювати структури за допомогою плазми.
+  - Зводити короткотривалі стіни.
+  - Прискорювати ріст фруктів.
+rmc-xeno-gardener-popup = Слава садівництву! Руки - в траві, голова - в темряві, серце - в смолі.
 
-rmc-xeno-healer-name = Healer
-rmc-xeno-healer-description = You lose your choice of resin secretions, a chunk of your slash damage, and you will experience a slighty-increased difficulty in tackling hosts in exchange for strong pheromones, and the ability to heal your sisters wounds.
-    You gain the ability to:
-    - Plant up to 3 lesser resin fruits
-    - Heal sisters by using plasma and some of your health.
-rmc-xeno-healer-popup = Divided we fall, united we win. We live for the hive, we die for the hive.
+rmc-xeno-healer-name = Цілитель
+rmc-xeno-healer-description = Ви жертвуєте будівництом смолистих cтруктур, частину шкоди від кігтів і тобі буде трохи складніше боротися з інкубаторами - в обмін на потужні феромони та здатність лікувати поранених сестер.
+    Ви отримуєте можливість:
+    - Висаджувати до трьох малих смолистих фруктів.
+    - Лікувати сестер, витрачаючи плазму та частину власного здоров'я.
+rmc-xeno-healer-popup = Окремо - ми помираємо, разом - перемагаємо. Ми живемо заради вулика і вмираємо заради вулика.
 
-rmc-xeno-resin-whisperer-name = Resin Whisperer
-rmc-xeno-resin-whisperer-description = You lose:
-  - Your corrosive acid
-  - Your ability to secrete thick resin
-  - Your ability to reinforce resin secretions
-  - Your ability to plant weed nodes outside of weeds
-  - A fifth of your plasma reserves to.
-  You gain the ability to:
-  - Remotely place resin secretions including weed nodes up to a distance of twelve paces!
-  - Enhance your vision and gain a stronger connection to the resin.
-rmc-xeno-resin-whisperer-popup = We let the resin guide us. It whispers, so listen closely.
+rmc-xeno-resin-whisperer-name = Трав'яний повелитель
+rmc-xeno-resin-whisperer-description = Ви втрачаєте:
+  - Їдку кислоту.
+  - Здатність будувати густі структури.
+  - Можливість укріплювати смолисті структури.
+  - Можливість висаджувати чорні вузли поза травою.
+  - П'яту частину запасу плазми.
+  Ви отримуєте можливість:
+  - Встановлювати смолисті cтруктури, зокрема чорні вузли, на відстані до дванадцяти кроків!
+  - Збільшити дальність свого зору і поглибити зв'язок зі смолою.
+rmc-xeno-resin-whisperer-popup = Ми дозволяємо смолі вести нас. Вона шепоче - тож слухаємо її уважно.
 
-rmc-xeno-acider-name = Acider
-rmc-xeno-acider-description = You trade your leap, bone chips, long-range sight, and a little speed to gain more health, some armor, and a new organ that fills with volatile acid over time.
-  You gain the ability to:
-  - Cause your enemies to be covered in acid on hit.
-  - Gain acid reserves from slashing your enemies, and passively over time up to 400, which can be spent on corrosive acid as strong as a boiler's but applied much faster.
-  - Become a living bomb using all your stored up acid. Survive for 20 seconds and you explode, coating your enemies and their defenses with acid. You'll reincarnate as a larva afterwards.
-rmc-xeno-acider-popup = This one will be the last thing they hear. A martyr.
+rmc-xeno-acider-name = Кислотний
+rmc-xeno-acider-description = Ви жертвуєте стрибок, кістколамові снаряди, далекозорість та частиною швидкості задля більшої кількості здоров'я, броні та нового органу, який із часом накопичує нестабільну кислоту.
+  Ви отримуєте можливість:
+  - Покривати ворогів кислотою при кожному ударі.
+  - Накопичувати кислоту, завдаючи удари кігтями або пасивно - до 400 одиниць. Потім витрачати її на роз'їдливу кислоту, таку ж потужну, як у бойлера, але зі значно швидшим застосуванням.
+  - Перетворитися на живу бомбу, витрачаючи всю накопичену кислоту. Якщо виживеш протягом 20 секунд — вибухнеш, покриваючи ворогів і їхню оборону кислотою. Після цього ти відродишся личинкою.
+rmc-xeno-acider-popup = Ми - стане останнім що вони побачуть.
 
-rmc-xeno-steelcrest-name = Steelcrest
-rmc-xeno-steelcrest-description = You trade your tail sweep and a small amount of slash damage for increased headbutt damage and fortified mobility to become a moving tank.
-   You gain the ability to:
-   - Move while fortified. Being fortified gives less armor and more directional armor, and no longer protects you from explosion stun.
-   - Headbutt while fortified. Headbutt doesn't lose damage and keeps it's higher range with high knockback.
-   - Soak in damage for 6 seconds for a small heal that also refreshes your tail slam.
-rmc-xeno-steelcrest-popup = This one, like my will, is indomitable. It will become my steel crest against all that defy me.
+rmc-xeno-steelcrest-name = Сталевий
+rmc-xeno-steelcrest-description = Ви жертвуєте обертовим ударом хвостом і частиною шкоди від кігтів задля підвищеної шкоди від удару головою, посиленої мобільності та при опущеному гребені перетворюватися на живий танк.
+   Ви отримуєте можливість:
+   - Рухатись при зміцненому стані. Зміцнення тепер дає менше загальної броні, але більше лобової, і більше не захищає від оглушення вибухами.
+   - Виконувати таран при зміцненому стані. Удар не втрачає шкоди, зберігає збільшену дальність і сильне відкидання.
+   - Поглинати шкоду протягом 6 секунд для незначного лікування та відновлення удару хвостом.
+rmc-xeno-steelcrest-popup = Моя шкіра як і воля - сталеві. Мій сталевим гребень стане проти всіх, хто зухвало чинить опір.
 
-rmc-xeno-maid-name = Cat Maid
-rmc-xeno-maid-description = You trade your dignity.
-    You gain the ability to:
-    - Cause mental anguish in friends and foes alike.
-rmc-xeno-maid-popup = Rawr :3
+rmc-xeno-maid-name = Котогосподинька
+rmc-xeno-maid-description = Ви жертвуєте своєю гідністю...
+    Ви отримуєте можливість:
+    - Завдавати ментальних страждань як союзникам, так і ворогам.
+rmc-xeno-maid-popup = Мяу~ :3
 
-rmc-xeno-vampire-name = Vampire
-rmc-xeno-vampire-description = You lose all of your abilities and you forfeit a chunk of your health and damage in exchange for a large amount of armor, a little bit of movement speed, increased attack speed, and brand new abilities that make you an assassin.
-  You gain the ability to:
-  - Rush on your opponent to disorient them.
-  - Flurry to unleash a forward cleave that can hit and slow three talls and heal you for every tall you hit.
-  - A special AoE Tail Jab to knock talls away, doing more damage with direct hits and even more damage and a stun if they smack into walls.
-  - Execute unconscious talls with a headbite to heal your wounds.
-rmc-xeno-vampire-popup = Show no mercy! Slaughter them all!
+rmc-xeno-vampire-name = Вампір
+rmc-xeno-vampire-description = Ви втрачаєте усі попередні здібності, а також частину свого здоров’я та шкоди в обмін на велику кількість броні, трохи швидшого руху, підвищену швидкість атаки та нові здібності, які роблять тебе справжнім убивцею.
+  Ви отримуєте можливість:
+  - Кидатися на ворога, дезорієнтуючи його.
+  - Використовувати "Лють - швидку серію ударів перед собою, яка може вразити до трьох ворогів, сповільнити їх і зцілити тебе за кожне влучання.
+  - Завдати спеціального розмаху хвостом, що відкидає ворогів. Прямі влучання завдають більше шкоди, а якщо ціль вдаряється об стіну - ще більше шкоди та оглушення.
+  - Добивати непритомних ворогів укусом у голову, відновлюючи своє здоров'я.
+rmc-xeno-vampire-popup = Жодної милості! Необхідно вбити їх усіх!
 
-rmc-xeno-eggsac-name = Eggsac
-rmc-xeno-eggsac-description = You trade your ability to store parasites and make resin traps for stronger pheromones, more egg storage, and the ability to produce eggs.
-   You gain the ability to:
-   - Place eggs from slightly farther away.
-   - Put eggs on non-hive weeds. You can have 4 sustained this way at once, and they will last awhile while you're near and not long if you're far.
-   - Sustained Eggs will convert into normal eggs upon touching hive weeds, and cannot produce sentient parasites.
-   - Use plasma over time to make eggs.
-rmc-xeno-eggsac-popup = An egg is always an adventure; the next one may be different.
+rmc-xeno-eggsac-name = Носій
+rmc-xeno-eggsac-description = Ви жертвуєте здатністю зберігати паразитів та робити пастки зі смоли на сильніші феромони, більше місця для зберігання яєць та здатність виробляти яйця.
+   Ви отримуєте можливість:
+   - Розміщувати яйця з трохи більшої відстані.
+   - Встановлювати яйця на не-вуликовій траві. Так можна підтримувати до 4 яєць, які довго зберігаються поруч із тобою, але швидко зникають, якщо ти далеко.
+   - Такі підтримувані яйця перетворюються на звичайні, щойно потрапляють на вуликову траву, однак не можуть створити розумного паразита.
+   - Створювати яйця, витрачаючи плазму з часом.
+rmc-xeno-eggsac-popup = Кожне яйце - це пригода. Наступне може бути іншою.
 
-rmc-xeno-berserker-name = Berserker
-rmc-xeno-berserker-description = You lose:
-  - Your empower, charge, and scissor cut.
-  - Some health.
-  - A bit of your influence under frenzy pheromones.
-  You gain:
-  - Movement speed, a slight increase in armor, and gain a new set of abilities that make you a terrifying melee monster.
-  - The ability to heal when you slash and gain a stack of rage that increases your armor, movement speed, and your heals per slash, to a maximum of six rage.
-  - Apprehend to increase your movement speed and apply a slow on the next target you slash.
-  - Eviscerate to unleash a devastating windmill attack that heals you for every enemy you hit after an immobilizing wind-up.
-  - Clothesline to fling your target to heal yourself, even more-so if you have a rage stack that will be used up.
-rmc-xeno-berserker-popup = Unbridled fury fills this one. You will become an extension of my rage.
+rmc-xeno-berserker-name = Берсерк
+rmc-xeno-berserker-description = Ви втрачаєте:
+  - Здібність: Підсилення, ривок і ножичний удар.
+  - Частину здоров'я.
+  - Частину впливу під дією феромонів люті.
+  Ви отримуєте:
+  - Збільшення швидкості руху, трохи більше броні та новий набір здібностей перетворюють тебе на скаженого бійця ближнього бою.
+  - Зцілення при кожному ударі кігтями та накопичення "люті" - до 6 рівнів. Кожен рівень підвищує твою броню, швидкість і ефективність зцілення.
+  - "Затримання" - пришвидшує тебе та сповільнює наступну ціль, яку вдариш.
+  - "Спустошення" - нищівний круговий удар, що вимагає короткої підготовки й одного очка люті, але натомість зцілює за кожного враженого ворога.
+  - "Звалювання" - відкидає ворога та лікує тебе. Якщо маєш заряд люті - ефект посилюється, а один заряд витрачається.
+rmc-xeno-berserker-popup = Нестримна лють наповнює нас. Інкубатори відчують наш гнів.
 
-rmc-xeno-charger-name = Charger
-rmc-xeno-charger-description = In exchange for:
-    - Your defensive shield ability.
-    - A little bit of your armor and damage.
-    - Your slowdown resist from turrets.
-    - Your influence under frenzy pheromones.
-    - Your stomp no longer knocking down talls.
-    - Your ability to lock your direction.
+rmc-xeno-charger-name = Бойовий
+rmc-xeno-charger-description = Ви втрачаєте:
+    - Здатність активовувати захисний щит.
+    - Частину броні та шкоди.
+    - Стійкість до уповільнення від турелей.
+    - Вплив феромонів люті.
+    - Можливість збивати ворогів своїм топотом.
+    - Твоя здатність стрибати в напрямок цілі.
 
-    You gain:
-    - A considerable amount of health.
-    - Some speed.
-    - Your stomp does extra damage when stomping over a grounded tall.
-    - Your charge is now manually-controlled and momentum-based; the further you go, the more damage and speed you will gain until you achieve maximum momentum, indicated by your roar.
-    - Your armor is now directional, being the toughest on the front, weaker on the sides, and weakest from the back.
-    - You gain an ability to tumble to pass through enemies.
-    - You gain an ability to forcefully move enemies via ramming into them.
-rmc-xeno-charger-popup = Nothing stops this hive. This one will become both the immovable object and the unstoppable force.
+    Ви отримуєте:
+    - Значно більше здоров'я.
+    - Трохи швидкості.
+    - Посилений топіт: завдає додаткової шкоди, якщо ти проходиш через повалену ціль.
+    - Нову керовану "Атаку з розгону": чим довше біжиш, тим більша швидкість і шкода. Досягає максимуму при крику.
+    - Напрямлену броню: найсильніша спереду, слабша з боків і найслабша ззаду.
+    - Здібність "Кувирок" - дозволяє в мить переміститися вліво чи вправо.
+    - Здібність "Таран" - силоміць штовхає ворогів у напрямку руху.
+rmc-xeno-charger-popup = Ніхто не зупинить вулик. Ми станемо і незламною перешкодою, і невпинною силою.
+
+rmc-xeno-hedgehog-name = Їжак
+# TODO RMC14 limb damage shrapnel and causing damage when they move
+rmc-xeno-hedgehog-description = Ви втрачаєте:
+  - Ваші здібності "Підсилення", "Напад" та "Ножиці".
+  - Частину швидкості руху та атаки.
+  - Вашу плазмову систему замінюють уламки кісток (максимум 300).
+  Ви отримуєте:
+  - Збільшення здоров'я та броні, що масштабується залежно від кількості уламків (+2,5 броні за кожні 50 уламків).
+  - Вогняні Шипи: Запускає 8 шипів, які при влучанні сповільнюють ціль. (75 уламків, час відновлення 10 с).
+  - Шипастий Щит: Тимчасовий щит з шипів, який випускає їх ж при кожному отриманому пошкоджені (150 уламків, тривалість 2 с, час відновлення 11 с).
+  - Шипастий Розвал: Випускає всі ваші уламки навколо вас, завдаючи значну шкоду оточуючим. Ви отримуєте прискорення, але втрачає генерацію уламків на 30 с (мінімум 50 осколків, час відновлення 30 с).
+rmc-xeno-hedgehog-popup = Шкура вкрита смертоносними колючками. Нехай вороги підійдуть та відчують, що ваш захист насправді є нападом.
+
+rmc-xeno-watcher-name = Спостерігач
+rmc-xeno-watcher-description = Ви втрачаєте здатність ховатися, але отримуєте збільшений радіус огляду. Ви можете перемикатися між нормальним та збільшеним радіусом.
+rmc-xeno-watcher-popup = Тепер ти Спостерігач. У тебе покращений зір, але ти не можеш сховатися.

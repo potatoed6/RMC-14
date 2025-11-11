@@ -1,8 +1,8 @@
 - type: entity
-  id: HiveCoreXeno
   parent: BaseHiveStructure
-  name: hive core
-  description: A giant pulsating mound of mass. It looks very much alive.
+  id: HiveCoreXeno
+  name: ядро вулика
+  description: Велика пульсуюча маса. Це виглядає дуже живим.
   components:
   - type: Transform
     anchored: true
@@ -41,7 +41,7 @@
         acts: ["Destruction"]
   - type: RepairableXenoStructure
     plasmaCost: 1000
-    repairLength: 15
+    repairLength: 4
   - type: MeleeReceivedMultiplier
     xenoDamage:
       types:
@@ -78,17 +78,20 @@
   - type: TacticalMapTracked
   - type: TacticalMapIcon
     icon:
-      sprite: _RMC14/Interface/map_blips.rsi
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: core
   - type: RMCAlternateSprite
     normalSprite: _RMC14/Structures/Xenos/hive_structures.rsi
     alternateSprite: _RMC14/Structures/Xenos/hive_structures_old.rsi
+  - type: RMCTrackable
+  - type: RMCMesonsNonviewable
+    xenoVisible: true
 
 - type: entity
   id: HiveCoreXenoConstructionNode
   parent: BaseHiveStructureNode
-  name: hive core
-  description: A strange wriggling lump. Looks like a marker for something.
+  name: ядро вулика
+  description: Дивна смикаючася грудка. Схоже на якийсь маркер.
   suffix: Construction
   components:
   - type: Sprite
@@ -118,13 +121,15 @@
   - type: RMCAlternateSprite
     normalSprite: _RMC14/Structures/Xenos/hive_structures.rsi
     alternateSprite: _RMC14/Structures/Xenos/hive_structures_old.rsi
+  - type: RMCMesonsNonviewable
+    xenoVisible: true
 
 
 - type: entity
   id: HivePylonXeno
   parent: BaseHiveStructure
-  name: hive pylon
-  description: A towering spike of resin. Its base pulsates with large tendrils.
+  name: пілон вулика
+  description: Високий шпиль із смоли. Біля основи пульсують товсті щупальця.
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/hive_structures.rsi
@@ -142,7 +147,7 @@
         acts: ["Destruction"]
   - type: RepairableXenoStructure
     plasmaCost: 1000
-    repairLength: 15
+    repairLength: 4
   - type: MeleeReceivedMultiplier
     xenoDamage:
       types:
@@ -173,3 +178,9 @@
   - type: RMCAlternateSprite
     normalSprite: _RMC14/Structures/Xenos/hive_structures.rsi
     alternateSprite: _RMC14/Structures/Xenos/hive_structures_old.rsi
+  - type: XenoStructureMapTracked
+  - type: TacticalMapTracked
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: pylon

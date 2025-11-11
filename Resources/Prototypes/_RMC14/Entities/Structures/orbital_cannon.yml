@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   id: RMCOrbitalCannon
   name: орбітальна гармата
-  description: "Орбітальна гарматна система КМПОН. Використовується для ураження великих цілей на планеті, навколо якої обертається. Прискорює свій боєзаряд за допомогою рідкого палива, завдаючи руйнівного удару при зіткненні."
+  description: "Орбітальна гарматна КМПОН. Використовується для ураження великої площі на планеті, навколо якої обертається корабель. Прискорює боєголовку за допомогою рідкого палива, завдаючи руйнівного удару при зіткненні."
   placement:
     mode: SnapgridCenter
   components:
@@ -33,6 +33,7 @@
     - RMCOrbitalCannonWarheadExplosive
     - RMCOrbitalCannonWarheadCluster
     - RMCOrbitalCannonWarheadIncendiary
+    - RMCOrbitalCannonWarheadAegis
   - type: Appearance
   - type: GenericVisualizer # TODO RMC14 animations
     visuals:
@@ -41,10 +42,13 @@
           Loaded: { state: obc_loaded }
           Unloaded: { state: obc_unloaded }
           Chambered: { state: obc_chambered }
+  - type: RMCLoreExaminable
+    content: rmc-lore-examniable-orbital-cannon
+  - type: RMCMesonsNonviewable
 
 - type: entity
   id: RMCOrbitalCannonFuel
-  name: рідке пальне
+  name: Рідке пальне
   placement:
     mode: SnapgridCenter
   components:
@@ -68,7 +72,7 @@
 - type: entity
   abstract: true
   id: RMCOrbitalCannonWarheadBase
-  name: орбітальна боєголовка
+  name: Орбітальна боєголовка
   placement:
     mode: SnapgridCenter
   components:
@@ -92,7 +96,8 @@
 - type: entity
   parent: RMCOrbitalCannonWarheadBase
   id: RMCOrbitalCannonWarheadExplosive
-  name: орбітальна боєголовка HE
+  description: "An orbital warhead designed to be fired from the UNMC Orbital Cannon system, after sufficient solid fuel has been inserted. This particular model is designed for use in heavily-fortified areas, and causes a large circular explosion if it manages to reach the ground."
+  name: Фугасна орбітальна боєголовка
   components:
   - type: Sprite
     state: ob_warhead_1
@@ -102,7 +107,8 @@
 - type: entity
   parent: RMCOrbitalCannonWarheadBase
   id: RMCOrbitalCannonWarheadIncendiary
-  name: запалювальна орбітальна боєголовка
+  description: "An orbital warhead designed to be fired from the UNMC Orbital Cannon system, after sufficient solid fuel has been inserted. This particular model is designed for cutting off enemy forces, and creates a large diamond of ultra-hot blue fire."
+  name: Запалювальна орбітальна боєголовка
   components:
   - type: Sprite
     state: ob_warhead_2
@@ -112,12 +118,41 @@
 - type: entity
   parent: RMCOrbitalCannonWarheadBase
   id: RMCOrbitalCannonWarheadCluster
-  name: кластерна орбітальна боєголовка
+  description: "An orbital warhead designed to be fired from the UNMC Orbital Cannon system, after sufficient solid fuel has been inserted. This particular model is designed for use in cramped heavily-fortified areas, and causes multiple explosions in a vaguely rectangular shape."
+  name: Кластерна орбітальна боєголовка
   components:
   - type: Sprite
     state: ob_warhead_3
   - type: OrbitalCannonWarhead
     explosion: RMCOrbitalCannonExplosionCluster
+
+- type: entity
+  parent: RMCOrbitalCannonWarheadBase
+  id: RMCOrbitalCannonWarheadAegis
+  description: "Експериментальна орбітальна боєголовка на основі форону, розроблена відділом досліджень і розробок AEGIS. Призначена для ураження цілей, де однієї звичайної орбітальної боєголовки недостатньо."
+  name: Орбітальна боєголовка AEGIS
+  components:
+  - type: WarpPoint
+  - type: TacticalMapIcon
+    icon:
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
+      state: aegisob
+  - type: TacticalMapTracked
+  - type: XenoMapTracked
+  - type: MarineMapTracked
+  - type: Sprite
+    sprite: _RMC14/Structures/ob_warhead_aegis.rsi
+    state: ob_warhead_aegis
+  - type: OrbitalCannonWarhead
+    explosion: RMCOrbitalCannonExplosionAegis
+    isAegis: true
+    firstWarningRange: 60
+    secondWarningRange: 55
+    thirdWarningRange: 45
+    intelPointsAwarded: 5
+  - type: PowerLoaderGrabbable
+    virtualRight: RMCVirtualWarheadRightAegis
+    virtualLeft: RMCVirtualWarheadLeftAegis
 
 - type: entity
   id: RMCOrbitalCannonWarheadSpawner
@@ -129,7 +164,8 @@
   - type: Sprite
     sprite: _RMC14/Structures/almayer_props.rsi
     state: ob_warhead_1
-  - type: RandomSpawner
+  - type: UniqueRandomSpawner
+    spawnerGroup: RMCOrbitalCannonWarheadSpawner
     prototypes:
     - RMCOrbitalCannonWarheadExplosive
     - RMCOrbitalCannonWarheadCluster
@@ -161,6 +197,36 @@
       max: 90
       delay: 0.6
       explosionEffect: RMCExplosionEffectClusterOB
+  - type: WarpPoint
+    location: 1 orbital bombardment
+
+- type: entity
+  parent: MarkerBase
+  id: RMCOrbitalCannonExplosionAegis
+  name: explosive Aegis OB explosion
+  suffix: FIRES AN OB!!!
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: OrbitalCannonExplosion
+    steps:
+    - type: RMCOBXenoTunnel
+      total: 5000
+      slope: 1500
+      max: 200
+      delay: 1
+    - type: RMCOBXenoTunnel
+      total: 150000
+      slope: 10
+      max: 90
+      delay: 0.3
+    - type: RMCOBXenoTunnel
+      total: 150000
+      slope: 10
+      max: 90
+      delay: 0.3
+    - fire: RMCTileFireOBAegis
+      fireRange: 35
   - type: WarpPoint
     location: 1 orbital bombardment
 
@@ -229,6 +295,10 @@
   - type: ActivatableUI
     key: enum.OrbitalCannonComputerUI.Key
   - type: OrbitalCannonComputer
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno
 
 - type: entity
   parent: CMSeatBase
@@ -250,7 +320,7 @@
 
 - type: entity
   id: RMCOrbitalCannonCableConnector
-  name: роз'єм гарматного кабелю
+  name: "роз'єм гарматного кабелю"
   description: "Роз'єм для підключення великогабаритних гарматних кабелів."
   placement:
     mode: SnapgridCenter

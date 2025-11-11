@@ -7,24 +7,6 @@
   targetNode: apc
   category: construction-category-cm-utilities
   description: "Зональний Контроль Живлення (ЗКЖ). Контролює енергію. У певній зоні."
-  icon:
-    sprite: _RMC14/Structures/Power/apc.rsi
-    state: base
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: true
-
-- type: construction
-  parent: RMC
-  name: рама машини
-  description: Машина на стадії будівництва. Потрібно більше частин.
-  id: CMMachineFrame
-  graph: CMMachineFrame
-  startNode: start
-  targetNode: machine
-  category: construction-category-cm-utilities
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  icon:
-    sprite: _RMC14/Structures/Machines/parts.rsi
-    state: "box_0"

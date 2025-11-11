@@ -19,6 +19,7 @@
         - WallLayer
   - type: Corrodible
     isCorrodible: false
+  - type: RMCMesonsNonviewable
 
 - type: entity
   parent: CMMemorialBase
@@ -38,3 +39,25 @@
   parent: CMMemorialMaintainers
   id: CMMemorialAdmins
   description: Меморіал усім Адмінам та Модераторам, які вийшли на пенсію з RMC-14. Імена наставників не вказані.
+
+- type: entity
+  parent: CMMemorial
+  id: RMCMemorialWall
+  components:
+  - type: Sprite
+    state: ship_memorial_wall
+    offset: 0.5,0
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb {}
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: WallMount
+    arc: 360
+  - type: Physics
+    bodyType: Static
+    canCollide: false

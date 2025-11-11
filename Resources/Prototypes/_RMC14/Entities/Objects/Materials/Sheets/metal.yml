@@ -35,6 +35,35 @@
   description: Листи, зроблені з металу. Вони отримали назву «Металеві листи».
   suffix: Заповнені
   components:
+    - type: RMCConstructionItem
+      buildable:
+      - RMCBarbedWireBuild
+      - RMCMetalBarricadeBuild
+      - RMCMetalBarricadeFoldableBuild
+      - RMCHandrailBuild
+      # - RMCDividerConstruction
+      # APC frame
+      # Fire alarm frame
+      - RMCDividerConstruction
+      - RMCFloorTileBuild
+      - RMCMetalRodBuild
+      - RMCWallGirderBuild
+      - RMCWindowFrameBuild
+      # Airlock assembly
+      # large airlock assembly
+      - RMCDividerConstruction
+      - RMCBedBuild
+      - RMCChairBuild
+      - RMCComfyChairList
+      - RMCSquadChairList
+      - RMCOfficeChairList
+      # stool
+      - RMCDividerConstruction
+      # computer frame
+      - RMCMachineFrameBuild
+      - RMCDividerConstruction
+      # metal baseball bat
+      - RMCDividerConstruction
     - type: RMCConstructionUpgradeItem
       whitelist:
         tags:
@@ -57,6 +86,10 @@
       layers:
         - state: metal_4
           map: ["base"]
+    - type: UserInterface
+      interfaces:
+        enum.RMCConstructionUiKey.Key:
+          type: RMCConstructionBui
 
 - type: entity
   parent: CMSheetMetal
@@ -159,6 +192,15 @@
   description: Пласталь - це дорогий, міцний матеріал, виготовлений шляхом поєднання платини, сталі та сучасних полімерів для створення металу, стійкого до корозії, дуже міцного та легкого. Єдина причина, чому його не використовують частіше, - це те, що він до біса дорогий».
   suffix: Заповнене
   components:
+    - type: RMCConstructionItem
+      buildable:
+      - RMCPlasteelBarricadeFoldableBuild
+      - RMCPlasteelBarricadeBuild
+      - RMCDividerConstruction
+      - RMCReinforcedWindowFrameBuild
+      - RMCDividerConstruction
+      - RMCPlasteelRodBuild
+      - RMCMetalCrateBuild
     - type: Material
     - type: PhysicalComposition
       materialComposition:
@@ -180,6 +222,10 @@
     - type: Item
       sprite: _RMC14/Objects/Materials/Sheets/plasteel.rsi
       heldPrefix: plasteel
+    - type: UserInterface
+      interfaces:
+        enum.RMCConstructionUiKey.Key:
+          type: RMCConstructionBui
 
 - type: entity
   parent: CMSheetPlasteel

@@ -9,6 +9,9 @@ rmc-breech-loaded-open-shoot-attempt = Спершу потрібно закри�
 rmc-breech-loaded-not-ready-to-shoot = Спершу треба передьорнуть затвор!
 rmc-breech-loaded-closed-load-attempt = Спершу треба відкрити затвор!
 rmc-breech-loaded-closed-extract-attempt = You need to open the breech first!
+rmc-breech-loaded-toggle-attempt-cooldown = You must wait before {$action} the chamber again!
+rmc-breech-loaded-open = opening
+rmc-breech-loaded-close = closing
 
 rmc-wield-use-delay = Спочатку зачекайте {$seconds} секунд перш ніж використовувати {THE($wieldable)}!
 rmc-shoot-use-delay = Спочатку зачекайте {$seconds} секунд перед тим як стріляти з {THE($wieldable)}!
@@ -42,6 +45,7 @@ rmc-examine-text-iff = [color=cyan]Ця зброя стріляє повз со�
 rmc-examine-text-id-lock-no-user = [color=chartreuse]It's unregistered. Pick it up to register yourself as its owner.[/color]
 rmc-examine-text-id-lock = [color=chartreuse]It is registered to [/color][color={$color}]{$name}[/color][color=chartreuse].[/color]
 rmc-examine-text-id-lock-unlocked = [color=chartreuse]It is registered to [/color][color={$color}]{$name}[/color][color=chartreuse], but has its fire restrictions unlocked.[/color]
+rmc-examine-text-execute = [color=red]This gun can be used to execute people with the right skill![/color]
 
 rmc-gun-rack-examine = [bold]Натисніть свою [color=cyan]унікальну[/color] клавішу (Пробіл за замовченням) щоб поставити перед стрільбою.[/bold]
 rmc-gun-rack-first-with = Вам спочатку потрібно поставити зброю за допомогою {$key}!
@@ -56,3 +60,16 @@ rmc-assisted-reload-start-target = {$reloader} begins reloading your {$weapon} w
 rmc-gun-stacks-hit-single = Вцілив!
 rmc-gun-stacks-hit-multiple = Вцілив! {$hits} влучань поспіль!
 rmc-gun-stacks-reset = {$weapon} втрачає дані про ціль, і перемикається на стандарний режим стрільби.
+
+rmc-gun-shoot-air-self = YOU FIRE YOUR { CAPITALIZE($weapon) } INTO THE AIR!
+rmc-gun-shoot-air-other = { CAPITALIZE(THE($user)) } FIRES { CAPITALIZE(THE($weapon)) } INTO THE AIR!
+rmc-gun-shoot-air-blocked = The roof above you is too dense.
+rmc-gun-shoot-air-examine = [bold]Press your [color=cyan]unique action[/color] keybind (Spacebar by default){$harm ->
+    [true] {" while in harm mode"}
+    *[false] {""}
+    } to fire into the air.[/bold]
+
+rmc-flare-gun-examine = The last signal flare fired has the designation: [color=#ad3b98][bold]{$id}[/bold][/color]
+
+expendable-light-starshell-ash-empty-name = extinguished star shell ash
+expendable-light-starshell-ash-empty-desc = Burnt out remains of a star shell

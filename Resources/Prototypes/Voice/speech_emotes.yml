@@ -1,4 +1,4 @@
-# vocal emotes
+# "звукові" емоції
 - type: emote
   id: Scream
   name: chat-emote-name-scream
@@ -7,9 +7,6 @@
   whitelist:
     components:
     - Vocal
-  blacklist:
-    components:
-    - BorgChassis
   chatMessages: ["chat-emote-msg-scream"]
   chatTriggers:
     - scream
@@ -28,6 +25,20 @@
     - yells
     - yelled
     - yelling
+    - кричить # Це та все нижче (до кінця прототипу) - з білду Січі. Варіанти у множині для відповідного займеника
+    - кричать
+    - верещить
+    - верещать
+    - волає
+    - волають
+    - йойкає
+    - йойкають
+    - зойкає
+    - зойкають
+    - скрикує
+    - скрикують
+    - горланить
+    - горланять
 
 - type: emote
   id: Laugh
@@ -38,8 +49,8 @@
     components:
     - Vocal
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-laugh"]
   chatTriggers:
     - laugh
@@ -57,6 +68,18 @@
     - chortle
     - chortles
     - chortling
+    - сміється # Це та все нижче (до кінця прототипу) - з білду Січі
+    - сміються
+    - хіхікає
+    - хіхікають
+    - хихикає
+    - хихикають
+    - регоче
+    - регочуть
+    - гигикає
+    - гигикають
+    - рже
+    - ржуть
 
 - type: emote
   id: Honk
@@ -67,13 +90,16 @@
     requireAll: true
     components:
     - Vocal
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-honk"]
   chatTriggers:
     - honk
     - honks
     - honked
     - honking
+    - гонкає # Це та все нижче (до кінця прототипу) - з білду Січі
+    - гонкають
 
 - type: emote
   id: Sigh
@@ -84,13 +110,15 @@
     components:
     - Vocal
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-sigh"]
   chatTriggers:
     - sigh
     - sighs
     - sighed
+    - зітхає # Це та все нижче (до кінця прототипу) - з білду Січі
+    - зітхають
 
 - type: emote
   id: Whistle
@@ -101,13 +129,21 @@
     components:
     - Vocal
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-whistle"]
   chatTriggers:
     - whistle
     - whistles
     - whistleblowing
+    - свистить # Це та все нижче (до кінця прототипу) - з білду Січі
+    - свистять
+    - насвистує
+    - насвистують
+    - присвистує
+    - присвистують
+    - висвистує
+    - висвистують
 
 - type: emote
   id: Crying
@@ -118,8 +154,8 @@
     components:
     - Vocal
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-crying"]
   chatTriggers:
     - cry
@@ -128,6 +164,25 @@
     - sob
     - sobs
     - sobbing
+    - плаче # Це та все нижче (до кінця прототипу) - з білду Січі
+    - плачуть
+    - ридає
+    - ридають
+    - схлипує
+    - схлипають
+    - реве
+    - ревуть
+    - ллє сльози
+    - ллють сльози
+    - заливається слізьми
+    - заливаються слізьми
+    - рюмсає
+    - рюмсають
+    - ниє
+    - ниють
+    - хникає
+    - хникають
+    - хниче
 
 - type: emote
   id: Squish
@@ -139,13 +194,15 @@
     components:
     - Vocal
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-squish"]
   chatTriggers:
     - squish
     - squishing
     - squishes
+    - хлюпає # Це та все нижче (до кінця прототипу) - з білду Січі
+    - хлюпають
 
 - type: emote
   id: Chitter
@@ -157,13 +214,17 @@
     components:
     - Vocal
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-chitter"]
   chatTriggers:
    - chitter
    - chitters
    - chittered
+   - цвірінькає # Це та все нижче (до кінця прототипу) - з білду Січі
+   - цвірінькають
+   - стрикотить
+   - стрикочуть
 
 - type: emote
   id: Squeak
@@ -175,13 +236,15 @@
     components:
       - Vocal
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-squeak"]
   chatTriggers:
    - squeak
    - squeaks
    - squeaked
+   - пищить # Це та все нижче (до кінця прототипу) - з білду Січі
+   - пищать
 
 - type: emote
   id: Click
@@ -193,14 +256,18 @@
     components:
     - Vocal
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-click"]
   chatTriggers:
    - click
    - clicks
+   - клікає # Це та все нижче (до кінця прототипу) - з білду Січі
+   - клікають
+   - клацає
+   - клацають
 
-# hand emotes
+# емоції рук
 - type: emote
   id: Clap
   name: chat-emote-name-clap
@@ -210,13 +277,15 @@
     components:
     - Hands
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-clap"]
   chatTriggers:
     - claps
     - clapping
     - clapped
+    - аплодує # Це та все нижче (до кінця прототипу) - з білду Січі
+    - аплодують
 
 - type: emote
   id: ClapSingle
@@ -227,8 +296,8 @@
     components:
     - Hands
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: [ "chat-emote-msg-clap-single" ]
   chatTriggers:
     - clap
@@ -236,6 +305,10 @@
     - claps her hands together
     - claps his hands together
     - claps its hands together
+    - плескає в долоні # Це та все нижче (до кінця прототипу) - з білду Січі
+    - плескають в долоні
+    - хлопає в долоні
+    - хлопають в долоні
 
 - type: emote
   id: Snap
@@ -246,8 +319,8 @@
     components:
     - Hands
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-snap"]
   chatTriggers:
     - snap
@@ -262,6 +335,10 @@
     - snaps its fingers
     - snapping fingers
     - snapped fingers
+    - ляскає пальцями # Це та все нижче (до кінця прототипу) - з білду Січі
+    - ляскають пальцями
+    - щолкає пальцями
+    - щолкають пальцями
 
 - type: emote
   id: Thump
@@ -273,8 +350,8 @@
     components:
     - Hands
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-thump"]
   chatTriggers:
     - thump
@@ -287,6 +364,12 @@
     - thumps her tail
     - thumps his tail
     - thumps its tail
+    - гупає хвостом # Це та все нижче (до кінця прототипу) - з білду Січі
+    - гупають хвостом
+    - стукає хвостом
+    - стукають хвостом
+    - б'є хвостом
+    - б'ють хвостом
 
 - type: emote
   id: Salute
@@ -297,12 +380,16 @@
     components:
     - Hands
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-salute"]
   chatTriggers:
     - salute
     - salutes
+    - салютує # Це та все нижче (до кінця прототипу) - з білду Січі
+    - салютують
+    - віддає честь
+    - віддають честь
 
 - type: emote
   id: Gasp
@@ -315,6 +402,8 @@
    - gasp
    - gasps
    - gasped
+   - задихається # Це та все нижче (до кінця прототипу) - з білду Січі
+   - задихаються
 
 - type: emote
   id: DefaultDeathgasp
@@ -326,12 +415,19 @@
   chatMessages: ["chat-emote-msg-deathgasp"]
   chatTriggers:
   - deathgasp
+  - передсмертний подих # Це та все нижче (до кінця прототипу) - з білду Січі
 
 - type: emote
   id: MonkeyDeathgasp
   name: chat-emote-name-deathgasp
   icon: Interface/Emotes/deathgasp.png
   chatMessages: ["chat-emote-msg-deathgasp-monkey"]
+
+- type: emote
+  id: ScurretDeathgasp
+  name: chat-emote-name-deathgasp
+  icon: Interface/Emotes/deathgasp.png
+  chatMessages: ["chat-emote-msg-deathgasp-scurret"]
 
 - type: emote
   id: Buzz
@@ -341,14 +437,17 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
     - Vocal
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-buzz"]
   chatTriggers:
     - buzzing
     - buzz
     - buzzed
     - buzzes
+    - бзижчить # Це та все нижче (до кінця прототипу) - з білду Січі
+    - бзижчать
 
 - type: emote
   id: Weh
@@ -375,16 +474,20 @@
     - Nymph
     - Vocal
   blacklist:
-    components:
-    - BorgChassis
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-chirp"]
   chatTriggers:
     - chirp
     - chirps
     - chirped
     - chirping
+    - чірікає # Це та все нижче (до кінця прототипу) - з білду Січі
+    - чірікають
+    - щебече
+    - щебечуть
 
-# Machine Emotes
+# Емоції силіконів 
 - type: emote
   id: Beep
   name: chat-emote-name-beep
@@ -393,14 +496,17 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
     - Vocal
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-beep"]
   chatTriggers:
     - beep
     - beeps
     - beeped
     - beeping
+    - біпає # Це та все нижче (до кінця прототипу) - з білду Січі
+    - біпають
 
 - type: emote
   id: Chime
@@ -410,14 +516,17 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
     - Vocal
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-chime"]
   chatTriggers:
     - chime
     - chimes
     - chimed
     - chiming
+    - дзвенить # Це та все нижче (до кінця прототипу) - з білду Січі
+    - дзвенять
 
 - type: emote
   id: Buzz-Two
@@ -427,8 +536,9 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
     - Vocal
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-buzzestwo"]
   chatTriggers:
     - buzztwice
@@ -441,6 +551,10 @@
     - buzzes twice
     - buzzing twice
     - buzzed twice
+    - двічі бзижчить # Це та все нижче (до кінця прототипу) - з білду Січі
+    - двічі бзижчать
+    - бзижчить двічі
+    - бзижчать двічі
 
 - type: emote
   id: Ping
@@ -450,11 +564,14 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
     - Vocal
+    tags:
+    - SiliconEmotes
   chatMessages: ["chat-emote-msg-ping"]
   chatTriggers:
     - ping
     - pings
     - pinged
     - pinging
+    - пінгує # Це та все нижче (до кінця прототипу) - з білду Січі
+    - пінгують

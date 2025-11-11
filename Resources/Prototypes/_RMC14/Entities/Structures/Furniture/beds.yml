@@ -1,11 +1,11 @@
-﻿- type: entity
+- type: entity
   parent: Bed
   id: CMBed
   name: ліжко
   description: Матрац на прямокутному металевому каркасі. Використовується для зручної підтримки людини в лежачому положенні, зокрема для регулярного сну. Давня технологія, яка все ще залишається корисною.
   components:
   - type: Transform
-    anchored: false
+    anchored: true
   - type: Physics
     bodyType: Static
   - type: Sprite
@@ -30,6 +30,7 @@
           CMSheetMetal1:
             min: 1
             max: 1
+  - type: RMCMesonsNonviewable
 
 - type: entity
   parent: CMBed

@@ -73,9 +73,9 @@
     - RMCWeaponSMGNailgun
 
 - type: entity
-  parent: BaseMagazineRifle
+  parent: CMMagazineRifleBase
   id: RMCMagazineSMGNailgun
-  name: "магазин цвяхостріла (7x45мм)"
+  name: "магазин цвяхостріла (7x45 мм)"
   description: "Магазин великих пласталевих цвяхів. Через високу ціну їх рідко використовують у військових цілях - лише для специфічних будівельних задач."
   components:
   - type: Tag
@@ -102,6 +102,8 @@
     zeroVisible: false
     zeroOnlyOnEmpty: true
   - type: Appearance
+  - type: Item
+    size: Small
 
 - type: entity
   parent: CMCartridgeSMGBase
@@ -113,11 +115,12 @@
     - Cartridge
     - RMCCartridge7x45mm
   - type: CartridgeAmmo
-    proto: Nail7x45mm
+    proto: RMCNail7x45mm
 
 - type: entity
   parent: RMCBaseBullet
-  id: Nail7x45mm
+  id: RMCNail7x45mm
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:

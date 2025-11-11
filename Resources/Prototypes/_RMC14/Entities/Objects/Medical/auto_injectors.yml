@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   parent: ChemicalMedipen
-  id: CMAutoInjector
+  id: CMAutoInjectorBase
   name: автоінжектор
   description: Ці ваші космічні наркомани...
   categories: [ HideSpawnMenu ]
@@ -33,18 +33,25 @@
     fillBaseName: autoinjector
     emptySpriteName: autoinjector
     changeColor: true
-  - type: CMRefillableSolution
-    solution: pen
-    reagents: {}
   - type: Tag
     tags:
     - CMAutoInjector
-  - type: MedicallyUnskilledDoAfter
   - type: UseDelay
     delay: 0.333
   - type: IconLabel
     textColor: White
     storedOffset: 0, 12
+  - type: RMCSmartFridgeInsertable
+
+- type: entity
+  parent: CMAutoInjectorBase
+  id: CMAutoInjector
+  abstract: true
+  components:
+  - type: MedicallyUnskilledDoAfter
+  - type: CMRefillableSolution
+    solution: pen
+    reagents: {}
 
 - type: entity
   parent: CMAutoInjector
@@ -87,7 +94,7 @@
 - type: entity
   parent: CMAutoInjector
   id: CMTricordrazineAutoInjector
-  name: автоіжектор трикордразину
+  name: автоінжектор трикордразину
   description: Автоінжектор заповнений трьома дозами Трикордразину, слабким препаратом загальної дії.
   components:
   - type: SolutionContainerManager
@@ -112,7 +119,7 @@
   - type: Sprite
     sprite: _RMC14/Objects/Medical/auto_injectors.rsi
     layers:
-    - state: tricord
+    - state: tricord1
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: MedicallyUnskilledDoAfter
     min: 0
@@ -196,7 +203,7 @@
 - type: entity
   parent: CMAutoInjector
   id: CMInaprovalineAutoInjector
-  name: автоіжектор інапроваліну
+  name: автоінжектор інапроваліну
   description: Автоінжектор заповнений трьома дозами Інапроваліну, який стабілізує пацієнтів в критичному стані.
   components:
   - type: Hypospray
@@ -238,37 +245,45 @@
     labelTextLocId: rmc-epinephrine-container-label-text
 
 - type: entity
-  parent: CMAutoInjector
+  parent: RMCMedicAutoInjectorBase
   id: RMCMedicAutoInjector15
   name: медичний автоінжектор (M-M)
-  description: Професійний інжектор, виготовлений на замовлення, виглядає так наче над ними працювала ціла наукова команда. Має сходий замок, як на пляшках з пігулками, і вміщує аж до щести доз препарату.
+  description: Професійний медичний автоінжектор виготовлений на замовлення. Виглядає так, наче над ними працювала ціла наукова команда. Має такий самий замок, як на пляшках з пігулками та здатен містити у собі до шести доз препарату.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/medic_auto_injector.rsi
+    layers:
+    - state: autoinjector
+    - state: autoinjector1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: autoinjector_tag
+      color: "#FF9F00"
   - type: SolutionContainerManager
     solutions:
       pen:
         maxVol: 90
   - type: SolutionContainerVisuals
     maxFillLevels: 6
-  - type: Tag
-    tags:
-    - CMAutoInjector
-    - RMCAutoInjectorMedical
-  - type: RefillableSolution
-    solution: pen
   - type: RequiresSkill
     skills:
       RMCSkillMedical: 2
   - type: Hypospray
     transferAmount: 15
-  - type: RMCEmptySolution
 
 - type: entity
   parent: RMCMedicAutoInjector15
   id: RMCMedicAutoInjector30
-  name: medic autoinjector (M-L)
+  name: медичний автоінжектор (M-XXL)
   components:
+  - type: Sprite
+    layers:
+    - state: autoinjector
+    - state: autoinjector1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: autoinjector_tag
+      color: "#FF0000"
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -277,32 +292,42 @@
     transferAmount: 30
 
 - type: entity
-  parent: RMCMedicAutoInjector15
+  parent: RMCMedicAutoInjectorBase
   id: RMCMedicAutoInjectorEZ1
-  name: автоіжектор (E-U)
-  description: Виготовлений на замовлення, автоінжектор EZ, ймовірно, не без наукових досліджень. Впорскує весь запас рідини за один укол, при тому не вимагає ніякого навчання.
+  name: автоінжектор (E-U)
+  description: Виготовлений на замовлення EZ автоінжектор, схоже на його дизайн та створення сильно не витрачалися. Вводить весь запас рідини за один укол, але при цьому не вимагає ніяких навичок.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/ez_medic_auto_injector.rsi
+    layers:
+    - state: autoinjector
+    - state: autoinjector1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: autoinjector_tag
+      color: "#FFFFFF"
   - type: SolutionContainerManager
     solutions:
       pen:
         maxVol: 1
   - type: SolutionContainerVisuals
     maxFillLevels: 1
-  - type: MedicallyUnskilledDoAfter
-    min: 0
-  - type: RequiresSkill
-    skills:
-      RMCSkillMedical: 0
   - type: Hypospray
     transferAmount: 1
 
 - type: entity
   parent: RMCMedicAutoInjectorEZ1
   id: RMCMedicAutoInjectorEZ5
-  name: autoinjector (E-VS)
+  name: автоінжектор (E-T)
   components:
+  - type: Sprite
+    layers:
+    - state: autoinjector
+    - state: autoinjector1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: autoinjector_tag
+      color: "#DD95FF"
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -313,8 +338,16 @@
 - type: entity
   parent: RMCMedicAutoInjectorEZ1
   id: RMCMedicAutoInjectorEZ10
-  name: автоінжектор (E-S)
+  name: автоінжектор (E-XXS)
   components:
+  - type: Sprite
+    layers:
+    - state: autoinjector
+    - state: autoinjector1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: autoinjector_tag
+      color: "#1EF6FF"
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -325,8 +358,16 @@
 - type: entity
   parent: RMCMedicAutoInjectorEZ1
   id: RMCMedicAutoInjectorEZ15
-  name: автоінжектор (E-T)
+  name: автоінжектор (E-XS)
   components:
+  - type: Sprite
+    layers:
+    - state: autoinjector
+    - state: autoinjector1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: autoinjector_tag
+      color: "#21A0FF"
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -337,8 +378,16 @@
 - type: entity
   parent: RMCMedicAutoInjectorEZ1
   id: RMCMedicAutoInjectorEZ30
-  name: автоінжектор (E-M)
+  name: автоінжектор (E-S)
   components:
+  - type: Sprite
+    layers:
+    - state: autoinjector
+    - state: autoinjector1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: autoinjector_tag
+      color: "#171DFF"
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -349,8 +398,16 @@
 - type: entity
   parent: RMCMedicAutoInjectorEZ1
   id: RMCMedicAutoInjectorEZ45
-  name: автоінжектор (E-L)
+  name: автоінжектор (E-M)
   components:
+  - type: Sprite
+    layers:
+    - state: autoinjector
+    - state: autoinjector1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: autoinjector_tag
+      color: "#00FF07"
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -361,8 +418,16 @@
 - type: entity
   parent: RMCMedicAutoInjectorEZ1
   id: RMCMedicAutoInjectorEZ60
-  name: автоінжектор (E-XL)
+  name: автоінжектор (E-L)
   components:
+  - type: Sprite
+    layers:
+    - state: autoinjector
+    - state: autoinjector1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: autoinjector_tag
+      color: "#E8FF00"
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -373,7 +438,7 @@
 - type: entity
   parent: RMCMedicAutoInjector15
   id: RMCMedicAutoInjectorBicaridine15
-  suffix: Bicaridine
+  suffix: Бікаридин
   components:
   - type: SolutionContainerManager
     solutions:
@@ -386,7 +451,7 @@
 - type: entity
   parent: RMCMedicAutoInjector15
   id: RMCMedicAutoInjectorKelotane15
-  suffix: Kelotane
+  suffix: Келотан
   components:
   - type: SolutionContainerManager
     solutions:
@@ -399,7 +464,7 @@
 - type: entity
   parent: RMCMedicAutoInjector15
   id: RMCMedicAutoInjectorTricordrazineRevival15
-  suffix: Tricordrazine - Revival
+  suffix: Трикодразин - Реанімація
   components:
   - type: SolutionContainerManager
     solutions:
@@ -416,7 +481,7 @@
 - type: entity
   parent: RMCMedicAutoInjector15
   id: RMCMedicAutoInjectorTricordrazine15
-  suffix: Tricordrazine
+  suffix: Трикодразин
   components:
   - type: SolutionContainerManager
     solutions:
@@ -425,6 +490,131 @@
         reagents:
         - ReagentId: CMTricordrazine
           Quantity: 90
+
+- type: entity
+  parent: RMCMedicAutoInjector15
+  id: RMCMedicAutoInjectorMeraBic15
+  suffix: MeraBic
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 90
+        reagents:
+        - ReagentId: CMMeralyne
+          Quantity: 45
+        - ReagentId: CMBicaridine
+          Quantity: 45
+
+- type: entity
+  parent: RMCMedicAutoInjector15
+  id: RMCMedicAutoInjectorKeloDerm15
+  suffix: KeloDerm
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 90
+        reagents:
+        - ReagentId: CMKelotane
+          Quantity: 45
+        - ReagentId: CMDermaline
+          Quantity: 45
+
+- type: entity
+  parent: CMAutoInjectorBase
+  id: RMCMedicAutoInjectorBase
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - CMAutoInjector
+    - RMCAutoInjectorMedical
+  - type: RMCEmptySolution
+  - type: SolutionStorageFillable
+    solution: pen
+
+- type: entity
+  parent: RMCMedicAutoInjectorBase
+  id: RMCMedicAutoInjectorCS5
+  name: автоінжектор (C-XS)
+  description: Автоінжектор виготовлений на замовлення. Ймовірно він з лабораторії.
+  components:
+  - type: Sprite
+    layers:
+    - state: autoinjector
+    - state: autoinjector1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: autoinjector_tag
+      color: "#21A0FF"
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+  - type: Hypospray
+    transferAmount: 5
+  - type: MedicallyUnskilledDoAfter
+
+- type: entity
+  parent: RMCMedicAutoInjectorCS5
+  id: RMCMedicAutoInjectorCS15
+  name: автоінжектор (C-M)
+  components:
+  - type: Sprite
+    layers:
+    - state: autoinjector
+    - state: autoinjector1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: autoinjector_tag
+      color: "#00FF07"
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 45
+  - type: Hypospray
+    transferAmount: 15
+
+- type: entity
+  parent: RMCMedicAutoInjectorCS5
+  id: RMCMedicAutoInjectorCS30
+  name: автоінжектор (C-XL)
+  components:
+  - type: Sprite
+    layers:
+    - state: autoinjector
+    - state: autoinjector1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: autoinjector_tag
+      color: "#FF9F00"
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 90
+  - type: Hypospray
+    transferAmount: 30
+
+- type: entity
+  parent: RMCMedicAutoInjectorCS5
+  id: RMCMedicAutoInjectorCS60
+  name: автоінжектор (C-XXL)
+  components:
+  - type: Sprite
+    layers:
+    - state: autoinjector
+    - state: autoinjector1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: autoinjector_tag
+      color: "#FF0000"
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 180
+  - type: Hypospray
+    transferAmount: 60
 
 - type: Tag
   id: CMAutoInjector

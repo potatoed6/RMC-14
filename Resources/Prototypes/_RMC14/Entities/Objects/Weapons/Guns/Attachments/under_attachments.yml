@@ -12,8 +12,8 @@
 - type: entity
   parent: RMCUnderAttachmentBase
   id: RMCAttachmentAngledGrip # angledgrip
-  name: кутова рукоятка
-  description: "Кутова рукоятка покращує ергономіку зброї та пришвидшує час наведення на ціль.
+  name: кутовий хват
+  description: "Кутовий хват покращує ергономіку зброї та пришвидшує час наведення на ціль.
     Проте це також збільшує розмір зброї."
   components:
   - type: Sprite
@@ -35,7 +35,7 @@
   parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
   id: RMCAttachmentBipod
   name: сошка
-  description: "Простий набір телескопічних опор для стабілізації зброї під час стрільби. При правильному розміщенні значно підвищує точність і скорострільність, а також зменшує віддачу. Однак у нерозгорнутому стані збільшує габарити зброї та знижує скорострільність."
+  description: "Простий набір телескопічних опор для стабілізації зброї під час стрільби. При правильному розміщенні значно підвищує точність, скорострільність а також зменшує віддачу. Однак у нерозгорнутому стані збільшує габарити зброї та знижує скорострільність."
   components:
   - type: Sprite
     state: bipod
@@ -79,13 +79,6 @@
     showActive: true
   - type: AttachableTemporarySpeedMods
     alteration: Interrupted
-    modifiers:
-    - duration: 1
-      walk: 0.5
-      sprint: 0.357
-    - duration: 2
-      walk: 0.66
-      sprint: 0.526
   - type: AttachableSizeMods
     modifiers:
     - size: 2
@@ -147,8 +140,8 @@
 - type: entity
   parent: RMCUnderAttachmentBase
   id: RMCAttachmentBurstFireAssembly # burstfire_assembly
-  name: burst fire assembly
-  description: A small angled piece of fine machinery that increases the burst count on some weapons.
+  name: модуль чергового вогню
+  description: Невеликий кутовий механізм, що дозволяє стріляти чергами на деяких видах зброї
   components:
   - type: Sprite
     state: rapidfire
@@ -228,6 +221,32 @@
         unwieldedOnly: true
       accuracyAddMult: 0.05
       scatterFlat: -4
+  - type: RMCLoreExaminable
+    content: rmc-lore-examinable-laser-sight
+
+- type: entity
+  parent: RMCUnderAttachmentBase
+  id: RMCAttachmentMicroLaserSight
+  name: micro laser sight
+  description: A compact, high-precision laser sight engineered exclusively for the M13 Auto Pistol. Offers exceptional accuracy gains by interfacing directly with the weapon's internal targeting systems.
+  components:
+  - type: Sprite
+    state: lasersight_micro
+  - type: AttachableVisuals
+  - type: Tag
+    tags:
+    - RMCAttachmentUnderbarrel
+    - RMCAttachmentMicroLaserSight
+  - type: AttachableWeaponRangedMods
+    modifiers:
+    - conditions:
+        wieldedOnly: true
+      accuracyAddMult: 0.05
+      scatterFlat: -1
+    - conditions:
+        unwieldedOnly: true
+      accuracyAddMult: 0.05
+      scatterFlat: -2
 
 - type: entity
   parent: RMCUnderAttachmentBase
@@ -259,6 +278,8 @@
         - ReagentId: RMCNapalmUT
           Quantity: 40
   - type: RMCFlamerAmmoProvider
+    maxIntensity: 10
+    maxDuration: 10
   - type: RMCFlamerTank
   - type: AttachableToggleable
     userOnly: true
@@ -281,15 +302,21 @@
       state: flamethrower-on
   - type: AttachableVisuals
     offset: -0.125, 0.245
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/flamer_mouse.rsi
+      state: all
 
 - type: entity
   parent: RMCUnderAttachmentBase
   id: CMAttachmentXMVESG1FlamerNozzle
-  name: XM-VESG-1 flamer nozzle
-  description: A special nozzle designed to alter flamethrowers to be used in a more offense orientated manner. As the inside of the nozzle is coated in a special gel and resin substance that takes the fuel that passes through and hardens it. Upon exiting the barrel, a cluster of burning gel is projected instead of a stream of burning naphtha.
+  name: XM-VESG-1 штурмова насадка для вогнемета
+  description: Спеціальна насадка, яка модифікує вогнемет для більш наступального використання. Внутрішнє покриття насадки з гелю та смоли спричиняє затвердіння пального під час проходження. Замість потоку полум’я випускається палаюча грудка гелю.
   components:
   - type: Sprite
     state: flamer_nozzle
+  - type: RMCLoreExaminable
+    content: rmc-lore-examinable-xm-vesg-1-flamer-nozzle
 
 - type: entity
   parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
@@ -358,11 +385,15 @@
       sprite: _RMC14/Objects/Weapons/Guns/Attachments/under.rsi
       state: masterkey-on
   - type: AttachableVisuals
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/shotgun_mouse.rsi
+      state: all
 
 - type: entity
   parent: RMCUnderAttachmentBase
   id: RMCAttachmentUnderbarrelExtinguisher
-  name: HME-12 underbarrel extinguisher
+  name: HME-12 підствольний вогнегасник
   description: "Підствольний вогнегасник Taiho-Technologies HME-12. Кріпиться до підствольника більшості видів зброї. Перед тим, як застосовувати, спрямувати на полум'я."
   components:
   - type: Sprite
@@ -423,6 +454,10 @@
   - type: SolutionTransfer
     maxTransferAmount: 60
     transferAmount: 60
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/shotgun_mouse.rsi
+      state: all
 
 - type: entity
   parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
@@ -509,6 +544,10 @@
     tags:
     - RMCAttachmentUnderbarrel
     - RMCAttachmentU1GrenadeLauncher
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/explosive_mouse.rsi
+      state: all
 
 - type: entity
   parent: RMCAttachmentU1GrenadeLauncher
@@ -548,6 +587,10 @@
     tags:
     - RMCAttachmentUnderbarrel
     - RMCAttachmentMK1GrenadeLauncher
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/explosive_mouse.rsi
+      state: all
 
 - type: entity
   parent: RMCAttachmentU1GrenadeLauncher
@@ -555,10 +598,12 @@
   name: M203 гранатомет
   description: Антикварний підствольний гранатомет. Вміщує лише одну 40-мм гранату, не має сучасних систем УДВ, та не уникне влучання в ваших друзів.
   components:
-  - type: Sprite # TODO: No IFF for this launcher
+  - type: Sprite
     layers:
       - state: grenade-m203
         map: [ "enum.BreechVisuals.Open" ]
+  - type: GunIFF
+    enabled: false
   - type: BallisticAmmoProvider
     capacity: 1
   - type: ShootAtFixedPoint
@@ -585,13 +630,16 @@
     tags:
     - RMCAttachmentUnderbarrel
     - RMCAttachmentM203GrenadeLauncher
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/explosive_mouse.rsi
+      state: all
 
 - type: entity
   parent: RMCUnderAttachmentBase
   id: RMCAttachmentVerticalGrip # verticalgrip
   name: вертикальна рукоятка
-  description: "Вертикальна рукоятка забезпечує кращу точність, меншу віддачу та менше розсіювання, особливо під час стрільби чергами.
-    However, it also increases weapon size."
+  description: "Вертикальна рукоятка забезпечує кращу точність, зменшену віддачу та менше розсіювання, особливо під час стрільби чергами. Однак збільшує розміри зброї."
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_under.rsi
@@ -621,9 +669,10 @@
   parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
   id: RMCAttachmentFlashlightGrip # flashlight/grip
   name: підствольне кріплення для ліхтаря
-  description: Святі небеса, чоловіче, вони поклали руку на ліхтарик! Зменшує віддачу і розсіювання на крихітну величину. Працює як джерело світла. 
+  description: Святі небеса, чоловіче, вони поклали руку на ліхтарик! Трохи знижує віддачу та розсіювання. Працює як джерело світла. 
   components:
-  - type: ToggleableLightVisuals
+  - type: ItemTogglePointLight
+  - type: ToggleableVisuals
     spriteLayer: light
   - type: PointLight
     enabled: false
@@ -759,6 +808,9 @@
 
 - type: Tag
   id: RMCAttachmentLaserSight
+
+- type: Tag
+  id: RMCAttachmentMicroLaserSight
 
 - type: Tag
   id: RMCAttachmentU7UnderbarrelShotgun

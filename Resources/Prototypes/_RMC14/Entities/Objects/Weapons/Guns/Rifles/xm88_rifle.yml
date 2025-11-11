@@ -1,8 +1,8 @@
 - type: entity
-  parent: CMBaseWeaponRifle
-  name: XM88 важка гвинтівка
+  parent: RMCBaseWeaponRifleNoMagazineProvider
+  name: ТМГ-88 важка гвинтівка
   id: WeaponRifleXM88
-  description: Експериментальна переносна протитехнічна гвинтівка під набій .458 SOCOM. Після кожного пострілу набій потрібно досилати вручну.
+  description: Тестова модель гвинтівка під набій .458 SOCOM. Після кожного пострілу набій потрібно досилати вручну.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/xm88/desert.rsi
@@ -103,6 +103,8 @@
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
       ballistic-ammo: !type:Container
+  - type: RMCLoreExaminable
+    content: rmc-lore-examinable-xm-88-heavy-rifle # Mention Favela Wars lore analogue here
 
 - type: entity
   parent: BulletRifle10x24mm
@@ -133,7 +135,7 @@
   parent: RMCBoxShotgunBase
   id: RMCBox458SOCOM
   name: коробка набоїв .458 SOCOM
-  description: Коробка, наповнена набоями .458 SOCOM, призначеними для важкої гвинтівки XM88.
+  description: Коробка, наповнена набоями .458 SOCOM, призначеними для важкої гвинтівки ТМГ-88.
   components:
   - type: Storage
     grid:

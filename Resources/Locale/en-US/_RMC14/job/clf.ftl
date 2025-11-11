@@ -1,7 +1,43 @@
-﻿CMCLFCellCommander = CLF Cell Commander
-rmc-job-description-clf-cell-commander = ""
-rmc-job-prefix-clf-cell-commander = CMDR
+﻿rmc-ghost-role-information-clf-rules = Ви [color=red][bold]ЧЛЕН ФВК[/bold][/color]. Ви вороже налаштовані до морпіхів, якщо не зазначено інше.
+                                             Ви не пам'ятаєте нічого зі свого попереднього життя, й не пам'ятаєте нічого, що бачили будучи привидом.
+                                             Вам дозволено використовувати знання про гру загалом, такі як стриляти, будувати, використовувати предмети, тощо.
+                                             Вам абсолютно [color=red]ЗАБОРОНЕНО[/color] пам'ятати та називати ім'я, заняття, тощо зі свого минулого персонажа.
 
-CMCLFSoldier = CLF Soldier
-rmc-job-description-clf-soldier = ""
-rmc-job-prefix-clf-soldier = GRL
+rmc-ghost-role-information-clf-description = Забезпечте вигнання морпіхів з цього простору заради вільних колоній!
+rmc-ghost-role-information-clf-pve-description = Follow any orders from command and carry them out to the best of your abillity. For the free colonies!
+
+rmc-ghost-role-clf-cell-commander = Командир Ячейки ФВК (Ворожі)
+rmc-clf-cell-commander = Командир Ячейки ФВК
+rmc-job-prefix-clf-cell-commander = КМНД
+
+rmc-ghost-role-clf-soldier = Солдат ФВК (Ворожі)
+rmc-clf-soldier = Солдат ФВК
+rmc-job-prefix-clf-soldier = СЛД
+
+rmc-ghost-role-clf-engineer = Технік ФВК (Ворожі)
+rmc-clf-engineer = Технік ФВК
+rmc-job-prefix-clf-engineer = ТЕХ
+
+rmc-ghost-role-clf-medic = Медик ФВК (Ворожі)
+rmc-clf-medic = Медик ФВК
+rmc-job-prefix-clf-medic = МЕД
+
+rmc-ghost-role-clf-specialist = Спеціаліст ФВК (Ворожі)
+rmc-clf-specialist = Спеціаліст ФВК
+rmc-job-prefix-clf-specialist = СПЦ
+
+rmc-ghost-role-clf-pve-commander = CLF Commander (PVE)
+rmc-job-name-clf-pve-commander = Commander
+rmc-job-prefix-clf-pve-commander = CMDR
+
+rmc-ghost-role-clf-pve-doctor = CLF Doctor (PVE)
+rmc-job-name-clf-pve-doctor = Doctor
+rmc-job-prefix-clf-pve-doctor = Doc
+
+rmc-ghost-role-clf-pve-heavy-gunner = CLF Heavy Gunner (PVE)
+rmc-job-name-clf-pve-heavy-gunner = Heavy Gunner
+rmc-job-prefix-clf-pve-heavy-gunner = Hvy. Gnr.
+
+rmc-ghost-role-clf-pve-standard = CLF Standard (PVE)
+rmc-job-name-clf-pve-standard = Standard
+rmc-job-prefix-clf-pve-standard = GRL

@@ -4,18 +4,20 @@
   name: Їдка Кислота (100)  # TODO RMC14 proper plasma costs
   description: Роз'їдає все до чого торкається, щоправда не одразу.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: corrosive_acid
+    checkCanInteract: false
+  - type: TargetAction
+  - type: EntityTargetAction
     event: !type:XenoCorrosiveAcidEvent
       acidId: XenoAcidNormal
       plasmaCost: 100
       time: 50 # seconds
       dps: 8
       expendableLightDps: 2.5
-    checkCanInteract: false
 
 - type: entity
   parent: CMGuidebookActionXenoBase
@@ -31,18 +33,20 @@
   name: Слабка Їдка Кислота (75)  # TODO RMC14 proper plasma costs
   description: З часом роз'їдає об'єкт.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: corrosive_acid
+    checkCanInteract: false
+  - type: TargetAction
+  - type: EntityTargetAction
     event: !type:XenoCorrosiveAcidEvent
       acidId: XenoAcidWeak
       plasmaCost: 75
       time: 125 # seconds or 2~ minutes
       dps: 4
       expendableLightDps: 0.3
-    checkCanInteract: false
 
 - type: entity
   parent: ActionXenoAcidNormal
@@ -50,30 +54,35 @@
   name: Сильна Їдка Кислота (125)  # TODO RMC14 proper plasma costs
   description: Роз'їдає будь-що, але це потребує часу.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: corrosive_acid
+    checkCanInteract: false
+  - type: TargetAction
+  - type: EntityTargetAction
     event: !type:XenoCorrosiveAcidEvent
       acidId: XenoAcidStrong
       plasmaCost: 125
       time: 20 # seconds
       dps: 20
       expendableLightDps: 23.4375
-    checkCanInteract: false
 
 - type: entity
   parent: ActionXenoAcidNormal
   id: ActionXenoAcidAcider
-  name: Strong Corrosive Acid (100 acid)
-  description: Melts down barricades or items over time. You cannot melt structures.
+  name: Стійка корозійна кислота (100 acid)
+  description: З часом роз'їдає барикади і предмети. Ви не можете розплавити споруди. 
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: corrosive_acid
+    checkCanInteract: false
+  - type: TargetAction
+  - type: EntityTargetAction
     event: !type:XenoCorrosiveAcidEvent
       acidId: XenoAcidStrong
       plasmaCost: 0
@@ -82,7 +91,6 @@
       time: 20 # seconds
       dps: 20
       expendableLightDps: 23.4375
-    checkCanInteract: false
 
 - type: entity
   id: ActionXenoRegurgitate
@@ -90,11 +98,12 @@
   name: Відригнути
   description: Відригнути схопленого інкубатора.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: regurgitate
+  - type: InstantAction
     event: !type:XenoRegurgitateActionEvent
   - type: RMCDazeableAction
 
@@ -104,17 +113,23 @@
   name: Удар Хвостом
   description: Атакуйте хвостом в заданому напрямку. Перезарядка дії відбуватиметься швидше, якщо ви промахнулися.
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: tail_attack
-    event: !type:XenoTailStabEvent
-    range: 15
     useDelay: 10
+  - type: TargetAction
+    range: 2.5
     checkCanAccess: false
+  - type: EntityTargetAction
+    targetCheckCanInteract: false
+  - type: WorldTargetAction
+    event: !type:XenoTailStabEvent
   - type: XenoTailStabAction
   - type: RMCDazeableAction
+  - type: ActionInRangeUnobstructed
+    range: 2.5
 
 - type: entity
   id: ActionXenoTailSlam
@@ -127,7 +142,7 @@
   name: Кислотний Удар Хвостом
   description: Атакуйте хвостом в заданому напрямку. Перезарядка відбуватиметься швидше, якщо ви промахнулися. [color=red]Впорскує в ціль розбавлену молекулярну кислоту, яка з часом завдає їй шкоди.[/color]
   components:
-  - type: WorldTargetAction
+  - type: Action
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: tail_attack_acid
@@ -144,28 +159,32 @@
   name: Стрибок
   description: Стрибніть на когось, й збийте з ніг свою ціль.
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: pounce
-    event: !type:XenoLeapActionEvent
-    range: 15
     useDelay: 3
+  - type: TargetAction
+    range: 15
     checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:XenoLeapActionEvent
   - type: RMCDazeableAction
 
 - type: entity
   id: ActionXenoRush
   parent: ActionXenoLeap
-  name: Rush
-  description: Jump towards a given location and slash the enemy you hit, shaking their screen.
+  name: Випад
+  description: Стрибає в задане місце й наносить рублячий удар по ворогу, якого зачепить. Після влучання екран ворога тремтить.
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
-    event: !type:XenoLeapActionEvent
     useDelay: 6
+  - type: TargetAction
     checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:XenoLeapActionEvent
 
 - type: entity
   parent: ActionXenoLeap
@@ -173,14 +192,16 @@
   name: Накинутися (20) # TODO RMC14 proper plasma costs
   description: Стрибніть на когось, й збийте з ніг свою ціль, [color=red]тільки якщо ви невидимі.[/color]
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: pounce
-    event: !type:XenoLeapActionEvent
     useDelay: 6
+  - type: TargetAction
     checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:XenoLeapActionEvent
   - type: RMCDazeableAction
 
 - type: entity
@@ -194,17 +215,19 @@
 - type: entity
   parent: ActionXenoLeap
   id: ActionXenoAssault
-  name: Assault (25)
-  description: Charge towards a location. Destroys some objects in your path. Melee slashes reduce assault's cooldown. If Super-Empowered, stuns and flings back the first enemy hit.
+  name: Напад (25)
+  description: Кидається в вказане місце. Знищує деякі об'єкти на своєму шляху. Удари в ближньому бою скорочують час відновлення атаки. Якщо ти маєш надзвичайну силу, оглушує і відкидає першого враженого ворога.
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: charge
-    event: !type:XenoLeapActionEvent
     useDelay: 14
+  - type: TargetAction
     checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:XenoLeapActionEvent
 
 - type: entity
   parent: CMGuidebookActionXenoBase
@@ -220,14 +243,16 @@
   name: Ривок (40)
   description: Зробіть ривок на невелику відстань до заданого місця.
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: prae_dash
-    event: !type:XenoLeapActionEvent
     useDelay: 10
+  - type: TargetAction
     checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:XenoLeapActionEvent
 
 - type: entity
   parent: CMGuidebookActionXenoBase
@@ -241,17 +266,19 @@
   id: ActionXenoHeadbutt
   parent: ActionXenoBase
   name: Удар Головою (10) # TODO RMC14 proper plasma costs
-  description: Charge towards the targeted enemy and push back the first enemy hit, piercing armor slightly. Does less damage but has more knockback when crest is lowered.
+  description: Нападає на вказаного ворога і відкидає першого враженого на вашому шляху, злегка пробиваючи броню. Завдає менше шкоди, але має більшу силу відкидання, коли гребінь опущений.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: headbutt
-    event: !type:XenoHeadbuttActionEvent
-    range: 3
     useDelay: 6
+  - type: TargetAction
+    range: 3.5
     deselectOnMiss: false
+  - type: EntityTargetAction
+    event: !type:XenoHeadbuttActionEvent
   - type: XenoOffensiveAction
   - type: XenoActionPlasma
     cost: 10
@@ -270,13 +297,14 @@
   name: Обертовий Удар Хвостом (10) # TODO RMC14 proper plasma costs
   description: Змусьте усіх інкубаторів навколо вас впасти.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: tail_sweep
-    event: !type:XenoTailSweepActionEvent
     useDelay: 15
+  - type: InstantAction
+    event: !type:XenoTailSweepActionEvent
   - type: RMCDazeableAction
 
 - type: entity
@@ -293,15 +321,18 @@
   name: Сповільнюючий Плювок (20) # TODO RMC14 proper plasma costs
   description: Запустіть нешкідливу, кислотну кулю яка сповільнить вашого ворога, і паралізує його, якщо він не матиме броні. Він також висмокче корисні речовини з тіла цілі.
   components:
-  - type: EntityWorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: xeno_spit
-    event: !type:XenoSlowingSpitActionEvent
     useDelay: 2
+  - type: TargetAction
     range: 15
     checkCanAccess: false
+  - type: EntityTargetAction
+  - type: WorldTargetAction
+    event: !type:XenoSlowingSpitActionEvent
   - type: ActionBlockIfResting
 
 - type: entity
@@ -310,15 +341,18 @@
   name: Розсіяний Плювок (20) # TODO RMC14 proper plasma costs
   description: Випускає кілька не обпікаючих снарядів, які ненадовго паралізують ворогів, в яких вони влучають
   components:
-  - type: EntityWorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: acid_shotgun
-    event: !type:XenoScatteredSpitActionEvent
     useDelay: 7
+  - type: TargetAction
     range: 15
     checkCanAccess: false
+  - type: EntityTargetAction
+  - type: WorldTargetAction
+    event: !type:XenoScatteredSpitActionEvent
   - type: ActionBlockIfResting
 
 - type: entity
@@ -335,16 +369,27 @@
   name: Ксено Плювок (25) # TODO RMC14 proper plasma costs
   description: Плюньте кислотою в свого ворога.
   components:
-  - type: EntityWorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: xeno_spit
-    event: !type:XenoSpitActionEvent
-    useDelay: 2
+    useDelay: 2.5
+  - type: TargetAction
     range: 15
     checkCanAccess: false
+  - type: EntityTargetAction
+    targetCheckCanInteract: false
+  - type: WorldTargetAction
+    event: !type:XenoSpitActionEvent
   - type: ActionBlockIfResting
+
+- type: entity
+  id: ActionXenoSpitPraetorian
+  parent: ActionXenoSpit
+  components:
+  - type: Action
+    useDelay: 2
 
 - type: entity
   parent: CMGuidebookActionXenoBase
@@ -360,13 +405,14 @@
   name: Покращити Плювок (50) # TODO RMC14 proper plasma costs
   description: Після активації ваш наступний плювок завдає більше шкоди і покриває ціль кислотою, але має меншу дальність дії. Збільшує швидкість пересування, доки не закінчиться дія здібності.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: charge_spit
-    event: !type:XenoChargeSpitActionEvent
     useDelay: 12
+  - type: InstantAction
+    event: !type:XenoChargeSpitActionEvent
   - type: XenoActionPlasma
     cost: 50
 
@@ -384,14 +430,16 @@
   name: Бризнути Кислотою (40)
   description: Бризкає кислоту лінією, покриваючи нею землю. [color=red]Вкриває барикади кислотою, а також значно посилить кислоту, що наноситься покращеним плювком![/color]
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: spray_acid
-    event: !type:XenoSprayAcidActionEvent
     useDelay: 8
+  - type: TargetAction
     range: 15
+  - type: WorldTargetAction
+    event: !type:XenoSprayAcidActionEvent
   - type: ActionBlockIfResting
 
 - type: entity
@@ -407,11 +455,14 @@
   id: ActionXenoSprayAcidBoiler
   description: Бризкає кислоту лінією, покриваючи нею землю. [color=red]Вкриває барикади кислотою![/color]
   components:
-  - type: WorldTargetAction
+  - type: Action
     useDelay: 10
   - type: ActionSharedCooldown
+    id: ActionXenoSprayAcidBoiler
     ids:
     - ActionXenoAcidShroud
+    activeIds:
+    - ActionXenoBombard
 
 - type: entity
   parent: ActionXenoSprayAcid
@@ -419,7 +470,7 @@
   name: Бризнути Кислотою (80)
   description: Бризкає кислоту лінією, покриваючи нею землю. [color=red]Вкриває барикади кислотою![/color]
   components:
-  - type: WorldTargetAction
+  - type: Action
     useDelay: 10
 
 - type: entity
@@ -427,7 +478,7 @@
   id: ActionXenoSprayAcidWarden
   name: Бризнути Кислотою (130)
   components:
-  - type: WorldTargetAction
+  - type: Action
     useDelay: 13
 
 - type: entity
@@ -436,15 +487,17 @@
   name: Кислотна Куля (80) # TODO RMC14 proper plasma costs
   description: Викидає кулю, яка після невеликої затримки вибухає кислотою у всі боки.
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: prae_acid_ball
-    event: !type:XenoAcidBallActionEvent
-    useDelay: 0
+    useDelay: 18
+  - type: TargetAction
     range: 15
     checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:XenoAcidBallActionEvent
   - type: ActionBlockIfResting
 
 - type: entity
@@ -461,13 +514,14 @@
   name: Паралізуючий Удар (50) # TODO RMC14 proper plasma costs
   description: Тимчасово зарядити атаку ближнього бою на те, щоб після короткої затримки паралізувала ціль.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: lurker_inject_neuro
-    event: !type:XenoParalyzingSlashActionEvent
     useDelay: 12
+  - type: InstantAction
+    event: !type:XenoParalyzingSlashActionEvent
   - type: XenoActionPlasma
     cost: 50
 
@@ -477,13 +531,14 @@
   name: Калічачий Удар (20) # TODO RMC14 proper plasma costs
   description: Тимчасово зарядіть ближню атаку, на те, щоб вона сповільнила ціль, а також завдала їй на 20% більше шкоди.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: lurker_inject_neuro
-    event: !type:XenoCripplingStrikeActionEvent
     useDelay: 10
+  - type: InstantAction
+    event: !type:XenoCripplingStrikeActionEvent
   - type: XenoActionPlasma
     cost: 20
 
@@ -501,14 +556,17 @@
   name: Кістколамовий Снаряд
   description: Запустіть снаряд, який завдасть шкоду та сповільнить ворога в якого влучить.
   components:
-  - type: EntityWorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: runner_bonespur
-    event: !type:XenoBoneChipsActionEvent
     useDelay: 12
+  - type: TargetAction
     range: 15
+  - type: EntityTargetAction
+  - type: WorldTargetAction
+    event: !type:XenoBoneChipsActionEvent
 
 - type: entity
   parent: CMGuidebookActionXenoBase
@@ -524,15 +582,18 @@
   name: Удар
   description: Вдарте ворога, завдавши йому значної шкоди, сповільнивши і відштовхнувши його від вас.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: punch
-    event: !type:XenoPunchActionEvent
-    range: 1.5
     useDelay: 4.5
+  - type: TargetAction
+    range: 1.5
     deselectOnMiss: false
+  - type: EntityTargetAction
+    event: !type:XenoPunchActionEvent
+    toggleOutline: false
   - type: XenoOffensiveAction
 
 - type: entity
@@ -549,15 +610,18 @@
   name: Буцнути
   description: Збийте з ніг ворога, що стоїть поруч, а також відштовхніть його.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: fling
-    event: !type:XenoFlingActionEvent
-    range: 1.5
     useDelay: 7
+  - type: TargetAction
+    range: 1.5
     deselectOnMiss: false
+  - type: EntityTargetAction
+    event: !type:XenoFlingActionEvent
+    toggleOutline: false
   - type: XenoOffensiveAction
   - type: RMCDazeableAction
 
@@ -575,17 +639,21 @@
   name: Ривок
   description: Зробіть ривок у бік цілі та схопіть її.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: lunge
-    event: !type:XenoLungeActionEvent
-    range: 5
     useDelay: 10
+  - type: TargetAction
+    range: 5
     deselectOnMiss: false
+  - type: EntityTargetAction
+    event: !type:XenoLungeActionEvent
+    toggleOutline: false
   - type: XenoOffensiveAction
   - type: RMCDazeableAction
+  - type: RMCCooldownOnMiss
 
 - type: entity
   parent: CMGuidebookActionXenoBase
@@ -601,13 +669,14 @@
   name: Королівський Крик (250)
   description: Змушує завмерти від жаху всіх інкубаторів навколо. [color=red]Це також оглушить усіх паразитів! Блокується міцними стінами, газом, димом проте не вікнами[/color]
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: screech
-    event: !type:XenoScreechActionEvent
     useDelay: 50
+  - type: InstantAction
+    event: !type:XenoScreechActionEvent
   - type: RMCDazeableAction
 
 - type: entity
@@ -616,13 +685,15 @@
   name: Розірвати (200)
   description: Розриває на шматки обрану вами ціль.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: gut
-    event: !type:XenoGutActionEvent
+  - type: TargetAction
     range: 2
+  - type: EntityTargetAction
+    event: !type:XenoGutActionEvent
 
 - type: entity
   id: ActionXenoStomp
@@ -630,13 +701,14 @@
   name: Тупіт (30)
   description: Здригає землю в невеликому радіусі навколо, сповільнює і роззброює всіх ворогів в зоні ураження. Завдає великої шкоди ворогам, на яких ви стоїте.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: stomp
-    event: !type:XenoStompActionEvent
     useDelay: 18
+  - type: InstantAction
+    event: !type:XenoStompActionEvent
 
 - type: entity
   parent: CMGuidebookActionXenoBase
@@ -649,16 +721,17 @@
 - type: entity
   parent: ActionXenoStomp
   id: ActionXenoCrush
-  name: Crush (25)
-  description: Slam the ground with a 7x7 AOE, slowing down and disarming all enemies in range. Deals heavy damage to targets you are on top of.
+  name: Розчавлення (25)
+  description: Удар по землі з площею дії 7x7, що уповільнює та обеззброюючи всіх ворогів у радіусі досяжності. Завдає значної шкоди цілям, над якими ви знаходитесь.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: stomp
-    event: !type:XenoStompActionEvent
     useDelay: 12
+  - type: InstantAction
+    event: !type:XenoStompActionEvent
 
 - type: entity
   id: ActionXenoCharge
@@ -666,15 +739,17 @@
   name: Стрибнути (20)
   description: Натисніть на клітинку, до якої хочете стрибнути, через короткий проміжок часу який не можна перервати ви там опинитеся, відкинувши ворога якщо він там стояв. [color=red]Обережно, ця дія, також, може нашкодити Ксеноїдам[/color]. [color=green]Час перезарядки частково зменшується після атаки на ворога і залежить від кількості ворогів, яких ви вбили за допомогою цієї здібності.[/color]
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: ready_charge
-    event: !type:XenoChargeActionEvent
-    range: 9
     useDelay: 14
+  - type: TargetAction
+    range: 9
     checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:XenoChargeActionEvent
 
 - type: entity
   parent: CMGuidebookActionXenoBase
@@ -687,23 +762,24 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoToggleCharging
-  name: Toggle Charging
-  description: Enable charging when moving in a straight line, which increases your speed and impact damage depending on the total distance travelled.
+  name: Перемкнути Накопичення
+  description: Увімкніть накопичення під час руху по прямій, що збільшує вашу швидкість і шкоду від удару в залежності від загальної пройденої відстані.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: ready_charge
-    event: !type:XenoToggleChargingActionEvent
     useDelay: 0.25
+  - type: InstantAction
+    event: !type:XenoToggleChargingActionEvent
 
 - type: entity
   parent: ActionXenoFling
   id: ActionXenoRam
   name: Ram (10)
   components:
-  - type: EntityTargetAction
+  - type: Action
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: fling # TODO RMC14 ram
@@ -717,15 +793,17 @@
   name: Постріл Газовою Кулею (200)
   description: Після підготовки вистрілить кулею кислотного або нейротоксичного газу.
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: bombard
-    event: !type:XenoBombardActionEvent
+    useDelay: 1
+  - type: TargetAction
     range: 10
     checkCanAccess: false
-    useDelay: 1
+  - type: WorldTargetAction
+    event: !type:XenoBombardActionEvent
   - type: ActionSharedCooldown
     id: ActionXenoBombard
     ids:
@@ -748,7 +826,7 @@
   name: Перемкнути Тип Газу
   description: Перемикайтеся між кислотним та нейротоксичним газом. Кислотний газ завдає постійної шкоди всьому, що потрапляє в його радіус дії, тоді як нейротоксин спричиняє задуху, сповільнює рух і засліплює цілі, а також, зрештою, змушує впасти, щоб ви могли їх викрасти.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     backgroundOn: null
     icon:
@@ -757,8 +835,9 @@
     iconOn:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: shift_spit_neuro_glob
-    event: !type:XenoGasToggleActionEvent
     useDelay: 1
+  - type: InstantAction
+    event: !type:XenoGasToggleActionEvent
 
 - type: entity
   parent: CMGuidebookActionXenoBase
@@ -774,11 +853,12 @@
   name: Газова Завіса
   description: Створіть навколо себе невелику хмару кислотного або нейротоксичного газу, щоб замаскуватися. Після цього вам прийдеться почекати перед тим, як використовувати будь-яке вміння.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: acid_shroud
+  - type: InstantAction
     event: !type:XenoAcidShroudActionEvent
   - type: ActionSharedCooldown
     id: ActionXenoAcidShroud
@@ -803,13 +883,14 @@
   name: Тремтіння Землі (100)
   description: Ударте по землі, оглушивши всіх ворогів навколо на короткий період часу.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: tremor
-    event: !type:XenoStompActionEvent
     useDelay: 30
+  - type: InstantAction
+    event: !type:XenoStompActionEvent
 
 - type: entity
   parent: CMGuidebookActionXenoBase
@@ -825,11 +906,12 @@
   name: За Вулик!
   description: Підготуйтеся до потужного кислотного самопідриву через 20 секунд. Потребує мінімум 200 накопиченої кислоти, але чим більше її буде тим потужніше бабахне. Вибух також покриє усі барикади і істот в половині радіусу кислотою. Чим далі істота від вас тим меншої шкоди зазнає. Під час підготовки ви сповільнетеся, змінитеся візуально, а також видасте гучний звук. Якщо вас вб'ють до детонації, вибуху не буде, але якщо все піде за планом, ви відродитеся в ядрі Вулика як личинка(якщо ядра немає, личинка з'явиться на місці вашого трупа). Використання цієї дії під час підготовки скасує її, але це коштуватиме чверть накопиченої кислоти.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: screech
+  - type: InstantAction
     event: !type:XenoForTheHiveActionEvent
 
 - type: entity
@@ -838,19 +920,22 @@
   name: Проколоти (80)
   description: Пронижіть ворога своїм хвостом. Двічі б'є по позначеній цілі і знімає позначку. Пробиває деяку броню.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: prae_impale
-    event: !type:XenoImpaleActionEvent
-    range: 1.5
     useDelay: 13
+  - type: TargetAction
+    range: 1.5
     deselectOnMiss: false
+  - type: EntityTargetAction
+    event: !type:XenoImpaleActionEvent
   - type: XenoOffensiveAction
   - type: ActionBlockIfResting
   - type: XenoActionPlasma
     cost: 80
+  - type: RMCCooldownOnMiss
 
 - type: entity
   parent: ActionXenoBase
@@ -858,19 +943,22 @@
   name: Змах Хвостом (30)
   description: Обеззброює та приголомшує ворога. Позначеного ворога приголомшує на довший період, а також знімає з нього позначку.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: prae_tail_trip
-    event: !type:XenoTailTripActionEvent
-    range: 2
     useDelay: 13
+  - type: TargetAction
+    range: 2
     deselectOnMiss: false
+  - type: EntityTargetAction
+    event: !type:XenoTailTripActionEvent
   - type: XenoOffensiveAction
   - type: XenoActionPlasma
     cost: 30
   - type: ActionBlockIfResting
+  - type: RMCCooldownOnMiss
 
 - type: entity
   parent: ActionXenoBase
@@ -878,15 +966,17 @@
   name: Пробиття (50)
   description: Пронизує ворога наскрізь, завдаючи великої шкоди, пробиває деяку броню. Попадання у 2-ох або більше перезарядить гребінь.
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: prae_pierce
-    event: !type:XenoPierceActionEvent
-    range: 15
     useDelay: 3
+  - type: TargetAction
+    range: 15
     checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:XenoPierceActionEvent
   - type: ActionBlockIfResting
   - type: XenoActionPlasma
     cost: 50
@@ -905,25 +995,27 @@
   name: Блискавичний Напад (50)
   description: Промчіть невелику відстань до обраної клітинки. Через 3 секунди чи якщо ви натиснете на дію ще раз, завдасте шкоду ворогам навколо. Попадання в 1-го чи більше перезарядить гребінь.
   components:
-  - type: WorldTargetAction
+  - type: Action
     useDelay: 0
   - type: ActionBlockIfResting
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoCleaveRoot
-  name: Cleave Root
-  description: Root an enemy for a second. The duration is higher if your shield is up.
+  name: Вкорінення
+  description: На секунду вкорінює ворога на одному місці. Тривалість ефекту збільшується, якщо у вас піднятий гребінь.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: prae_cleave_root
-    event: !type:XenoCleaveActionEvent
-    range: 1.5
     useDelay: 12
+  - type: TargetAction
+    range: 1.5
     deselectOnMiss: false
+  - type: EntityTargetAction
+    event: !type:XenoCleaveActionEvent
   - type: ActionBlockIfResting
   - type: ActionSharedCooldown
     id: ActionXenoCleaveRoot
@@ -942,19 +1034,21 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoCleaveFling
-  name: Cleave Fling
-  description: Fling an enemy. The distance is doubled if your shield is up.
+  name: Викинути
+  description: Кидає ворога. Дистанція подвоюється, якщо твій гребінь піднятий.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: prae_cleave_fling
+    useDelay: 12
+  - type: TargetAction
+    range: 1.5
+    deselectOnMiss: false
+  - type: EntityTargetAction
     event: !type:XenoCleaveActionEvent
       flings: true
-    range: 1.5
-    useDelay: 12
-    deselectOnMiss: false
   - type: ActionBlockIfResting
   - type: ActionSharedCooldown
     id: ActionXenoCleaveFling
@@ -976,7 +1070,7 @@
 #  name: Toggle Cleave Type
 #  description: Toggle between your Cleave rooting enemies or flinging enemies.
 #  components:
-#  - type: InstantAction
+#  - type: Action
 #    itemIconStyle: NoItem
 #    backgroundOn: null
 #    icon:
@@ -985,21 +1079,22 @@
 #    iconOn:
 #      sprite: _RMC14/Actions/xeno_actions.rsi
 #      state: prae_cleave_fling
+#  - type: InstantAction
 #    event: !type:XenoToggleCleaveActionEvent
 
 - type: entity
   id: ActionXenoSpitQueen
   parent: ActionXenoSpit
-  name: Xeno Spit (50/25)
-  description: Launches a projectile that will either paralyze the first enemy it hits or damage them and cover them in acid.
+  name: Ксено Плювок (50/25)
+  description: Випускає снаряд, який або паралізує ворога в кого влучить, або завдає шкоди й покриває кислотою.
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoToggleSpitType
-  name: Toggle Spit Type
-  description: Toggle between Neurotoxic or Acidic spit. Neurotoxic has less range and costs 50 plasma, and knocks down the first enemy it hits. Acidic has more range and costs 25 plasma, and damages and covers in acid the first enemy it hits.
+  name: Перемкнути Тип Плювка
+  description: Перемикайся між нейротоксичним і кислотним плювком. Нейротоксичний має меншу дальність і коштує 50 плазми, збиває з ніг ворога в якого влучить. Кислотний має більшу дальність і коштує 25 плазми, завдає шкоди й покриває кислотою ворога.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     backgroundOn: null
     icon:
@@ -1008,23 +1103,26 @@
     iconOn:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: shift_spit_xeno_acid
+  - type: InstantAction
     event: !type:XenoSpitToggleActionEvent
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoHighGallop
-  name: High Gallop
-  description: Stuns foes in a 2x3 area in targeted direction, and slows them. Also flings back grenades.
+  name: Високий Галоп
+  description: Оглушує та сповільнює ворогів у заданому напрямку в зоні 2x3. Також відкидає гранати.
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: stomp
-    event: !type:XenoHighGallopActionEvent
-    range: 15
     useDelay: 12
+  - type: TargetAction
+    range: 15
     checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:XenoHighGallopActionEvent
   - type: ActionBlockIfResting
 
 - type: entity
@@ -1038,18 +1136,20 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoScissorCut
-  name: Scissor Cut (25)
-  description: Cuts enemies and fences in a straight line. If Super-Empowered, slows enemies hit too.
+  name: Ножиці (25)
+  description: Розрізає ворогів і огорожі по прямій лінії. Якщо маєте надзвичайну силу, також уповільнює вражених ворогів.
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: rav_scissor_cut
-    event: !type:XenoScissorCutActionEvent
     useDelay: 6
+  - type: TargetAction
     checkCanAccess: false
     range: 15
+  - type: WorldTargetAction
+    event: !type:XenoScissorCutActionEvent
   - type: ActionBlockIfResting
   - type: XenoActionPlasma
     cost: 25
@@ -1065,19 +1165,22 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoTailSeize
-  name: Tail Seize
-  description: Throw out your tail in front of you. Uses up your melee attack. Pulls in the first enemy hit to you and roots and slows them on arrival.
+  name: Захоплення Хвостом
+  description: Викидає хвіст перед собою. Використовує атаку ближнього бою. Притягує першого ворога, який вас вразив, зупиняє та уповільнює його після притягування.
   components:
-  - type: EntityWorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: tail_seize
-    event: !type:XenoTailSeizeActionEvent
-    range: 15
     useDelay: 15
+  - type: TargetAction
+    range: 15
     deselectOnMiss: false
     checkCanAccess: false
+  - type: EntityTargetAction
+  - type: WorldTargetAction
+    event: !type:XenoTailSeizeActionEvent
   - type: ActionBlockIfResting
 
 - type: entity
@@ -1091,19 +1194,22 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoAbduct
-  name: Abduct (180)
-  description: Cast out a line that after a small doafter pulls in enemies towards you, disarming them. Catching 1 target slows them, 2 roots them, and 3 or more stuns them.
+  name: Викрадення (180)
+  description: Викидає жилку яка після короткої паузи притягує ворогів до тебе та роззброює їх. Зловивши 1 ціль, ви сповільнюєте її, 2 - приковуєте до місця, а 3 і більше - оглушуєте.
   components:
-  - type: EntityWorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: abduct
-    event: !type:XenoAbductActionEvent
-    range: 7
     useDelay: 15
+  - type: TargetAction
+    range: 6
     deselectOnMiss: false
     checkCanAccess: false
+  - type: EntityTargetAction
+  - type: WorldTargetAction
+    event: !type:XenoAbductActionEvent
   - type: ActionBlockIfResting
 
 - type: entity
@@ -1117,19 +1223,21 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoTailLash
-  name: Tail Lash (80)
-  description: Fling back foes in a 2x3 area in targeted direction after a very short doafter. Also slows.
+  name: Хвостовий Батіг (80)
+  description: Після короткої паузи викидає ворогів назад у напрямку цілі на площі 2×3. Також сповільнює.
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: prae_tail_lash
-    event: !type:XenoTailLashActionEvent
-    range: 15
     useDelay: 13
+  - type: TargetAction
+    range: 15
     deselectOnMiss: false
     checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:XenoTailLashActionEvent
   - type: ActionBlockIfResting
 
 - type: entity
@@ -1143,18 +1251,20 @@
 - type: entity
   id: ActionXenoDislocate
   parent: ActionXenoBase
-  name: Dislocate (55)
-  description: Punch a targeted enemy, doing some damage and pushing them back. If the target is slowed, stunned, downed, or rooted, instead roots and completely pierces armor. Reduces the cooldown of Abduct and Tail Lash.
+  name: Дизлокація (55)
+  description: Б’є обраного ворога, завдаючи шкоди та відштовхуючи його назад. Якщо ворог сповільнений, оглушений, повалений або вкорінений - замість цього вкорінює його й повністю пробиває броню. Зменшує час перезаряджання здібностей Хвостовий Батіг і Викрадення.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: dislocate
-    event: !type:XenoDislocateActionEvent
-    range: 1.5
     useDelay: 10
+  - type: TargetAction
+    range: 1.5
     deselectOnMiss: false
+  - type: EntityTargetAction
+    event: !type:XenoDislocateActionEvent
   - type: XenoOffensiveAction
   - type: ActionBlockIfResting
   - type: XenoActionPlasma
@@ -1171,37 +1281,43 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoTailJab
-  name: Tail Jab
-  description: Jab an enemy in a 2.5 tile range, doing high damage and slowing them.
+  name: Хвостовий Удар
+  description: Б’є ворога на відстані 2,5 клітинки, завдає високої шкоди та сповільнює.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: prae_pierce
-    event: !type:XenoTailJabActionEvent
-    range: 2.5
     useDelay: 7
+  - type: TargetAction
+    range: 2.5
     checkCanAccess: false
     deselectOnMiss: false
+  - type: EntityTargetAction
+    event: !type:XenoTailJabActionEvent
   - type: ActionBlockIfResting
+  - type: ActionInRangeUnobstructed
+    range: 2.5
   - type: XenoOffensiveAction
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoFlurry
-  name: Flurry
-  description: An attack that has a range of 1x3 tiles, dealing damage per target and healing you.
+  name: Шквал
+  description: Атакує на площі 1×3 клітинки, завдає шкоду кожній цілі та лікує вас.
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: rav_spike
-    event: !type:XenoFlurryActionEvent
     useDelay: 3
+  - type: TargetAction
     checkCanAccess: false
     range: 15
+  - type: WorldTargetAction
+    event: !type:XenoFlurryActionEvent
   - type: ActionBlockIfResting
 
 - type: entity
@@ -1215,19 +1331,21 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoHeadbite
-  name: Headbite
-  description: Instantly kills unconscious targets and heals you for 150 HP.
+  name: Вкусити За Голову
+  description: Миттєво вбиває непритомних інкубаторів та відновлює вам 150 здоров'я.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: headbite
-    event: !type:XenoHeadbiteActionEvent
-    range: 1.5
     useDelay: 10
+  - type: TargetAction
+    range: 1.5
     checkCanAccess: false
     deselectOnMiss: false
+  - type: EntityTargetAction
+    event: !type:XenoHeadbiteActionEvent
   - type: ActionBlockIfResting
   - type: XenoOffensiveAction
 
@@ -1242,16 +1360,17 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoApprehend
-  name: Apprehend
-  description: Increases your movement speed and applies a slow on the next target you slash.
+  name: Схоплення
+  description: Збільшує вашу швидкість руху та накладає сповільнення на наступну ціль, яку ви розсікаєте.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: rav_enrage
-    event: !type:XenoCripplingStrikeActionEvent
     useDelay: 18
+  - type: InstantAction
+    event: !type:XenoCripplingStrikeActionEvent
   - type: ActionBlockIfResting
 
 - type: entity
@@ -1260,51 +1379,95 @@
   name: Eviscerate
   description: Eviscerate nearby enemies after a short delay. Costs 1 rage stack.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: rav_eviscerate
-    event: !type:XenoEviscerateActionEvent
     useDelay: 23
+  - type: InstantAction
+    event: !type:XenoEviscerateActionEvent
   - type: ActionBlockIfResting
   - type: RMCDazeableAction
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoClothesline
-  name: Clothesline
-  description: Flings a target, doing minimal damage and healing you. The amount healed is higher the more rage stacks you have.
+  name: Розмах
+  description: Кидає ціль і завдає мінімальної шкоди, також лікує вас. Кількість лікування зростає з числом накопиченої ярості.
   components:
-  - type: EntityTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: prae_cleave_fling
-    event: !type:XenoFlingActionEvent
-    range: 1.5
     useDelay: 16
+  - type: TargetAction
+    range: 1.5
     deselectOnMiss: false
+  - type: EntityTargetAction
+    event: !type:XenoFlingActionEvent
   - type: XenoOffensiveAction
   - type: RMCDazeableAction
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoTumble
-  name: Tumble (25) # TODO RMC14 proper plasma costs
-  description: Charge towards your side and push back the first enemy hit. Can only be used towards either side of where you are facing.
+  name: Перекид (25) # TODO RMC14 proper plasma costs
+  description: Розганяється в сторону та відштовхує першого ворога у якого влучить. Можна використовувати лише вліво або вправо від вашого напряму.
   components:
-  - type: WorldTargetAction
+  - type: Action
     itemIconStyle: NoItem
     icon:
       sprite: _RMC14/Actions/xeno_actions.rsi
       state: tumble
-    event: !type:XenoTumbleActionEvent
-    range: 20
     useDelay: 10
+  - type: TargetAction
+    range: 20
     deselectOnMiss: false
     checkCanAccess: false
-    rotate: false
+  - type: WorldTargetAction
+    event: !type:XenoTumbleActionEvent
+    rotateOnUse: false
   - type: ActionBlockIfResting
   - type: XenoActionPlasma
     cost: 25
+
+- type: entity
+  parent: ActionXenoBase
+  id: ActionXenoFireSpikes
+  name: Fire Spikes (75 shards)
+  description: Launch 8 small shards of spikes in the direction you click.
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    icon:
+      sprite: _RMC14/Actions/xeno_actions.rsi
+      state: rav_spike
+    useDelay: 10
+  - type: TargetAction
+    range: 15
+    checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:XenoScatteredSpitActionEvent
+  - type: ActionBlockIfResting
+  - type: XenoActionEnergy
+    cost: 75
+
+- type: entity
+  parent: ActionXenoBase
+  id: ActionXenoSpikeShed
+  name: Spike Shed (all shards)
+  description: Shred all of your shards to launch them all in all directions around yourself. Lose the bonus armor in the process while also gaining a speed boost. This will disable you from gaining any shards for 30 seconds. Requires 150 shards minimum
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    icon:
+      sprite: _RMC14/Actions/xeno_actions.rsi
+      state: rav_shard_shed
+    useDelay: 30
+  - type: InstantAction
+    event: !type:ActionXenoSpikeShedEvent
+  - type: ActionBlockIfResting
+  - type: RMCDazeableAction
+

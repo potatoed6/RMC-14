@@ -5,3 +5,6 @@ cm-refillable-solution-whirring-noise = {CAPITALIZE(THE($user))} дзижчіт�
 rmc-bottle-closed = Герметична кришка повністю закриває її.
 rmc-bottle-put-lid = Закрити кришку
 rmc-bottle-remove-lid = Зняти кришку
+
+rmc-refillsolution-flush = Flush container
+rmc-refillsolution-flush-start = You hold down the emergency flush button. Wait {$time} seconds...

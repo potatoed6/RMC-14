@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseStorageItem
   id: CMPacketBase
-  name: packet
+  name: упаковка
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/packets.rsi
@@ -35,8 +35,8 @@
 - type: entity
   parent: CMPacketBase
   id: CMPacketGrenadeHighExplosive
-  name: HEDP grenade packet
-  description: It contains three HEDP high explosive grenades.
+  name: упаковка гранат М40 ФПП
+  description: Містить три фугасні гранати М40 ФПП.
   components:
   - type: Sprite
     layers:
@@ -58,8 +58,8 @@
 - type: entity
   parent: CMPacketBase
   id: CMPacketGrenadeFrag
-  name: HEFA grenade packet
-  description: It contains three HEFA grenades. Don't tell the HEFA order.
+  name: упаковка гранат М40 ОФ
+  description: Містить три осколково-фугасні гранати М40 ОФ. І не згадуйте про той 'наказ ОФ'.
   components:
   - type: Sprite
     layers:
@@ -81,7 +81,7 @@
 - type: entity
   parent: BaseStorageItem
   id: RMCPacketGrenadeFlashBang
-  name: box of flashbangs (WARNING)
+  name: упаковка світлошумових гранат (WARNING)
   suffix: Filled
   components:
   - type: Sprite
@@ -120,8 +120,8 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeSmoke
-  name: HSDP grenade packet
-  description: It contains three HSDP smoke grenades.
+  name: упаковка гранат М40 ВДР
+  description: Містить три димові гранати М40 ВДР.
   components:
   - type: Sprite
     layers:
@@ -143,8 +143,8 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeM74AGMF
-  name: M74AGM-F grenade packet
-  description: It contains three M74AGM-Frag airburst grenades.
+  name: упаковка гранат M74 ПВГ-О
+  description: Містить три гранатометні осколкові гранати М74 ПВГ-О.
   components:
   - type: Sprite
     layers:
@@ -166,8 +166,8 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeM74AGMI
-  name: M74AGM-I grenade packet
-  description: It contains three M74AGM-Incendiary airburst grenades.
+  name: упаковка гранат М74 ПВГ-З
+  description: Містить три гранатометні запалювальні гранати М74 ПВГ-З.
   components:
   - type: Sprite
     layers:
@@ -189,8 +189,8 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeM74AGMS
-  name: M74AGM-S grenade packet
-  description: It contains three M74AGM-Smoke airburst grenades.
+  name: упаковка гранат М74 ПВГ-Д
+  description: Містить три гранатометні димові гранати М74 ПВГ-Д.
   components:
   - type: Sprite
     layers:
@@ -212,8 +212,8 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeM74AGMSHornet
-  name: M74AGM-S Hornet grenade packet
-  description: It contains three M74AGM-S Hornet airburst grenades.
+  name: упаковка гранат М74 ПВГ-К Шершень
+  description: Містить три гранатометні гранати М74 ПВГ-К Шершень.
   components:
   - type: Sprite
     layers:
@@ -235,8 +235,8 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeM74AGMSStarShell
-  name: M74AGM-S Starshell grenade packet
-  description: It contains three M74AGM-S Starshell airburst grenades.
+  name: упаковка гранат М74 ПВГ-З Зіркова
+  description: Містить три гранатометні гранати М74 ПВГ-З Зіркова.
   components:
   - type: Sprite
     layers:
@@ -258,8 +258,8 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeBatonSlugHIRR
-  name: HIRR Baton Slug packet
-  description: It contains three HIRR Baton Slug rounds.
+  name: упаковка гранат ВІГС
+  description: Містить три гранатометні сповільнювальні гранати ВІГС.
   components:
   - type: Sprite
     layers:
@@ -281,8 +281,8 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeIncendiary
-  name: HIDP grenade packet
-  description: It contains three HIDP incendiary grenades.
+  name: упаковка гранат М40 ВІРЗ
+  description: Містить три запалювальні гранати М40 ВІРЗ.
   components:
   - type: Sprite
     layers:
@@ -304,8 +304,8 @@
 - type: entity
   parent: CMPacketBase
   id: CMPacketGrenadeFragOld
-  name: M15 frag grenade packet
-  description: It contains three M15 fragmentation grenades. Handle with care.
+  name: упаковка гранат М15
+  description: Містить три осколкові гранати М15. Будьте обережні.
   components:
   - type: Sprite
     layers:
@@ -331,8 +331,8 @@
   abstract: true
   parent: CMPacketBase
   id: RMCBoxBase
-  name: grenade box
-  description: A secure box holding grenades. High explosive, don't store near the flamer fuel.
+  name: коробка гранат
+  description: Надійна коробка з гранатами. Вибухонебезпечний! Не зберігати поблизу пального для вогнемета.
   components:
   - type: Sprite
     layers:
@@ -357,8 +357,8 @@
 - type: entity
   parent: RMCBoxBase
   id: RMCBoxHEDP
-  name: M40 HEDP grenade box
-  description: A secure box holding 25 M40 High-Explosive Dual-Purpose grenades. High explosive, don't store near the flamer fuel.
+  name: коробка гранат М40 ФПП
+  description: Надійна коробка, яка зберігає 25 фугасних гранат М40 ФПП. Вибухонебезпечний! Не зберігати поблизу пального для вогнемета.
   components:
   - type: Sprite
     layers:
@@ -380,8 +380,8 @@
 - type: entity
   parent: RMCBoxBase
   id: RMCBoxHEFA
-  name: M40 HEFA grenade box
-  description: A secure box holding 25 M40 High-Explosive Fragmenting-Antipersonnel grenades. High explosive, don't store near the flamer fuel.
+  name: коробка гранат М40 ОФ
+  description: Надійна коробка, яка зберігає 25 осколково-фугасних гранат М40 ОФ. Вибухонебезпечний! Не зберігати поблизу пального для вогнемета.
   components:
   - type: Sprite
     layers:
@@ -403,8 +403,8 @@
 - type: entity
   parent: RMCBoxBase
   id: RMCBoxAGMF
-  name: M74 AGM-F grenade box
-  description: A secure box holding 25 M74 AGM Fragmentation grenades. Explosive, don't store near the flamer fuel.
+  name: коробка гранат M74 ПВГ-О
+  description: Надійна коробка, яка зберігає 25 гранатометних осколкових гранат М74 ПВГ-О. Вибухонебезпечний! Не зберігати поблизу пального для вогнемета.
   components:
   - type: Sprite
     layers:
@@ -426,8 +426,8 @@
 - type: entity
   parent: RMCBoxBase
   id: RMCBoxAGMI
-  name: M74 AGM-I grenade box
-  description: A secure box holding 25 M74 AGM Incendiary grenades. Highly flammable, don't store near the flamer fuel.
+  name: коробка гранат M74 ПВГ-З
+  description: Надійна коробка, яка зберігає 25 гранатометних запалювальних гранат М74 ПВГ-З. Легкозаймистий! Не зберігати поблизу пального для вогнемета.
   components:
   - type: Sprite
     layers:

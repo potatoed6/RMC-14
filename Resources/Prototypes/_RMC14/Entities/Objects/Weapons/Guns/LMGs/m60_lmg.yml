@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCBaseWeaponLMG
-  name: M60 General Purpose Machine Gun
+  name: "M60 кулемет загального призначення"
   id: RMCWeaponLMGM60
-  description: The Pig. The Action Hero's dream. Chambered in 7.62x51 NATO
+  description: "'Свиня'. Улюблена зброя героїв бойовиків. Під набій 7.62х51 мм НАТО."
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/LMGs/m60.rsi
@@ -101,7 +101,7 @@
 - type: entity
   parent: RMCMagazineLMGBase
   id: RMCMagazineLMGM60
-  name: "M60 Ammo Box (7.62x51 NATO)"
+  name: "M60 коробка з набоями (7.62x51 НАТО)"
   components:
   - type: Tag
     tags:
@@ -126,8 +126,8 @@
 - type: entity
   parent: RMCCartridgeRifleAR10
   id: RMCCartridgeLMGM60
-  name: cartridge (7.62x51)
-  description: A 7.62x51 NATO cartridge
+  name: набій (7.62x51)
+  description: НАТО-вський набій під калібр 7.62х51 мм.
   components:
   - type: Tag
     tags:
