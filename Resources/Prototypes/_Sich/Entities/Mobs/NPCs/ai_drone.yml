@@ -1,0 +1,16 @@
+- type: entity
+  id: CMSichXenoAI
+  parent: CMXenoBase
+  suffix: ШІ
+  abstract: true
+  components:
+  - type: HTN # TODO RMC14 needs to not target nested marines
+    rootTask:
+      task: CMXenoCompound
+
+
+- type: entity
+  parent:
+  - CMSichXenoAI
+  - CMXenoDrone
+  id: CMSichXenoAIDrone
