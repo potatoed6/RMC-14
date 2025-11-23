@@ -1,3 +1,26 @@
+# Xeno AI
+- type: htnCompound
+  id: CMSichXenoCompound
+  branches:
+  - tasks:
+    - !type:HTNCompoundTask
+      task: CMSichXenoMeleeCombatCompound
+  - tasks:
+    - !type:HTNCompoundTask
+      task: IdleCompound
+
+# Selects a target in melee and tries to attack it.
+- type: htnCompound
+  id: CMSichXenoMeleeCombatCompound
+  branches:
+  # Melee combat (unarmed or otherwise)
+  - tasks:
+    - !type:HTNPrimitiveTask
+      operator: !type:UtilityOperator
+        proto: NearbyMeleeTargets
+    - !type:HTNCompoundTask
+      task: MeleeAttackTargetCompound
+
 - type: entity
   id: CMSichXenoAI
   parent: CMXenoBase
@@ -6,7 +29,7 @@
   components:
   - type: HTN # TODO RMC14 needs to not target nested marines
     rootTask:
-      task: CMXenoCompound
+      task: CMSichXenoCompound
 
 
 - type: entity
