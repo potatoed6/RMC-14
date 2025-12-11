@@ -8,7 +8,7 @@
     - CMWeaponsSpecialist
     pointsType: Specialist
     sections:
-    - name: Weapons Specialist Sets
+    - name: Набори Спеціаліста
       takeOne: SquadSpecKit
       sharedSpecLimit: 1 # 1, бо так вирішили Ми
       entries:
@@ -70,7 +70,7 @@
           state: spec_anti_materiel_sniper
         linkedEntries:
         - CMSniperEquipmentCase
-    - name: Extra Scout Ammunition
+    - name: Додаткові Набої Розвідника
       entries:
       - id: RMCMagazineRifleM4SPRA19Impact
         points: 40
@@ -78,7 +78,7 @@
         points: 40
       - id: RMCMagazineRifleM4SPRA19
         points: 40
-    - name: Extra Sniper Ammunition
+    - name: Додаткові Набої Снайперів
       entries:
       - id: CMMagazineSniperM96SFlak
         points: 40
@@ -88,7 +88,7 @@
         points: 40
       - id: RMCMagazineSniperXM43E1AntiMateriel
         points: 40
-    - name: Extra Demolitionist Ammunition
+    - name: Додаткові Ракети Ракетника
       entries:
       - id: RMCRocket84mmAntiArmor
         points: 40
@@ -96,14 +96,14 @@
         points: 40
     #- id: 84mmWhitePhosphorusRocket
     #  points: 40
-    - name: Extra Grenades
+    - name: Додаткові Гранати
       entries:
       - id: CMGrenadeHighExplosive
-        name: 30mm HEDP Blast Grenades (x6)
+        name: М40 ФПП фугасні гранати (x6)
         points: 40
         spawn: 6
       - id: RMCGrenadeIncendiary
-        name: 30mm HIDP Incendiary Grenades (x6)
+        name: М40 ВІРЗ запалювальні гранати (x6)
         points: 40
         spawn: 6
       #- id: M40HPDPWhitePhosphorusGrenadesx6
@@ -119,7 +119,7 @@
         spawn: 6
       # -id: RMCElectroshockGrenadex6
       # points: 40
-    #- name: Extra Flamethrower Tanks
+    #- name: Додаткові Баки Для Вогнемету
     #  entries: [ ]
     #- id: LargeIncineratorTank
     #  points: 40
@@ -131,8 +131,8 @@
 - type: entity
   parent: [ColMarTechBase, RMCVendorWeaponsSpecialistGearBase]
   id: ColMarTechSWSGear
-  name: ColMarTech squad weapons specialist gear rack
-  description: An automated gear rack for Squad Weapons Specialists.
+  name: КолМорТех стійка для обладнання Збройного Спеціаліста
+  description: Автоматизована стійка обладнання для Збройного Спеціаліста.
   components:
   - type: RMCVendorSpecialist
   - type: AccessReader
@@ -144,8 +144,8 @@
 - type: entity
   parent: [BaseItem, RMCVendorWeaponsSpecialistGearBase]
   id: RMCKitWeaponsSpecialist
-  name: specialist kit
-  description: A paper box. Open it and get a specialist kit.
+  name: набір спеціаліста
+  description: Паперова коробка, відчини та отримай свій набір спеціаліста.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/loadout_kits.rsi
@@ -169,8 +169,8 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechSWSEquipment
-  name: ColMarTech squad weapons specialist equipment rack
-  description: An automated rack hooked up to a colossal storage of Squad Weapons Specialist standard-issue equipment.
+  name: КолМорТех автоматизована стійка морпіхотного спорядження Збройного Спеціаліста
+  description: Автоматизована стійка, під'єднана до величезного сховища зі стандартним спорядженням Збройного Спеціаліста морської піхоти.
   components:
   - type: AccessReader
     access:
@@ -181,19 +181,19 @@
     jobs:
     - CMWeaponsSpecialist
     sections:
-    - name: Standard Equipment
+    - name: Стандартне Спорядження
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleWeaponsSpecialistApparel
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
-    - name: Backpack
+    - name: Рюкзаки
       choices: { CMBackpack: 1 }
       entries:
       - id: CMBackpackMarine
       - id: CMSatchelMarine
         recommended: true
-    - name: Belt
+    - name: Ремені
       choices: { CMBelt: 1 }
       entries:
       - id: RMCBeltUtilityGeneral
@@ -205,20 +205,20 @@
       - id: RMCBeltHolsterSMGPouch
       - id: RMCM82FHolster
       - id: RMCM276ShotgunShellLoadingRig
-    - name: Pouches
+    - name: Підсумки
       choices: { RMCPouch: 2 }
       entries:
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: підсумок першої допомоги (багаторазові автоінжектори)
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: підсумок першої допомоги (марля, мазь) # TODO RMC14 splints comma
         recommended: true
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: підсумок першої допомоги (пігулки)
         recommended: true
       - id: RMCPouchFlareFilled
-        name: Flare pouch (Full)
+        name: підсумок для фаєрів (Повний)
       - id: RMCPouchMagazine
         recommended: true
       - id: RMCPouchShotgun
@@ -227,7 +227,7 @@
       - id: RMCPouchGeneralMedium
       - id: RMCPouchPistol
       #- id: CMSlingPouch
-    - name: Accessories
+    - name: Ремінно-Плечові Системи
       choices: { CMAccessories: 1 }
       entries:
       - id: CMWebbingBrown
@@ -241,19 +241,19 @@
       - id: RMCWebbingDropPouchBlack
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
-    - name: Mask
+    - name: Маски
       choices: { CMMask: 1 }
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif
       - id: RMCMaskRebreather
-    - name: Restricted Firearms
+    - name: Додаткова Зброя
       entries:
       - id: RMCGunCasePistolMK80
         points: 15
       - id: RMCGunCasePistolSmart
         points: 15
-    - name: Sidearm Ammunition
+    - name: Набої Для Пістолетів
       entries:
       - id: RMCMagazinePistolM13Ext
         points: 6
@@ -269,13 +269,13 @@
         points: 5
       - id: RMCMagazinePistolSU6
         points: 10
-    - name: Clothing Items
+    - name: Предмети Одягу
       entries:
       - id: RMCScabbardMacheteFilled
-        name: machete scabbard (Full)
+        name: чохол для мачете (Повний)
         points: 6
       - id: RMCPouchMacheteFilled
-        name: machete pouch (Full)
+        name: підсумок для мачете (Повний)
         points: 15
       - id: RMCBackpackRTO
         points: 15
@@ -288,9 +288,9 @@
       - id: CMBeltUtilityCombat
         points: 15
       - id: RMCPouchAutoinjectorFill
-        name: autoinjector pouch (Full)
+        name: автоінжекторний підсумок (Повний)
         points: 15
-    - name: Utilities
+    - name: Додаткове Обладнання
       entries:
       - id: CMRollerBedSpawnFolded
         points: 5
@@ -304,7 +304,7 @@
         points: 10
       - id: RMCWhistle
         points: 5
-    - name: Binoculars
+    - name: Біноклі
       entries:
       - id: RMCBinoculars
         points: 5
@@ -312,19 +312,19 @@
         points: 10
       - id: RMCLaserDesignator
         points: 15
-    - name: Helmet Optics
+    - name: Візори Для Шолома
       entries:
       - id: RMCVisorMedical
         points: 15
       - id: RMCVisorWelding
         points: 5
-    - name: Pamphlets
+    - name: Довідники
       entries:
       - id: CMPamphletJTAC
         points: 15
       - id: CMPamphletEngineer
         points: 15
-    - name: Radio Keys
+    - name: Ключі Шифрування
       entries:
       - id: CMEncryptionKeyEngineer
         points: 5
