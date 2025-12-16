@@ -11,8 +11,6 @@
   name: Захисник
   description: Ксеноїд з панцирним гребенем.
   components:
-  - type: GhostRole
-    name: cm-job-name-xeno-defender
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Defender/defender.rsi
   - type: MobState

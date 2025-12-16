@@ -79,8 +79,6 @@
   name: Бігун
   description: Малий червоний ксеноїд, схоже він здатен бігати доволі швидко... 
   components:
-  - type: GhostRole
-    name: cm-job-name-xeno-runner
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Runner/runner.rsi
   - type: Eye
