@@ -19,8 +19,38 @@
       operator: !type:UtilityOperator
         proto: NearbyMeleeTargets
     - !type:HTNCompoundTask
-      task: MeleeAttackTargetCompound
+      task: SichXenoBeforeMeleeAttackTargetCompound
 
+- type: htnCompound
+  id: SichXenoBeforeMeleeAttackTargetCompound
+  branches:
+    - preconditions:
+        - !type:BuckledPrecondition
+          isBuckled: true
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UnbuckleOperator
+            shutdownState: TaskFinished
+
+    - preconditions:
+        - !type:PulledPrecondition
+          isPulled: true
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UnPullOperator
+            shutdownState: TaskFinished
+
+    - preconditions:
+        - !type:InContainerPrecondition
+          isInContainer: true
+      tasks:
+        - !type:HTNCompoundTask
+          task: EscapeCompound
+
+    # Melee combat (unarmed or otherwise)
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeAttackTargetCompound
 
 - type: entity
   id: CMSichXenoAIBase
@@ -31,6 +61,15 @@
   - type: HTN # TODO RMC14 needs to not target nested marines
     rootTask:
       task: CMSichXenoCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
   - type: Damageable
     damageContainer: Xeno
   - type: Destructible
@@ -176,7 +215,6 @@
         density: 185
         mask:
         - MobMask
-        - BarricadeImpassable
         - BarbedBarricade
         layer:
         - MobLayer
