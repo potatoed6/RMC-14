@@ -281,6 +281,7 @@
       2: sich-xeno-elder-queen
       3: sich-xeno-ancient-queen
       4: sich-xeno-prime-queen
+      5: sich-xeno-prime-queen
 
 - type: entity
   parent: RMCXenoQueenBase
