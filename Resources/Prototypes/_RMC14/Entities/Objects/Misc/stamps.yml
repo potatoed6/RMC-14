@@ -112,7 +112,7 @@
 - type: entity
   parent: CMStampBase
   id: RMCStampSEA
-  name: senior enlisted advisor's rubber stamp
+  name: печатка Інструктора
   components:
   - type: Sprite
     state: stamp-sea
@@ -136,7 +136,7 @@
 - type: entity
   parent: CMStampBase
   id: RMCStampProvostInspector
-  name: provost inspector rubber stamp
+  name: печатка Інспектора Провосту
   components:
   - type: Sprite
     state: stamp-provost
