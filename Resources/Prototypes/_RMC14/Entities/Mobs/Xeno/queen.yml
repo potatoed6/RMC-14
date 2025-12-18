@@ -274,6 +274,13 @@
   - type: RMCTrackable
   - type: ExcludedFromKingVote
     canVote: true
+  - type: XenoRankNames #TODO change ranks based on total hugs done
+    rankNames:
+      0: sich-xeno-young-queen
+      1: sich-xeno-mature-queen
+      2: sich-xeno-elder-queen
+      3: sich-xeno-ancient-queen
+      4: sich-xeno-prime-queen
 
 - type: entity
   parent: RMCXenoQueenBase
@@ -294,7 +301,7 @@
 - type: entity
   parent: RMCXenoQueenBase
   id: RMCXenoQueenMaid
-  suffix: Cat Maid Queen
+  suffix: Королева-Кішкопокоївка
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Extras/Maid_queen/maid_queen.rsi
@@ -316,8 +323,8 @@
 - type: entity
   parent: StationAiHolo
   id: RMCQueenEye
-  name: queen eye
-  description: It seems to be a visual projection of someone.
+  name: око королеви
+  description: Це виглядає наче чиясь візуальна проєкція.
   categories: [ HideSpawnMenu, DoNotMap ]
   components:
   - type: Sprite
