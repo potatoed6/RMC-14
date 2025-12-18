@@ -6,8 +6,8 @@
   - RMCXenoSpeechSounds
   - RMCXenoMobCollision
   id: RMCXenoKing
-  name: King
-  description: The end of the line.
+  name: Король
+  description: Кінець.
   components:
   - type: GhostRole
     name: rmc-job-name-xeno-king
@@ -89,7 +89,6 @@
         density: 185
         layer:
         - BulletImpassable
-  - type: DropshipHijacker
   - type: MovementSpeedModifier
     baseWalkSpeed: 1.66
     baseSprintSpeed: 3
