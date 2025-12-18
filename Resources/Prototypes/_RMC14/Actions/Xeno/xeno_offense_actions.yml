@@ -1479,8 +1479,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoRend
-  name: М'ясорубка (25)
-  description: Пройдіться кігтями по всім ворогам навколо себе.
+  name: Rend (25)
+  description: Claw at enemies around you.
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1497,8 +1497,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoDestroy
-  name: Стрибок Винищення
-  description: Через короткий час стрибніть до обраного місця, руйнуючи споруди та роздираючі ворогів у радіусі 3 метрів. Діє через барикади та інші невисокі перешкоди.
+  name: Destroy
+  description: After a short time, jump to the targeted location, destroying structures and gibbing hostiles within a 3x3 range. Works over barricades and other short barriers.
   components:
   - type: Action
     itemIconStyle: NoItem

@@ -112,12 +112,6 @@ public sealed class XenoCollisionSystem : EntitySystem
             _contacts.Clear();
             _physics.GetContactingEntities(uid, _contacts);
 
-            var evOne = new AttemptMobCollideEvent();
-            RaiseLocalEvent(uid, ref evOne);
-
-            if (evOne.Cancelled)
-                continue;
-
             foreach (var other in _contacts)
             {
                 if (_mobState.IsDead(other) ||
@@ -134,16 +128,9 @@ public sealed class XenoCollisionSystem : EntitySystem
                 if (!ourAabb.Intersects(otherAabb))
                     continue;
 
-
                 var intersect = Box2.Area(otherAabb.Intersect(ourAabb));
                 var ratio = Math.Max(intersect / Box2.Area(otherAabb), intersect / Box2.Area(ourAabb));
                 if (ratio < comp.Ratio)
-                    continue;
-
-                var evTwo = new AttemptMobTargetCollideEvent();
-                RaiseLocalEvent(other, ref evTwo);
-
-                if (evTwo.Cancelled)
                     continue;
 
                 if (!_hive.FromSameHive(uid, other))
@@ -170,12 +157,6 @@ public sealed class XenoCollisionSystem : EntitySystem
             _contacts.Clear();
             _physics.GetContactingEntities(uid, _contacts);
 
-            var evOne = new AttemptMobCollideEvent();
-            RaiseLocalEvent(uid, ref evOne);
-
-            if (evOne.Cancelled)
-                continue;
-
             foreach (var other in _contacts)
             {
                 if (_mobState.IsDead(other) ||
@@ -195,12 +176,6 @@ public sealed class XenoCollisionSystem : EntitySystem
                 var intersect = Box2.Area(otherAabb.Intersect(ourAabb));
                 var ratio = Math.Max(intersect / Box2.Area(otherAabb), intersect / Box2.Area(ourAabb));
                 if (ratio < comp.Ratio)
-                    continue;
-
-                var evTwo = new AttemptMobTargetCollideEvent();
-                RaiseLocalEvent(other, ref evTwo);
-
-                if (evTwo.Cancelled)
                     continue;
 
                 if (!_xeno.CanAbilityAttackTarget(uid, other))

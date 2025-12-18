@@ -45,9 +45,6 @@
   components:
   - type: Sprite
     color: "#9DCD4A"
-  - type: Area
-    zLevel: 0
-    retrieveItemObjective: true
 
 - type: entity
   parent: RMCAreaWarship
@@ -68,7 +65,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipHangerCrewLounge
-  name: Hangar Crew Lounge
+  name: Hanger Crew Lounge
   components:
   - type: Sprite
     color: "#003807"
@@ -92,7 +89,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipHangerConstruction
-  name: Hangar Construction
+  name: Hanger Construction
   components:
   - type: Sprite
     color: "#A4E8F4"
@@ -100,7 +97,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipHangerBriefing
-  name: Hangar Briefing
+  name: Hanger Briefing
   components:
   - type: Sprite
     color: "#EEA0F1"
@@ -108,7 +105,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipHangerHallwaySouth
-  name: Hangar Hallway South
+  name: Hanger Hallway South
   components:
   - type: Sprite
     color: "#BAA871"
@@ -116,7 +113,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipDropshipHanger
-  name: Dropship Hangar
+  name: Dropship Hanger
   components:
   - type: Sprite
     color: "#BC92F6"
@@ -136,10 +133,6 @@
   components:
   - type: Sprite
     color: "#A26C6E"
-  - type: Area
-    hijackEvacuationArea: true
-    hijackEvacuationWeight: 0.2
-    hijackEvacuationType: Add
 
 - type: entity
   parent: RMCAreaWarship
@@ -172,7 +165,6 @@
   components:
   - type: Sprite
     color: "#7E4E5A"
-  - type: IntelRecoverCorpsesArea
 
 - type: entity
   parent: RMCAreaWarship
@@ -237,8 +229,6 @@
   components:
   - type: Sprite
     color: "#F03997"
-  - type: Area
-    alwaysPowered: true
 
 - type: entity
   parent: RMCAreaWarship
@@ -266,28 +256,11 @@
 
 - type: entity
   parent: RMCAreaWarship
-  id: RMCAreaWarshipMedicalHallway
-  name: Medical Hallway
-  components:
-  - type: Sprite
-    color: "#B27C5F"
-
-- type: entity
-  parent: RMCAreaWarship
-  id: RMCAreaWarshipMedicalRecovery
-  name: Medical Recovery
-  components:
-  - type: Sprite
-    color: "#B27C50"
-
-- type: entity
-  parent: RMCAreaWarship
   id: RMCAreaWarshipResearchChemistry
   name: Research Chemistry
   components:
   - type: Sprite
     color: "#3FDE4F"
-  - type: IntelRecoverCorpsesArea
 
 - type: entity
   parent: RMCAreaWarship
@@ -296,7 +269,6 @@
   components:
   - type: Sprite
     color: "#6EBAEF"
-  - type: IntelRecoverCorpsesArea
 
 - type: entity
   parent: RMCAreaWarship
@@ -305,12 +277,6 @@
   components:
   - type: Sprite
     color: "#5293B8"
-  - type: IntelRecoverCorpsesArea
-  - type: Area
-    zLevel: 0
-    avoidBioscan: true
-    noTunnel: true
-    unweedable: false
 
 - type: entity
   parent: RMCAreaWarship
@@ -513,8 +479,6 @@
   components:
   - type: Sprite
     color: "#F03997"
-  - type: Area
-    alwaysPowered: true
 
 - type: entity
   parent: RMCAreaWarship
@@ -659,8 +623,6 @@
   components:
   - type: Sprite
     color: "#9B841F"
-  - type: Area
-    alwaysPowered: true
 
 - type: entity
   parent: RMCAreaWarship
@@ -713,7 +675,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperWestNorthCheckpoint
-  name: Upper Deck West North Checkpoint
+  name: Upper West North Checkpoint
   components:
   - type: Sprite
     color: "#593F6B"
@@ -721,7 +683,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperWestSouthCheckpoint
-  name: Upper Deck West South Checkpoint
+  name: Upper West South Checkpoint
   components:
   - type: Sprite
     color: "#D46A94"
@@ -729,54 +691,34 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperWestNorthPump
-  name: Upper Deck West North Pump
+  name: Upper West North Pump
   components:
   - type: Sprite
     color: "#58471A"
-  - type: Area
-    zLevel: 1
-    hijackEvacuationArea: true
-    hijackEvacuationWeight: 0.1
-    hijackEvacuationType: Add
 
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperWestSouthPump
-  name: Upper Deck West South Pump
+  name: Upper West South Pump
   components:
   - type: Sprite
     color: "#5E0D81"
-  - type: Area
-    zLevel: 1
-    hijackEvacuationArea: true
-    hijackEvacuationWeight: 0.1
-    hijackEvacuationType: Add
 
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperEastNorthPump
-  name: Upper Deck East North Pump
+  name: Upper East North Pump
   components:
   - type: Sprite
     color: "#7332CC"
-  - type: Area
-    zLevel: 1
-    hijackEvacuationArea: true
-    hijackEvacuationWeight: 0.1
-    hijackEvacuationType: Add
 
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperEastSouthPump
-  name: Upper Deck East South Pump
+  name: Upper East South Pump
   components:
   - type: Sprite
     color: "#9B3D71"
-  - type: Area
-    zLevel: 1
-    hijackEvacuationArea: true
-    hijackEvacuationWeight: 0.1
-    hijackEvacuationType: Add
 
 - type: entity
   parent: RMCAreaWarship
@@ -789,7 +731,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperNorthEngineeringMaintenance
-  name: Upper Deck North Engineering Maintenance
+  name: Upper North Engineering Maintenance
   components:
   - type: Sprite
     color: "#F917E0"
@@ -797,7 +739,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperNorthEngineeringHallway
-  name: Upper Deck North Engineering Hallway
+  name: Upper North Engineering Hallway
   components:
   - type: Sprite
     color: "#F917E0"
@@ -805,7 +747,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperSouthEngineeringHallway
-  name: Upper Deck South Engineering Hallway
+  name: Upper South Engineering Hallway
   components:
   - type: Sprite
     color: "#F917E0"
@@ -813,7 +755,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperSouthEngineeringMaintenance
-  name: Upper Deck South Engineering Maintenance
+  name: Upper South Engineering Maintenance
   components:
   - type: Sprite
     color: "#9DAE18"
@@ -845,7 +787,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperNorthMilitaryPoliceMaintenance
-  name: Upper Deck North Military Police Maintenance
+  name: Upper North Military Police Maintenance
   components:
   - type: Sprite
     color: "#36C40A"
@@ -853,7 +795,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperSouthMilitaryPoliceMaintenance
-  name: Upper Deck South Military Police Maintenance
+  name: Upper South Military Police Maintenance
   components:
   - type: Sprite
     color: "#423BF0"
@@ -1049,8 +991,6 @@
   components:
   - type: Sprite
     color: "#ED3793"
-  - type: Area
-    alwaysPowered: true
 
 - type: entity
   parent: RMCAreaWarship
@@ -1087,7 +1027,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperNorthBrigHallway
-  name: Upper Deck North Brig Hallway
+  name: Upper North Brig Hallway
   components:
   - type: Sprite
     color: "#B41A75"
@@ -1095,7 +1035,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperSouthBrigHallway
-  name: Upper Deck South Brig Hallway
+  name: Upper South Brig Hallway
   components:
   - type: Sprite
     color: "#FA3D1A"
@@ -1103,7 +1043,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperNorthCentralHallway
-  name: Upper Deck North Central Hallway
+  name: Upper North Central Hallway
   components:
   - type: Sprite
     color: "#B5B0CB"
@@ -1111,7 +1051,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperCentralHallway
-  name: Upper Deck Central Hallway
+  name: Upper Central Hallway
   components:
   - type: Sprite
     color: "#CBDB24"
@@ -1119,7 +1059,7 @@
 - type: entity
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperSouthCentralHallway
-  name: Upper Deck South Central Hallway
+  name: Upper South Central Hallway
   components:
   - type: Sprite
     color: "#FCB8E8"
@@ -1413,8 +1353,6 @@
   components:
   - type: Sprite
     color: "#6A4C3E"
-  - type: Area
-    alwaysPowered: true
 
 - type: entity
   parent: RMCAreaWarship
@@ -1423,8 +1361,6 @@
   components:
   - type: Sprite
     color: "#5E9C0F"
-  - type: Area
-    alwaysPowered: true
 
 - type: entity
   parent: RMCAreaWarship
@@ -1465,11 +1401,6 @@
   components:
   - type: Sprite
     color: "#C5F07A"
-  - type: Area
-    zLevel: 2
-    hijackEvacuationArea: true
-    hijackEvacuationWeight: 1.1
-    hijackEvacuationType: Multiply
 
 - type: entity
   parent: RMCAreaWarship
@@ -1508,24 +1439,6 @@
 
 - type: entity
   parent: RMCAreaWarship
-  id: RMCAreaWarshipUpperDeckNorthCentralHallway
-  name: Upper Deck North Central Hallway
-  components:
-  - type: Sprite
-    color: "#EE679E"
-
-- type: entity
-  parent: RMCAreaWarship
-  id: RMCAreaWarshipUpperDeckSouthCentralHallway
-  name: Upper Deck South Central Hallway
-  components:
-  - type: Sprite
-    color: "#EE679E"
-
-# Docking Port
-
-- type: entity
-  parent: RMCAreaWarship
   id: RMCAreaWarshipDockingPort
   name: Docking Port
   components:
@@ -1561,7 +1474,7 @@
 - type: entity
   parent: RMCAreaWarshipDockingPort
   id: RMCAreaWarshipDockingPortUNW
-  name: Upper Deck North West Docking Port
+  name: Upper North West Docking Port
   components:
   - type: Sprite
     color: "#EE679E"
@@ -1569,12 +1482,10 @@
 - type: entity
   parent: RMCAreaWarshipDockingPort
   id: RMCAreaWarshipDockingPortUSE
-  name: Upper Deck South East Docking Port
+  name: Upper South East Docking Port
   components:
   - type: Sprite
     color: "#EE679E"
-
-# Stairwell
 
 - type: entity
   parent: RMCAreaWarship
@@ -1652,26 +1563,6 @@
   parent: RMCAreaWarship
   id: RMCAreaWarshipUpperDeckWardroomStairwell
   name: Upper Deck Wardroom Stairwell
-  components:
-  - type: Sprite
-    color: "#0CE70F"
-
-# maints
-
-- type: entity
-  parent: RMCAreaWarship
-  id: RMCAreaWarshipWardroomMaints
-  name: Upper Deck Wardroom Maintenance
-  components:
-  - type: Sprite
-    color: "#0CE70F"
-
-# Extra
-
-- type: entity
-  parent: RMCAreaWarship
-  id: RMCAreaWarshipLateWakeCryo
-  name: Late Wake Cryopods
   components:
   - type: Sprite
     color: "#0CE70F"

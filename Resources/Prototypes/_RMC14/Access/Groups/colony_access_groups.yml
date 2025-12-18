@@ -59,17 +59,6 @@
   - CMAccessColonyCommand
 
 - type: accessGroup
-  id: ColonistCMBSurvivor
-  tags:
-  - CMAccessColonyPublic
-  - CMAccessColonyResearch
-  - CMAccessColonyEngineering
-  - CMAccessColonyLogistics
-  - CMAccessColonyBrig
-  - CMAccessColonyMedbay
-  - CMAccessColonyCommand
-
-- type: accessGroup
   id: ColonistMedical
   tags:
   - CMAccessColonyPublic

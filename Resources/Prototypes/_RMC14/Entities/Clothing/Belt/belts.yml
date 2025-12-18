@@ -70,15 +70,7 @@
     sprite: _RMC14/Objects/Clothing/Belt/shotgun/jungle-classic.rsi
     layers:
     - state: icon
-    - state: sixth
-      visible: false
-    - state: third
-      visible: false
     - state: half
-      visible: false
-    - state: twothirds
-      visible: false
-    - state: fivesixths
       visible: false
     - state: full
       visible: false
@@ -110,32 +102,8 @@
       Classic: _RMC14/Objects/Clothing/Belt/shotgun/jungle-classic.rsi
   - type: ItemMapper
     mapLayers:
-      sixth:
-        minCount: 1
-        whitelist:
-          tags:
-          - RMCShellShotgun
-          - RMCCartridge458SOCOM
-      third:
-        minCount: 3
-        whitelist:
-          tags:
-          - RMCShellShotgun
-          - RMCCartridge458SOCOM
       half:
-        minCount: 6
-        whitelist:
-          tags:
-          - RMCShellShotgun
-          - RMCCartridge458SOCOM
-      twothirds:
-        minCount: 9
-        whitelist:
-          tags:
-          - RMCShellShotgun
-          - RMCCartridge458SOCOM
-      fivesixths:
-        minCount: 12
+        minCount: 1
         whitelist:
           tags:
           - RMCShellShotgun

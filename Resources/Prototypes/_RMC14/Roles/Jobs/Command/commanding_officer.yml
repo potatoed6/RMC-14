@@ -1,5 +1,4 @@
-﻿
-- type: job
+﻿- type: job
   parent: CMJobBase
   id: CMCommandingOfficer
   name: cm-job-name-commanding-officer
@@ -86,6 +85,8 @@
     ears: CMHeadsetSeniorCommand
     pocket1: RMCPouchCommand
     pocket2: RMCPouchGeneralLarge
+  inhand:
+    - RMCMatebaCustomizationCase
 
 - type: entity
   parent: CMSpawnPointJobBase
