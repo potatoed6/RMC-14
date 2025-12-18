@@ -17,6 +17,9 @@
   - tasks:
     - !type:HTNPrimitiveTask
       operator: !type:UtilityOperator
+        proto: SichNearbyBarricade
+    - !type:HTNPrimitiveTask
+      operator: !type:UtilityOperator
         proto: NearbyMeleeTargets
     - !type:HTNCompoundTask
       task: SichXenoBeforeMeleeAttackTargetCompound
@@ -47,10 +50,62 @@
         - !type:HTNCompoundTask
           task: EscapeCompound
 
-    # Melee combat (unarmed or otherwise)
+    # Attack barricades, then attack melee targets
+    - tasks:
+        - !type:HTNCompoundTask
+          task: SichXenoMeleeAttackTargetCompound
     - tasks:
         - !type:HTNCompoundTask
           task: MeleeAttackTargetCompound
+
+- type: htnCompound
+  id: SichXenoMeleeAttackTargetCompound
+  branches:
+    - preconditions:
+      - !type:KeyExistsPrecondition
+        key: Target
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            shutdownState: PlanFinished
+            pathfindInPlanning: true
+            removeKeyOnFinish: false
+            targetKey: TargetCoordinates
+            pathfindKey: TargetPathfind
+            rangeKey: MeleeRange
+        - !type:HTNPrimitiveTask
+          operator: !type:JukeOperator
+            jukeType: Away
+        - !type:HTNPrimitiveTask
+          operator: !type:MeleeOperator
+            targetKey: Target
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: MeleeRange
+          services:
+            - !type:UtilityService
+              id: SichBarricadeMeleeService
+              proto: SichNearbyBarricade
+              key: Target
+
+- type: utilityQuery
+  id: SichNearbyBarricade
+  query:
+    - !type:ComponentQuery
+      components:
+        - type: Barricade
+        - type: Entity
+  considerations:
+    - !type:TargetDistanceCon
+      curve: !type:PresetCurve
+        preset: TargetDistance
+    - !type:TargetAccessibleCon
+      curve: !type:BoolCurve
+    - !type:TargetInLOSOrCurrentCon
+      curve: !type:BoolCurve
 
 - type: entity
   id: CMSichXenoAIBase
