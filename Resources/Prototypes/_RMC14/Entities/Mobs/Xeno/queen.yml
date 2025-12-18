@@ -277,11 +277,11 @@
   - type: XenoRankNames #TODO change ranks based on total hugs done
     rankNames:
       0: sich-xeno-young-queen
-      1: sich-xeno-mature-queen
-      2: sich-xeno-elder-queen
-      3: sich-xeno-ancient-queen
-      4: sich-xeno-prime-queen
+      2: sich-xeno-mature-queen
+      3: sich-xeno-elder-queen
+      4: sich-xeno-ancient-queen
       5: sich-xeno-prime-queen
+      6: sich-xeno-prime-queen
 
 - type: entity
   parent: RMCXenoQueenBase
