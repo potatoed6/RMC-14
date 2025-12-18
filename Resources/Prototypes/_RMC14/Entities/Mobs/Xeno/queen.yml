@@ -301,7 +301,7 @@
 - type: entity
   parent: RMCXenoQueenBase
   id: RMCXenoQueenMaid
-  suffix: Королева-Кішкопокоївка
+  suffix: Cat Maid Queen
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Extras/Maid_queen/maid_queen.rsi
