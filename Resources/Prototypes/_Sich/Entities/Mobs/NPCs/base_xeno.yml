@@ -13,11 +13,18 @@
 - type: htnCompound
   id: CMSichXenoMeleeCombatCompound
   branches:
-  # Melee combat (unarmed or otherwise)
+
+  # PRIMARY: attack barricades
   - tasks:
     - !type:HTNPrimitiveTask
       operator: !type:UtilityOperator
         proto: SichNearbyBarricade
+    - !type:HTNCompoundTask
+      task: SichXenoBeforeMeleeAttackTargetCompound
+
+
+  # SECONDARY: attack mobs
+  - tasks:
     - !type:HTNPrimitiveTask
       operator: !type:UtilityOperator
         proto: NearbyMeleeTargets
@@ -54,9 +61,6 @@
     - tasks:
         - !type:HTNCompoundTask
           task: SichXenoMeleeAttackTargetCompound
-    - tasks:
-        - !type:HTNCompoundTask
-          task: MeleeAttackTargetCompound
 
 - type: htnCompound
   id: SichXenoMeleeAttackTargetCompound
@@ -85,11 +89,6 @@
             - !type:TargetInRangePrecondition
               targetKey: Target
               rangeKey: MeleeRange
-          services:
-            - !type:UtilityService
-              id: SichBarricadeMeleeService
-              proto: SichNearbyBarricade
-              key: Target
 
 - type: utilityQuery
   id: SichNearbyBarricade
