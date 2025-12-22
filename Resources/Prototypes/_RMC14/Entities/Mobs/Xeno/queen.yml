@@ -274,7 +274,7 @@
   - type: RMCTrackable
   - type: ExcludedFromKingVote
     canVote: true
-  - type: XenoRankNames #TODO change ranks based on total hugs done
+  - type: XenoRankNames
     rankNames:
       0: sich-xeno-young-queen
       2: sich-xeno-mature-queen
