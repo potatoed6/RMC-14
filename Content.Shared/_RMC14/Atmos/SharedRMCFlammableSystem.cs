@@ -34,7 +34,6 @@ using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
-using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Player;
@@ -400,10 +399,6 @@ public abstract class SharedRMCFlammableSystem : EntitySystem
     {
     }
 
-    public virtual void DoStopDropRollAnimation(EntityUid uid)
-    {
-    }
-
     private void SpawnFireChain(EntProtoId spawn, EntityUid chain, EntityCoordinates coordinates, int? intensity, int? duration)
     {
         var spawned = Spawn(spawn, coordinates);
@@ -719,7 +714,7 @@ public abstract class SharedRMCFlammableSystem : EntitySystem
     {
         using (args.PushGroup(nameof(RMCImmuneToIgnitionComponent)))
         {
-            args.PushMarkup(Loc.GetString("rmc-immune-to-ignition-examine", ("ent", ent), ("direct", ent.Comp.ImmuneToDirectHits)));
+            args.PushMarkup(Loc.GetString("rmc-immune-to-ignition-examine", ("ent", ent)));
         }
     }
 
@@ -988,14 +983,14 @@ public abstract class SharedRMCFlammableSystem : EntitySystem
             }
         }
 
-        var steppingQuery = EntityQueryEnumerator<SteppingOnFireComponent, PhysicsComponent>();
-        while (steppingQuery.MoveNext(out var uid, out var stepping, out var body))
+        var steppingQuery = EntityQueryEnumerator<SteppingOnFireComponent>();
+        while (steppingQuery.MoveNext(out var uid, out var stepping))
         {
             stepping.ArmorMultiplier = 1;
             Dirty(uid, stepping);
 
             var isStepping = false;
-            foreach (var contact in _physics.GetContactingEntities(uid, body, approximate: true))
+            foreach (var contact in _physics.GetContactingEntities(uid, approximate: true))
             {
                 if (!_igniteOnCollideQuery.TryComp(contact, out var ignite))
                     continue;

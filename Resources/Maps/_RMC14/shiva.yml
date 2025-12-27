@@ -116381,7 +116381,7 @@ entities:
   - uid: 14823
     components:
     - type: MetaData
-      name: Crisis Center
+      name: Colony Administration
     - type: Transform
       pos: 107.5,79.5
       parent: 1
@@ -116451,7 +116451,7 @@ entities:
   - uid: 14833
     components:
     - type: MetaData
-      name: Administration
+      name: Command Centre
     - type: Transform
       pos: 116.5,119.5
       parent: 1
