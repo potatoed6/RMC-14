@@ -18,16 +18,7 @@
   - tasks:
     - !type:HTNPrimitiveTask
       operator: !type:UtilityOperator
-        proto: SichNearbyBarricade
-    - !type:HTNCompoundTask
-      task: SichXenoBeforeMeleeAttackTargetCompound
-
-
-  # SECONDARY: attack mobs
-  - tasks:
-    - !type:HTNPrimitiveTask
-      operator: !type:UtilityOperator
-        proto: NearbyMeleeTargets
+        proto: SichNearbyBarricadeOrEnemy
     - !type:HTNCompoundTask
       task: SichXenoBeforeMeleeAttackTargetCompound
 
@@ -91,8 +82,9 @@
               rangeKey: MeleeRange
 
 - type: utilityQuery
-  id: SichNearbyBarricade
+  id: SichNearbyBarricadeOrEnemy
   query:
+    - !type:NearbyHostilesQuery
     - !type:ComponentQuery
       components:
         - type: Barricade
