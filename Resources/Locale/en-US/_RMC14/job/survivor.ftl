@@ -37,7 +37,7 @@ rmc-job-description-survivor-military = Ви пережили інфестаці
 
 # Playtime trackers
 rmc-playtime-tracker-job-name-survivor = Уцілілий Цивільний
-rmc-playtime-tracker-job-name-survivor-doctor = Уцілілий Доктор
+rmc-playtime-tracker-job-name-survivor-doctor = Уцілілий Лікар
 rmc-playtime-tracker-job-name-survivor-engineer = Уцілілий Інженер
 rmc-playtime-tracker-job-name-survivor-security = Уцілілий Охоронець
 rmc-playtime-tracker-job-name-survivor-corporate = Уцілілий Корпорат
@@ -273,8 +273,8 @@ CMSurvivorTrijentCorporate = Trijent Corporation Liaison
 cm-job-name-survivor-fiorina-corporate-liaison = Представник Корпорації на Фіоріні
 CMSurvivorFiorinaCorporateLiaison = Представник Корпорації на Фіоріні
 
-cm-job-name-survivor-fiorina-doctor = Доктор Фіоріни
-CMSurvivorFiorinaDoctor = Доктор Фіоріни
+cm-job-name-survivor-fiorina-doctor = Лікар Фіоріни
+CMSurvivorFiorinaDoctor = Лікар Фіоріни
 
 cm-job-name-survivor-fiorina-engineer = Інженер Фіоріни
 CMSurvivorFiorinaEngineer = Інженер Фіоріни
@@ -295,7 +295,7 @@ rmc-job-name-survivor-kutjevo-chaplain = Священик Кутєво
 
 rmc-job-name-survivor-kutjevo-corporate = Представник Корпорації на Кутєво
 
-rmc-job-name-survivor-kutjevo-doctor = Доктор Кутєво
+rmc-job-name-survivor-kutjevo-doctor = Лікар Кутєво
 
 rmc-job-name-survivor-kutjevo-engineer = Інженер Кутєво
 
@@ -311,7 +311,7 @@ rmc-job-name-survivor-solaris-chaplain = Священник Соляріс
 
 rmc-job-name-survivor-solaris-corporate-liaison = Представник Корпорації на Соляріс
 
-rmc-job-name-survivor-solaris-doctor = Доктор Соляріс
+rmc-job-name-survivor-solaris-doctor = Лікар Соляріс
 
 rmc-job-name-survivor-solaris-engineer = Інженер Соляріс
 
@@ -324,6 +324,6 @@ rmc-job-name-survivor-unmc-recruiter = Рекрутер КМПОН
 # Shivas survs
 
 rmc-job-name-survivor-shivas-liaison = Представник Корпорації на Шивас
-rmc-job-name-survivor-shivas-doctor = Доктор Шивас
+rmc-job-name-survivor-shivas-doctor = Лікар Шивас
 rmc-job-name-survivor-shivas-researcher = Дослідник Шивас
 rmc-job-name-survivor-shivas-engineer = Інженер Шивас
