@@ -110,11 +110,11 @@ rmc-job-greeting-forecon = Ви — морський піхотинець Роз
 
   Ви [bold][color=#51A16C][font size=16]НЕ ВОРОЖІ до КМПОН![/font][/color][/bold]
 
-rmc-job-name-forecon = Виживший ФОРКОН
+rmc-job-name-forecon = Виживший ФОРКОНа
 rmc-job-description-forecon = Ви — морський піхотинець КМПОН ФОРКОН, який застряг на планеті. Ваш корабель ОНК Хануют, зазнав аварії і ви опинилися на ній. Зробіть усе можливе, щоб вижити!
 
 rmc-job-name-forecon-sniper = Снайпер
-rmc-job-name-forecon-marksman = Марксман
+rmc-job-name-forecon-marksman = Марксмен
 rmc-job-name-forecon-support-tech = Технік Підтримки
 rmc-job-name-forecon-synth = Синтетик
 rmc-job-name-forecon-commander = Командувач
@@ -171,7 +171,7 @@ rmc-job-greeting-corporate-dome-goon-medic = Ви є Медиком Корпор
 
   Ви [bold][color=#51A16C][font size=16]НЕ ВОРОЖІ до КМПОН![/font][/color][/bold]
 
-rmc-job-greeting-corporate-dome-goon-engi = You are a Corporate Security Technician!
+rmc-job-greeting-corporate-dome-goon-engi = Ви є Техніком Корпоративної Охорони!
 
   Ви усвідомлюєте загрозу ксенонідів.
   
@@ -265,8 +265,8 @@ cm-job-name-survivor-trijent-engi-hydro = Інженер-Гідроелектр�
 
 cm-job-name-survivor-trijent-dam-tech = Технік з Обслуговування Дамби
 
-cm-job-name-survivor-trijent-corporate = Представник Корпорації Трідженту
-CMSurvivorTrijentCorporate = Trijent Corporation Liaison
+cm-job-name-survivor-trijent-corporate = Представник Корпорації на Трідженті
+CMSurvivorTrijentCorporate = Представник Корпорації на Трідженті
 
 # Fiorina Science Annex Survs
 
@@ -307,23 +307,23 @@ rmc-job-name-survivor-kutjevo-trucker = Водій Важкого Транспо
 
 # Solaris Ridge Survs
 
-rmc-job-name-survivor-solaris-chaplain = Священник Соляріс
+rmc-job-name-survivor-solaris-chaplain = Священник Солярісу
 
-rmc-job-name-survivor-solaris-corporate-liaison = Представник Корпорації на Соляріс
+rmc-job-name-survivor-solaris-corporate-liaison = Представник Корпорації на Солярісі
 
-rmc-job-name-survivor-solaris-doctor = Лікар Соляріс
+rmc-job-name-survivor-solaris-doctor = Лікар Солярісу
 
-rmc-job-name-survivor-solaris-engineer = Інженер Соляріс
+rmc-job-name-survivor-solaris-engineer = Інженер Солярісу
 
-rmc-job-name-survivor-solaris-scientist = Науковець Соляріс
+rmc-job-name-survivor-solaris-scientist = Науковець Солярісу
 
-rmc-job-name-survivor-solaris-trucker = Водій Важкого Транспорту Кутєво Соляріс
+rmc-job-name-survivor-solaris-trucker = Водій Важкого Транспорту Солярісу
 
 rmc-job-name-survivor-unmc-recruiter = Рекрутер КМПОН
 
 # Shivas survs
 
-rmc-job-name-survivor-shivas-liaison = Представник Корпорації на Шивас
-rmc-job-name-survivor-shivas-doctor = Лікар Шивас
-rmc-job-name-survivor-shivas-researcher = Дослідник Шивас
-rmc-job-name-survivor-shivas-engineer = Інженер Шивас
+rmc-job-name-survivor-shivas-liaison = Представник Корпорації на Шивасі
+rmc-job-name-survivor-shivas-doctor = Лікар Шивасу
+rmc-job-name-survivor-shivas-researcher = Дослідник Шивасу
+rmc-job-name-survivor-shivas-engineer = Інженер Шивасу
