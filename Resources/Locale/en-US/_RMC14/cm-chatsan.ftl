@@ -28,17 +28,17 @@ cm-chatsan-replacement-deltoid = delta
 cm-chatsan-word-deltoids = deltoids
 cm-chatsan-replacement-deltoids = delta
 
-cm-chatsan-word-admins-marine = admins
-cm-chatsan-replacement-admins-marine = high command
+cm-chatsan-word-admins-marine = адміни
+cm-chatsan-replacement-admins-marine = вище командування
 
-cm-chatsan-word-eorg-marine = eorg
-cm-chatsan-replacement-eorg-marine = warcrimes
+cm-chatsan-word-eorg-marine = еорг
+cm-chatsan-replacement-eorg-marine = військові злочини
 
-cm-chatsan-word-xenoid = xenoid
-cm-chatsan-replacement-xenoid = xenonid
+cm-chatsan-word-xenoid = ксенос
+cm-chatsan-replacement-xenoid = ксенонід
 
-cm-chatsan-word-xenoids = xenoids
-cm-chatsan-replacement-xenoids = xenonids
+cm-chatsan-word-xenoids = ксеноси
+cm-chatsan-replacement-xenoids = ксеноніди
 
 cm-chatsan-word-beno = beno
 cm-chatsan-replacement-beno = xeno
@@ -46,462 +46,465 @@ cm-chatsan-replacement-beno = xeno
 cm-chatsan-word-benos = benos
 cm-chatsan-replacement-benos = xenos
 
-cm-chatsan-word-eorg-xeno = eorg
-cm-chatsan-replacement-eorg-xeno = sister harm
+cm-chatsan-word-eorg-xeno = еорг
+cm-chatsan-replacement-eorg-xeno = шкода сестрам
 
-cm-chatsan-word-sniper = sniper
-cm-chatsan-replacement-sniper = long spitter
+cm-chatsan-word-sniper = снайпер
+cm-chatsan-replacement-sniper = довга палка
 
-cm-chatsan-word-flare = flare
-cm-chatsan-replacement-flare = glow stick
+cm-chatsan-word-flare = фаєр
+cm-chatsan-replacement-flare = світлопалка
 
-cm-chatsan-word-flares = flares
-cm-chatsan-replacement-flares = glow sticks
+cm-chatsan-word-flares = фаєри
+cm-chatsan-replacement-flares = світлопалки
 
-cm-chatsan-word-synth = synth
-cm-chatsan-replacement-synth = fake host
+cm-chatsan-word-synth = синт
+cm-chatsan-replacement-synth = штучний інкубатор
 
-cm-chatsan-word-synthetic = synthetic
-cm-chatsan-replacement-synthetic = fake host
+cm-chatsan-word-synthetic = синтетик
+cm-chatsan-replacement-synthetic = штучний інкубатор
 
-cm-chatsan-word-synths = synths
-cm-chatsan-replacement-synths = fake hosts
+cm-chatsan-word-synths = синти
+cm-chatsan-replacement-synths = штучні інкубатори
 
-cm-chatsan-word-synthetics = synthetics
-cm-chatsan-replacement-synthetics = fake hosts
+cm-chatsan-word-synthetics = синтетики
+cm-chatsan-replacement-synthetics = штучні інкубатори
 
-cm-chatsan-word-human = human
-cm-chatsan-replacement-human = tall host
+cm-chatsan-word-human = людина
+cm-chatsan-replacement-human = інкубатор
 
-cm-chatsan-word-humans = humans
-cm-chatsan-replacement-humans = tall hosts
+cm-chatsan-word-humans = люди
+cm-chatsan-replacement-humans = інкубатори
 
-cm-chatsan-word-marine = marine
-cm-chatsan-replacement-marine = tall host
+cm-chatsan-word-marine = морпіх
+cm-chatsan-replacement-marine = інкубатор
 
-cm-chatsan-word-marines = marines
-cm-chatsan-replacement-marines = tall hosts
+cm-chatsan-word-marines = морпіхи
+cm-chatsan-replacement-marines = інкубатори
 
-cm-chatsan-word-lizard = lizard
-cm-chatsan-replacement-lizard = scaled host
+cm-chatsan-word-lizard = унатх
+cm-chatsan-replacement-lizard = лускатий інкубатор
 
-cm-chatsan-word-lizards = lizards
-cm-chatsan-replacement-lizards = scaled hosts
+cm-chatsan-word-lizards = унатхи
+cm-chatsan-replacement-lizards = лускаті інкубатори
 
-cm-chatsan-word-reptilian = reptilian
-cm-chatsan-replacement-reptilian = scaled host
+cm-chatsan-word-reptilian = рептилоїд
+cm-chatsan-replacement-reptilian = лускатий інкубатор
 
-cm-chatsan-word-reptilians = reptilians
-cm-chatsan-replacement-reptilians = scaled hosts
+cm-chatsan-word-reptilians = рептилоїди
+cm-chatsan-replacement-reptilians = лускаті інкубатори
 
-cm-chatsan-word-dwarf = dwarf
-cm-chatsan-replacement-dwarf = short host
+cm-chatsan-word-dwarf = дворф
+cm-chatsan-replacement-dwarf = низький інкубатор
 
-cm-chatsan-word-dwarves = dwarves
-cm-chatsan-replacement-dwarves = short hosts
+cm-chatsan-word-dwarves = дворфи
+cm-chatsan-replacement-dwarves = низкі інкубатори
 
-cm-chatsan-word-slime = slime
-cm-chatsan-replacement-slime = slime host
+cm-chatsan-word-slime = слайм
+cm-chatsan-replacement-slime = слаймовий інкубатор
 
-cm-chatsan-word-slimes = slimes
-cm-chatsan-replacement-slimes = slime hosts
+cm-chatsan-word-slimes = слайми
+cm-chatsan-replacement-slimes = слаймові інкубатори
 
-cm-chatsan-word-diona = diona
-cm-chatsan-replacement-diona = plant host
+cm-chatsan-word-diona = діона
+cm-chatsan-replacement-diona = дерев'яний інкубатор
 
-cm-chatsan-word-dionas = dionas
-cm-chatsan-replacement-dionas = plant hosts
+cm-chatsan-word-dionas = діони
+cm-chatsan-replacement-dionas = дерев'яні інкубатори
 
-cm-chatsan-word-moth = moth
-cm-chatsan-replacement-moth = winged host
+cm-chatsan-word-moth = ніана
+cm-chatsan-replacement-moth = крилатий інкубатор
 
-cm-chatsan-word-moths = moths
-cm-chatsan-replacement-moths = winged hosts
+cm-chatsan-word-moths = ніани
+cm-chatsan-replacement-moths = крилаті інкубатори
 
 cm-chatsan-word-mothes = mothes
 cm-chatsan-replacement-mothes = winged hosts
 
-cm-chatsan-word-spider = spider
-cm-chatsan-replacement-spider = webspitter
+cm-chatsan-word-spider = павук
+cm-chatsan-replacement-spider = плювака павутинням
 
-cm-chatsan-word-spiders = spiders
-cm-chatsan-replacement-spiders = webspitters
+cm-chatsan-word-spiders = павуки
+cm-chatsan-replacement-spiders = плюваки павутинням
 
-cm-chatsan-word-arachnid = arachnid
-cm-chatsan-replacement-arachnid = webspitting host
+cm-chatsan-word-arachnid = арахнід
+cm-chatsan-replacement-arachnid = павутинний інкубатор
 
-cm-chatsan-word-arachnids = arachnids
-cm-chatsan-replacement-arachnids = webspitting hosts
+cm-chatsan-word-arachnids = арахніди
+cm-chatsan-replacement-arachnids = павутинні інкубатори
 
-cm-chatsan-word-skrell = skrell
-cm-chatsan-replacement-skrell = frog host
+cm-chatsan-word-skrell = скрелл
+cm-chatsan-replacement-skrell = лягушачій інкубатор
 
-cm-chatsan-word-skrells = skrells
-cm-chatsan-replacement-skrells = frog hosts
+cm-chatsan-word-skrells = скрелли
+cm-chatsan-replacement-skrells = лягушачі інкубатори
 
-cm-chatsan-word-dropship = dropship
-cm-chatsan-replacement-dropship = metal bird
+cm-chatsan-word-dropship = шатл
+cm-chatsan-replacement-dropship = металева птаха
 
-cm-chatsan-word-dropships = dropships
-cm-chatsan-replacement-dropships = metal birds
+cm-chatsan-word-dropships = шатли
+cm-chatsan-replacement-dropships = металеві птахи
 
-cm-chatsan-word-ship = ship
-cm-chatsan-replacement-ship = metal bird
+cm-chatsan-word-ship = корабель
+cm-chatsan-replacement-ship = металева птаха
 
-cm-chatsan-word-ships = ships
-cm-chatsan-replacement-ships = metal birds
+cm-chatsan-word-ships = кораблі
+cm-chatsan-replacement-ships = металеві птахи
 
-cm-chatsan-word-alamo = alamo
-cm-chatsan-replacement-alamo = metal bird
+cm-chatsan-word-alamo = аламо
+cm-chatsan-replacement-alamo = металева птаха
 
-cm-chatsan-word-normandy = normandy
-cm-chatsan-replacement-normandy = metal bird
+cm-chatsan-word-normandy = нормандія
+cm-chatsan-replacement-normandy = металева птаха
 
-cm-chatsan-word-almayer = almayer
-cm-chatsan-replacement-almayer = metal hive
+cm-chatsan-word-almayer = саванна
+cm-chatsan-replacement-almayer = металеве гніздо
 
-cm-chatsan-word-admins-xeno = admins
-cm-chatsan-replacement-admins-xeno = grandmothers
+cm-chatsan-word-admins-xeno = адміни
+cm-chatsan-replacement-admins-xeno = бабусі
 
-cm-chatsan-word-ob = ob
-cm-chatsan-replacement-ob = skyfire
+cm-chatsan-word-ob = об
+cm-chatsan-replacement-ob = падаюче небо
 
-cm-chatsan-word-orbital = orbital
-cm-chatsan-replacement-orbital = skyfire
+cm-chatsan-word-orbital = орбіталка
+cm-chatsan-replacement-orbital = падаюче небо
 
-cm-chatsan-word-orbital-bomb = orbital bomb
-cm-chatsan-replacement-orbital-bomb = skyfire
+cm-chatsan-word-orbital-bomb = орбітальне бомб
+cm-chatsan-replacement-orbital-bomb = падаюче небо
 
-cm-chatsan-word-orbital-bombardment = orbital bombardment
-cm-chatsan-replacement-orbital-bombardment = skyfire
+cm-chatsan-word-orbital-bombardment = орбітальне бомбардування
+cm-chatsan-replacement-orbital-bombardment = падаюче небо
 
-cm-chatsan-word-engie = engie
-cm-chatsan-replacement-engie = tall builder
+cm-chatsan-word-engie = інж
+cm-chatsan-replacement-engie = будівничий інкубатор
 
-cm-chatsan-word-engineer = engineer
-cm-chatsan-replacement-engineer = tall builder
+cm-chatsan-word-engineer = інженер
+cm-chatsan-replacement-engineer = будівничий інкубатор
 
-cm-chatsan-word-comtech = comtech
-cm-chatsan-replacement-comtech = tall builder
+cm-chatsan-word-comtech = бт
+cm-chatsan-replacement-comtech = будівничий інкубатор
 
-cm-chatsan-word-combat-technician = combat technician
-cm-chatsan-replacement-combat-technician = tall builder
+cm-chatsan-word-combat-technician = бойовий технік
+cm-chatsan-replacement-combat-technician = будівничий інкубатор
 
-cm-chatsan-word-corpsman = corpsman
-cm-chatsan-replacement-corpsman = tall healer
+cm-chatsan-word-corpsman = медик
+cm-chatsan-replacement-corpsman = лікувальниця інкубаторів
 
-cm-chatsan-word-medic = medic
-cm-chatsan-replacement-medic = tall healer
+cm-chatsan-word-medic = бм
+cm-chatsan-replacement-medic = лікувальниця інкубаторів
 
-cm-chatsan-word-doc = doc
-cm-chatsan-replacement-doc = tall healer
+cm-chatsan-word-doc = лікар
+cm-chatsan-replacement-doc = лікувальниця інкубаторів
 
-cm-chatsan-word-doctor = doctor
-cm-chatsan-replacement-doctor = tall healer
+cm-chatsan-word-doctor = доктор
+cm-chatsan-replacement-doctor = лікувальниця інкубаторів
 
-cm-chatsan-word-squad-leader = squad leader
-cm-chatsan-replacement-squad-leader = tall leader
+cm-chatsan-word-squad-leader = лідер загону
+cm-chatsan-replacement-squad-leader = лідер інкубаторів
 
-cm-chatsan-word-sl = sl
-cm-chatsan-replacement-sl = tall leader
+cm-chatsan-word-sl = лз
+cm-chatsan-replacement-sl = лідер інкубаторів
 
-cm-chatsan-word-commanding-officer = commanding officer
-cm-chatsan-replacement-commanding-officer = tall empress
+cm-chatsan-word-commanding-officer = командуючий офіцер
+cm-chatsan-replacement-commanding-officer = імператриця інкубаторів
 
-cm-chatsan-word-comm-officer = comm officer
-cm-chatsan-replacement-comm-officer = tall empress
+cm-chatsan-word-comm-officer = ком офіцер
+cm-chatsan-replacement-comm-officer = імператриця інкубаторів
 
-cm-chatsan-word-co = co
-cm-chatsan-replacement-co = tall empress
+cm-chatsan-word-co = ко
+cm-chatsan-replacement-co = імператриця інкубаторів
 
-cm-chatsan-word-staff-officer = staff officer
-cm-chatsan-replacement-staff-officer = tall watcher
+cm-chatsan-word-staff-officer = штабний офіцер
+cm-chatsan-replacement-staff-officer = наглядач інкубаторів
 
-cm-chatsan-word-staff-officers = staff officers
-cm-chatsan-replacement-staff-officers = tall watchers
+cm-chatsan-word-staff-officers = штабні офіцери
+cm-chatsan-replacement-staff-officers = наглядачі інкубаторів
 
-cm-chatsan-word-xo = xo
-cm-chatsan-replacement-xo = tall queen
+cm-chatsan-word-xo = во
+cm-chatsan-replacement-xo = королева інкубаторів
 
-cm-chatsan-word-executive-officer = executive officer
-cm-chatsan-replacement-executive-officer = tall queen
+cm-chatsan-word-executive-officer = виконавчий офіцер
+cm-chatsan-replacement-executive-officer = королева інкубаторів
 
-cm-chatsan-word-exec-officer = exec officer
-cm-chatsan-replacement-exec-officer = tall queen
+cm-chatsan-word-exec-officer = вик офіцер
+cm-chatsan-replacement-exec-officer = королева інкубаторів
 
-cm-chatsan-word-senior-enlisted = senior enlisted
-cm-chatsan-replacement-senior-enlisted = young tall queen
+cm-chatsan-word-senior-enlisted = інструктор
+cm-chatsan-replacement-senior-enlisted = молода королева інкубаторів
 
-cm-chatsan-word-senior-enlisted-advisor = senior enlisted advisor
-cm-chatsan-replacement-senior-enlisted-advisor = young tall queen
+cm-chatsan-word-senior-enlisted-advisor = інструктор
+cm-chatsan-replacement-senior-enlisted-advisor = молода королева інкубаторів
 
-cm-chatsan-word-senior-enlisted-advisors = senior enlisted advisors
-cm-chatsan-replacement-senior-enlisted-advisors = young tall queens
+cm-chatsan-word-senior-enlisted-advisors = інструктори
+cm-chatsan-replacement-senior-enlisted-advisors = молоді королеви інкубаторів
 
-rmc-chatsan-word-auxiliary-support-officer = auxiliary support officer
-rmc-chatsan-replacement-auxiliary-support-officer = young tall queen
+rmc-chatsan-word-auxiliary-support-officer = офіцер підтримки
+rmc-chatsan-replacement-auxiliary-support-officer = молода королева інкубаторів
 
-rmc-chatsan-word-aux-support-officer = aux support officer
-rmc-chatsan-replacement-aux-support-officer = young tall queen
+rmc-chatsan-word-aux-support-officer = оф підтримки
+rmc-chatsan-replacement-aux-support-officer = молода королева інкубаторів
 
-rmc-chatsan-word-aso = aso
-rmc-chatsan-replacement-aso = young tall queen
+rmc-chatsan-word-aso = оп
+rmc-chatsan-replacement-aso = молода королева інкубаторів
 
-rmc-chatsan-word-honor-guard = honor guard
-rmc-chatsan-replacement-honor-guard = tall praetorian
+rmc-chatsan-word-honor-guard = почесний вартовий
+rmc-chatsan-replacement-honor-guard = преторіанець інкубаторів
 
-rmc-chatsan-word-honor-guards = honor guards
-rmc-chatsan-replacement-honor-guards = tall praetorians
+rmc-chatsan-word-honor-guards = почесна варта
+rmc-chatsan-replacement-honor-guards = преторіанці інкубаторів
 
-rmc-chatsan-word-brigadier = brigadier
-rmc-chatsan-replacement-brigadier = tall queen mother
+rmc-chatsan-word-brigadier = бригадний
+rmc-chatsan-replacement-brigadier = королева-мати інкубаторів
 
-rmc-chatsan-word-major-general = major general
-rmc-chatsan-replacement-major-general = tall queen mother
+rmc-chatsan-word-major-general = генерал-майор
+rmc-chatsan-replacement-major-general = королева-мати інкубаторів
 
-rmc-chatsan-word-lieutenant-general = lieutenant general
-rmc-chatsan-replacement-lieutenant-general = tall queen mother
+rmc-chatsan-word-lieutenant-general = генерал-лейтенант
+rmc-chatsan-replacement-lieutenant-general = королева-мати інкубаторів
 
-rmc-chatsan-word-lt-general = lt general
-rmc-chatsan-replacement-lt-general = tall queen mother
+rmc-chatsan-word-lt-general = ген-лт
+rmc-chatsan-replacement-lt-general = королева-мати інкубаторів
 
-rmc-chatsan-word-commandant = commandant
-rmc-chatsan-replacement-commandant = tall queen mother
+rmc-chatsan-word-commandant = комендант
+rmc-chatsan-replacement-commandant = королева-мати інкубаторів
 
-rmc-chatsan-word-high-command = high command
-rmc-chatsan-replacement-high-command = tall queen mother
+rmc-chatsan-word-high-command = вище командування
+rmc-chatsan-replacement-high-command = королева-мати інкубаторів
 
-cm-chatsan-word-lz = lz
-cm-chatsan-replacement-lz = metal bird perch
+cm-chatsan-word-lz = пз
+cm-chatsan-replacement-lz = гніздо птахи
 
-cm-chatsan-word-shoot = shoot
-cm-chatsan-replacement-shoot = spit
+cm-chatsan-word-shoot = стріляти
+cm-chatsan-replacement-shoot = плювати
 
-cm-chatsan-word-felinid = felinid
-cm-chatsan-replacement-felinid = feline host
+cm-chatsan-word-felinid = фелінід
+cm-chatsan-replacement-felinid = кошачій інкубатор
 
-cm-chatsan-word-felinids = felinids
-cm-chatsan-replacement-felinids = feline hosts
+cm-chatsan-word-felinids = фелінід
+cm-chatsan-replacement-felinids = кошачі інкубатори
 
-cm-chatsan-word-cat = cat
-cm-chatsan-replacement-cat = feline host
+cm-chatsan-word-cat = кіт
+cm-chatsan-replacement-cat = кошачий інкубатор
 
-cm-chatsan-word-cats = cats
-cm-chatsan-replacement-cats = feline hosts
+cm-chatsan-word-cats = коти
+cm-chatsan-replacement-cats = кошачі інкубатори
 
-cm-chatsan-word-vulpkanin = vulpkanin
-cm-chatsan-replacement-vulpkanin = canine host
+cm-chatsan-word-vulpkanin = вульпканін
+cm-chatsan-replacement-vulpkanin = собачий інкубатор
 
-cm-chatsan-word-vulpkanins = vulpkanins
-cm-chatsan-replacement-vulpkanins = canine hosts
+cm-chatsan-word-vulpkanins = вульканіни
+cm-chatsan-replacement-vulpkanins = собачі інкубатори
 
-cm-chatsan-word-vulp = vulp
-cm-chatsan-replacement-vulp = canine host
+cm-chatsan-word-vulp = вульпа
+cm-chatsan-replacement-vulp = собачий інкубатор
 
-cm-chatsan-word-vulps = vulps
-cm-chatsan-replacement-vulps = canine hosts
+cm-chatsan-word-vulps = вульпи
+cm-chatsan-replacement-vulps = собачі інкубатори
 
-cm-chatsan-word-dog = dog
-cm-chatsan-replacement-dog = canine host
+cm-chatsan-word-dog = пес
+cm-chatsan-replacement-dog = собачий інкубатор
 
-cm-chatsan-word-dogs = dogs
-cm-chatsan-replacement-dogs = canine hosts
+cm-chatsan-word-dogs = пси
+cm-chatsan-replacement-dogs = собачі інкубатори
 
-cm-chatsan-word-avali = avali
-cm-chatsan-replacement-avali = four-eared host
+cm-chatsan-word-avali = авалі
+cm-chatsan-replacement-avali = чворовухий інкубатор
 
-cm-chatsan-word-avalis = avalis
-cm-chatsan-replacement-avalis = four-eared hosts
+# вибачте, у нас авалі у одній формі...
+cm-chatsan-word-avalis = аваліс
+cm-chatsan-replacement-avalis = чворовухі інкубатори
 
-cm-chatsan-word-rodentia = rodentia
-cm-chatsan-replacement-rodentia = squeaking host
+cm-chatsan-word-rodentia = родент
+cm-chatsan-replacement-rodentia = пищащий інкубатор
 
-cm-chatsan-word-rodentias = rodentias
-cm-chatsan-replacement-rodentias = squeaking hosts
+cm-chatsan-word-rodentias = роденти
+cm-chatsan-replacement-rodentias = пищащі інкубатори
 
 cm-chatsan-word-rodentiae = rodentiae
 cm-chatsan-replacement-rodentiae = squeaking hosts
 
-cm-chatsan-word-rat = rat
-cm-chatsan-replacement-rat = squeaking host
+cm-chatsan-word-rat = щур
+cm-chatsan-replacement-rat = пищащий інкубатор
 
-cm-chatsan-word-rats = rats
-cm-chatsan-replacement-rats = squeaking hosts
+cm-chatsan-word-rats = щури
+cm-chatsan-replacement-rats = пищащі інкубатори
 
-cm-chatsan-word-mouse = mouse
-cm-chatsan-replacement-mouse = squeaking host
+cm-chatsan-word-mouse = миша
+cm-chatsan-replacement-mouse = пищащий інкубатор
 
-cm-chatsan-word-mice = mice
-cm-chatsan-replacement-mice = squeaking hosts
+cm-chatsan-word-mice = миші
+cm-chatsan-replacement-mice = пищащі інкубатори
 
-cm-chatsan-word-feroxi = feroxi
-cm-chatsan-replacement-feroxi = aquatic host
+cm-chatsan-word-feroxi = фероксі
+cm-chatsan-replacement-feroxi = водний інкубатор
 
-cm-chatsan-word-feroxis = feroxis
-cm-chatsan-replacement-feroxis = aquatic hosts
+# аааа те саме що з авалі
+cm-chatsan-word-feroxis = фероксіс
+cm-chatsan-replacement-feroxis = водні інкубатори
 
-cm-chatsan-word-shark = shark
-cm-chatsan-replacement-shark = aquatic host
+cm-chatsan-word-shark = акула
+cm-chatsan-replacement-shark = водний інкубатор
 
-cm-chatsan-word-sharks = sharks
-cm-chatsan-replacement-sharks = aquatic hosts
+cm-chatsan-word-sharks = акули
+cm-chatsan-replacement-sharks = водні інкубатори
 
-cm-chatsan-word-fish = fish
-cm-chatsan-replacement-fish = aquatic host
+cm-chatsan-word-fish = риба
+cm-chatsan-replacement-fish = водний інкубатор
 
-cm-chatsan-word-grenade = grenade
-cm-chatsan-replacement-grenade = boomstick
+cm-chatsan-word-grenade = гранат
+cm-chatsan-replacement-grenade = бумпалка
 
-cm-chatsan-word-grenades = grenades
-cm-chatsan-replacement-grenades = boomsticks
+cm-chatsan-word-grenades = гранати
+cm-chatsan-replacement-grenades = бумпалки
 
-cm-chatsan-word-gl = gl
-cm-chatsan-replacement-gl = boomstick launcher
+cm-chatsan-word-gl = гранік
+cm-chatsan-replacement-gl = пулялка бумпалок
 
-cm-chatsan-word-gls = gls
-cm-chatsan-replacement-gls = boomstick launchers
+cm-chatsan-word-gls = граніки
+cm-chatsan-replacement-gls = пулялки бумпалок
 
-cm-chatsan-word-bullet = bullet
-cm-chatsan-replacement-bullet = spit
+cm-chatsan-word-bullet = куля
+cm-chatsan-replacement-bullet = плювок
 
-cm-chatsan-word-bullets = bullets
-cm-chatsan-replacement-bullets = spits
+cm-chatsan-word-bullets = кулі
+cm-chatsan-replacement-bullets = плювки
 
-cm-chatsan-word-ammo = ammo
-cm-chatsan-replacement-ammo = spits
+cm-chatsan-word-ammo = бк
+cm-chatsan-replacement-ammo = плювки
 
 # TODO RMC14 rouny > runner but only if no rouny was spawned in the round
 
 # cm-chatsan-word-#tank = #tank
 # cm-chatsan-replacement-#tank = turtle
 
-cm-chatsan-word-laser = laser
-cm-chatsan-replacement-laser = dot
+cm-chatsan-word-laser = лазер
+cm-chatsan-replacement-laser = точка
 
 cm-chatsan-word-lazer = lazer
 cm-chatsan-replacement-lazer = dot
 
-cm-chatsan-word-flamer = flamer
-cm-chatsan-replacement-flamer = fire spitter
+cm-chatsan-word-flamer = вогнемет
+cm-chatsan-replacement-flamer = плювака вогню
 
-cm-chatsan-word-flamethrower = flamethrower
-cm-chatsan-replacement-flamethrower = fire spitter
+cm-chatsan-word-flamethrower = вогнеметник
+cm-chatsan-replacement-flamethrower = плювака вогню
 
-cm-chatsan-word-sadar = sadar
-cm-chatsan-replacement-sadar = tuber
+cm-chatsan-word-sadar = садар
+cm-chatsan-replacement-sadar = труба
 
-cm-chatsan-word-rocket = rocket
-cm-chatsan-replacement-rocket = boom spit
+cm-chatsan-word-rocket = ракета
+cm-chatsan-replacement-rocket = бум плювок
 
-cm-chatsan-word-grenadier = grenadier
-cm-chatsan-replacement-grenadier = boomstick spitter
+cm-chatsan-word-grenadier = гренадір
+cm-chatsan-replacement-grenadier = плювака бумпалок
 
-cm-chatsan-word-scout = scout spec
-cm-chatsan-replacement-scout = tall lurker
+cm-chatsan-word-scout = скаут
+cm-chatsan-replacement-scout = люркер інкубаторів
 
-cm-chatsan-word-scout-specialist = scout specialist
-cm-chatsan-replacement-scout-specialist = tall lurker
+cm-chatsan-word-scout-specialist = скутер
+cm-chatsan-replacement-scout-specialist = люркер інкубаторів
 
-cm-chatsan-word-mortar = mortar
-cm-chatsan-replacement-mortar = skyboom
+cm-chatsan-word-mortar = міномет
+cm-chatsan-replacement-mortar = грозове небо
 
-cm-chatsan-word-demo = demo
-cm-chatsan-replacement-demo = boom tuber
+cm-chatsan-word-demo = демо
+cm-chatsan-replacement-demo = труба
 
-cm-chatsan-word-demolitionist = demolitionist
-cm-chatsan-replacement-demolitionist = boom tuber
+cm-chatsan-word-demolitionist = ракетник
+cm-chatsan-replacement-demolitionist = труба
 
-cm-chatsan-word-ws = ws
-cm-chatsan-replacement-ws = special tall
+cm-chatsan-word-ws = зс
+cm-chatsan-replacement-ws = спеціяльний інкубатор
 
-cm-chatsan-word-spec = spec
-cm-chatsan-replacement-spec = special tall
+cm-chatsan-word-spec = спец
+cm-chatsan-replacement-spec = спеціяльний інкубатор
 
-cm-chatsan-word-cas = cas
-cm-chatsan-replacement-cas = skyspit
+cm-chatsan-word-cas = кас
+cm-chatsan-replacement-cas = плювки з неба
 
-cm-chatsan-word-sensors = sensors
-cm-chatsan-replacement-sensors = evil eye tower
+cm-chatsan-word-sensors = сенсор
+cm-chatsan-replacement-sensors = зла вежа ока
 
-cm-chatsan-word-sensor-tower = sensor tower
-cm-chatsan-replacement-sensor-tower = evil eye tower
+cm-chatsan-word-sensor-tower = сенсорна вежа
+cm-chatsan-replacement-sensor-tower = зла вежа ока
 
-cm-chatsan-word-comms = comms
-cm-chatsan-replacement-comms = tall hivemind tower
+cm-chatsan-word-comms = зв'язок
+cm-chatsan-replacement-comms = вуха інкубаторів
 
-cm-chatsan-word-tcomms = tcomms
-cm-chatsan-replacement-tcomms = tall hivemind tower
+cm-chatsan-word-tcomms = коммси
+cm-chatsan-replacement-tcomms = вуха інкубаторів
 
-cm-chatsan-word-communications-tower = communications tower
-cm-chatsan-replacement-communications-tower = tall hivemind tower
+cm-chatsan-word-communications-tower = вежа зв'язку
+cm-chatsan-replacement-communications-tower = вуха інкубаторів
 
-cm-chatsan-word-smart-gun = smart gun
-cm-chatsan-replacement-smartgun = smart spitter
+cm-chatsan-word-smart-gun = смарт ган
+cm-chatsan-replacement-smartgun = розумний плювака
 
-cm-chatsan-word-sg = sg
-cm-chatsan-replacement-sg = smart spitter
+cm-chatsan-word-sg = осг
+cm-chatsan-replacement-sg = розумний плювака
 
+# ну тут ніяк взагалі :v
 cm-chatsan-word-sgs = sgs
 cm-chatsan-replacement-sgs = smart spitters
 
-cm-chatsan-word-smartgun = smartgun
-cm-chatsan-replacement-smart-gun = smart spitter
+cm-chatsan-word-smartgun = смартган
+cm-chatsan-replacement-smart-gun = розумний плювака
 
-cm-chatsan-word-smartgunner = smartgunner
-cm-chatsan-replacement-smartgunner = smart spitter
+cm-chatsan-word-smartgunner = смартганер
+cm-chatsan-replacement-smartgunner = розумний плювака
 
-cm-chatsan-word-smart-gunner = smart gunner
-cm-chatsan-replacement-smart-gunner = smart spitter
+cm-chatsan-word-smart-gunner = смарт ганнер
+cm-chatsan-replacement-smart-gunner = розумний плювака
 
-cm-chatsan-word-sentry = sentry
-cm-chatsan-word-turret = turret
-cm-chatsan-replacement-sentry = auto spitter
+cm-chatsan-word-sentry = сентрі
+cm-chatsan-word-turret = турель
+cm-chatsan-replacement-sentry = автоплювака
 
 cm-chatsan-word-sentries = sentries
-cm-chatsan-word-turrets = turrets
-cm-chatsan-replacement-sentries = auto spitters
+cm-chatsan-word-turrets = турелі
+cm-chatsan-replacement-sentries = авто плюваки
 
-cm-chatsan-word-squad = squad
-cm-chatsan-replacement-squad = caste
+cm-chatsan-word-squad = загон
+cm-chatsan-replacement-squad = каста
 
-cm-chatsan-word-squads = squads
-cm-chatsan-replacement-squads = castes
+cm-chatsan-word-squads = загони
+cm-chatsan-replacement-squads = касти
 
-cm-chatsan-word-shotgun = shotgun
-cm-chatsan-replacement-shotgun = scatter spitter
+cm-chatsan-word-shotgun = дробовик
+cm-chatsan-replacement-shotgun = розкидний плювака
 
-cm-chatsan-word-nade = nade
-cm-chatsan-replacement-nade = boomstick
+cm-chatsan-word-nade = грена
+cm-chatsan-replacement-nade = бумпалка
 
-cm-chatsan-word-nades = nades
-cm-chatsan-replacement-nades = boomsticks
+cm-chatsan-word-nades = грени
+cm-chatsan-replacement-nades = бумпалки
 
-cm-chatsan-word-nuke = nuke
-cm-chatsan-replacement-nuke = hive killer
+cm-chatsan-word-nuke = ядерка
+cm-chatsan-replacement-nuke = вбивця вуликів
 
-cm-chatsan-word-intel = intel
-cm-chatsan-replacement-intel = scavenger hosts
+cm-chatsan-word-intel = інтел
+cm-chatsan-replacement-intel = збирач інкубаторів
 
-cm-chatsan-word-survivor = survivor
-cm-chatsan-replacement-survivor = planet tall
+cm-chatsan-word-survivor = виживший
+cm-chatsan-replacement-survivor = планетний інкубатор
 
-cm-chatsan-word-survivors = survivors
-cm-chatsan-replacement-survivors = planet hosts
+cm-chatsan-word-survivors = виживші
+cm-chatsan-replacement-survivors = планетні інкубатори
 
-cm-chatsan-word-surv = surv
-cm-chatsan-replacement-surv = planet tall
+cm-chatsan-word-surv = сурв
+cm-chatsan-replacement-surv = палетний інкубатор
 
-cm-chatsan-word-survs = survs
-cm-chatsan-replacement-survs = planet hosts
+cm-chatsan-word-survs = сурви
+cm-chatsan-replacement-survs = планетні інкубатори
 
-cm-chatsan-word-bro = bro
-cm-chatsan-replacement-bro = sister
+cm-chatsan-word-bro = бро
+cm-chatsan-replacement-bro = сестро
 
-cm-chatsan-word-bruh = bruh
-cm-chatsan-replacement-bruh = sister
+cm-chatsan-word-bruh = братан
+cm-chatsan-replacement-bruh = сестро
 
-cm-chatsan-word-bvro = bvro
-cm-chatsan-replacement-bvro = sister
+cm-chatsan-word-bvro = чел
+cm-chatsan-replacement-bvro = сестро
 
 cm-chatsan-word-xro = xro
 cm-chatsan-replacement-xro = sister
@@ -536,26 +539,26 @@ cm-chatsan-replacement-mcxonald = tall garden
 cm-chatsan-word-mcxonalds = mcxonalds
 cm-chatsan-replacement-mcxonalds = tall garden
 
-cm-chatsan-word-slop = slop
-cm-chatsan-replacement-slop = hell
+cm-chatsan-word-slop = слоп
+cm-chatsan-replacement-slop = пекло
 
 cm-chatsan-word-spam = spam
 cm-chatsan-replacement-spam = flood
 
-cm-chatsan-word-god = god
-cm-chatsan-replacement-god = queen mother
+cm-chatsan-word-god = бог
+cm-chatsan-replacement-god = королева-мати
 
-cm-chatsan-word-xod = xod
-cm-chatsan-replacement-xod = queen mother
+cm-chatsan-word-xod = боже
+cm-chatsan-replacement-xod = королева-мати
 
-cm-chatsan-word-jesus = jesus
-cm-chatsan-replacement-jesus = queen mother
+cm-chatsan-word-jesus = сука
+cm-chatsan-replacement-jesus = королева-мати
 
-cm-chatsan-word-xesus = xesus
-cm-chatsan-replacement-xesus = queen mother
+cm-chatsan-word-xesus = блять
+cm-chatsan-replacement-xesus = королева-мати
 
-cm-chatsan-word-jesus-christ = jesus christ
-cm-chatsan-replacement-jesus-christ = queen mother
+cm-chatsan-word-jesus-christ = блядь
+cm-chatsan-replacement-jesus-christ = королева-мати
 
 cm-chatsan-word-froot = froot
 cm-chatsan-replacement-froot = fruit
@@ -575,8 +578,8 @@ cm-chatsan-replacement-bald = crestless
 cm-chatsan-word-woyer = woyer
 cm-chatsan-replacement-woyer = warrior
 
-cm-chatsan-word-sigma = sigma
-cm-chatsan-replacement-sigma = prime
+cm-chatsan-word-sigma = сігма
+cm-chatsan-replacement-sigma = первісний
 
 cm-chatsan-word-xigma = xigma
 cm-chatsan-replacement-xigma = prime
@@ -589,11 +592,11 @@ cm-chatsan-word-paras = paras
 cm-chatsan-word-parasites = parasites
 cm-chatsan-replacement-parasites = children
 
-cm-chatsan-word-barricade = barricade
+cm-chatsan-word-barricade = барикада
 cm-chatsan-word-cade = cade
-cm-chatsan-word-barricades = barricades
+cm-chatsan-word-barricades = барикади
 cm-chatsan-word-cades = cades
-cm-chatsan-replacement-barricades = metal resin
+cm-chatsan-replacement-barricades = металева смола
 
 cm-chatsan-word-barbed = barbed
 cm-chatsan-replacement-barbed = spiked
@@ -603,127 +606,127 @@ cm-chatsan-word-barbed-wire = barbed wire
 cm-chatsan-word-barbed-wires = barbed wires
 cm-chatsan-replacement-barbed-wires = spikes
 
-cm-chatsan-word-medal = medal
-cm-chatsan-replacement-medal = jelly
+cm-chatsan-word-medal = медаль
+cm-chatsan-replacement-medal = желейка
 
-cm-chatsan-word-fob = fob
-cm-chatsan-replacement-fob = tall nest
+cm-chatsan-word-fob = поб
+cm-chatsan-replacement-fob = гніздо інкубаторів
 
-cm-chatsan-word-rifle = rifle
-cm-chatsan-word-gun = gun
-cm-chatsan-replacement-rifle = spitter
+cm-chatsan-word-rifle = автомат
+cm-chatsan-word-gun = зброя
+cm-chatsan-replacement-rifle = плювака
 
-cm-chatsan-word-rifles = rifles
-cm-chatsan-word-guns = guns
-cm-chatsan-replacement-rifles = spitters
+cm-chatsan-word-rifles = автомати
+cm-chatsan-word-guns = зброя
+cm-chatsan-replacement-rifles = плюваки
 
-cm-chatsan-word-pistol = pistol
-cm-chatsan-replacement-pistol = small spitter
+cm-chatsan-word-pistol = пістолет
+cm-chatsan-replacement-pistol = малий плювака
 
-cm-chatsan-word-pistols = pistols
-cm-chatsan-replacement-pistols = small spitters
+cm-chatsan-word-pistols = пістолети
+cm-chatsan-replacement-pistols = малі плюваки
 
-cm-chatsan-word-revolver = revolver
-cm-chatsan-replacement-revolver = spinning spitter
+cm-chatsan-word-revolver = револьвер
+cm-chatsan-replacement-revolver = крутящийся плювака
 
-cm-chatsan-word-knife = knife
-cm-chatsan-replacement-knife = fang
+cm-chatsan-word-knife = ніж
+cm-chatsan-replacement-knife = ікло
 
-cm-chatsan-word-knives = knives
-cm-chatsan-replacement-knives = fangs
+cm-chatsan-word-knives = ножі
+cm-chatsan-replacement-knives = ікла
 
-cm-chatsan-word-armor = armor
-cm-chatsan-replacement-armor = carapace
+cm-chatsan-word-armor = броня
+cm-chatsan-replacement-armor = панцир
 
-cm-chatsan-word-armorless = armorless
-cm-chatsan-replacement-armorless = carapaceless
+cm-chatsan-word-armorless = без броні
+cm-chatsan-replacement-armorless = без панциря
 
-cm-chatsan-word-helmet = helmet
-cm-chatsan-replacement-helmet = head carapace
+cm-chatsan-word-helmet = шолом
+cm-chatsan-replacement-helmet = панцир на голову
 
-cm-chatsan-word-medkit = medkit
-cm-chatsan-replacement-medkit = healing bundle
+cm-chatsan-word-medkit = аптечка
+cm-chatsan-replacement-medkit = в'язка ліків
 
-cm-chatsan-word-medkits = medkits
-cm-chatsan-replacement-medkits = healing bundles
+cm-chatsan-word-medkits = аптечки
+cm-chatsan-replacement-medkits = в'язки ліків
 
-cm-chatsan-word-injector = injector
-cm-chatsan-word-autoinjector = autoinjector
-cm-chatsan-replacement-injector = sting tool
+cm-chatsan-word-injector = інжектор
+cm-chatsan-word-autoinjector = автоінжектор
+cm-chatsan-replacement-injector = лікувальне жало
 
-cm-chatsan-word-injectors = injectors
-cm-chatsan-word-autoinjectors = autoinjectors
-cm-chatsan-replacement-injectors = sting tools
+cm-chatsan-word-injectors = інжектори
+cm-chatsan-word-autoinjectors = автоінжектори
+cm-chatsan-replacement-injectors = лікувальні жала
 
-cm-chatsan-word-bandage = bandage
-cm-chatsan-replacement-bandage = wrap
+cm-chatsan-word-bandage = бинт
+cm-chatsan-replacement-bandage = обгортка
 
-cm-chatsan-word-bandages = bandages
-cm-chatsan-replacement-bandages = wraps
+cm-chatsan-word-bandages = бинти
+cm-chatsan-replacement-bandages = обгортки
 
-cm-chatsan-word-baton = baton
-cm-chatsan-replacement-baton = shock stick
+cm-chatsan-word-baton = батон
+cm-chatsan-replacement-baton = шокова палка
 
-cm-chatsan-word-batons = batons
-cm-chatsan-replacement-batons = shock sticks
+cm-chatsan-word-batons = батони
+cm-chatsan-replacement-batons = шокові палки
 
-cm-chatsan-word-flashbang = flashbang
-cm-chatsan-replacement-flashbang = bright bang
+cm-chatsan-word-flashbang = флеш
+cm-chatsan-replacement-flashbang = яркий бум
 
-cm-chatsan-word-prisoner = prisoner
-cm-chatsan-replacement-prisoner = caged one
+cm-chatsan-word-prisoner = в'язень
+cm-chatsan-replacement-prisoner = той що в клітці
 
-cm-chatsan-word-battery = battery
-cm-chatsan-replacement-battery = light core
+cm-chatsan-word-battery = батарейка
+cm-chatsan-replacement-battery = джерело світла
 
-cm-chatsan-word-console = console
-cm-chatsan-word-radio = radio
-cm-chatsan-word-computer = computer
-cm-chatsan-word-terminal = terminal
-cm-chatsan-word-tablet = tablet
-cm-chatsan-replacement-console = talk box
+cm-chatsan-word-console = консоль
+cm-chatsan-word-radio = радіо
+cm-chatsan-word-computer = комп'ютер
+cm-chatsan-word-terminal = термінал
+cm-chatsan-word-tablet = планшет
+cm-chatsan-replacement-console = ящик розмов
 
-cm-chatsan-word-generator = generator
-cm-chatsan-replacement-generator = light core
+cm-chatsan-word-generator = генератор
+cm-chatsan-replacement-generator = коробка світла
 
-cm-chatsan-word-generators = generators
-cm-chatsan-replacement-generators = light cores
+cm-chatsan-word-generators = генератори
+cm-chatsan-replacement-generators = коробки світла
 
-cm-chatsan-word-disk = disk
-cm-chatsan-word-disc = disc
-cm-chatsan-replacement-disk = memory wheel
+cm-chatsan-word-disk = діск
+cm-chatsan-word-disc = диск
+cm-chatsan-replacement-disk = колесо пам'яті
 
-cm-chatsan-word-flashlight = flashlight
-cm-chatsan-replacement-flashlight = glow tube
+cm-chatsan-word-flashlight = ліхтар
+cm-chatsan-replacement-flashlight = трубка світла
 
-cm-chatsan-word-flashlights = flashlights
-cm-chatsan-replacement-flashlights = glow tubes
+cm-chatsan-word-flashlights = ліхтарі
+cm-chatsan-replacement-flashlights = трубки світла
 
-cm-chatsan-word-window = window
-cm-chatsan-replacement-window = tall membrane
+cm-chatsan-word-window = вікно
+cm-chatsan-replacement-window = мембрана інкубаторів
 
-cm-chatsan-word-windows = windows
-cm-chatsan-replacement-windows = tall membranes
+cm-chatsan-word-windows = вікна
+cm-chatsan-replacement-windows = мембрани інкубаторів
 
-cm-chatsan-word-light-bulb = light bulb
+cm-chatsan-word-light-bulb = лампочка
 cm-chatsan-word-lightbulb = lightbulb
-cm-chatsan-replacement-light-bulb = glow orb
+cm-chatsan-replacement-light-bulb = куля світла
 
-cm-chatsan-word-light-bulbs = light bulbs
+cm-chatsan-word-light-bulbs = лампочки
 cm-chatsan-word-lightbulbs = lightbulbs
-cm-chatsan-replacement-light-bulbs = glow orbs
+cm-chatsan-replacement-light-bulbs = кулі світла
 
-cm-chatsan-word-crate = crate
-cm-chatsan-replacement-crate = containment box
+cm-chatsan-word-crate = ящик
+cm-chatsan-replacement-crate = коробка інкубаторів
 
-cm-chatsan-word-crates = crates
-cm-chatsan-replacement-crates = containment boxes
+cm-chatsan-word-crates = ящики
+cm-chatsan-replacement-crates = коробки інкубаторів
 
-cm-chatsan-word-gunshot = gunshot
-cm-chatsan-replacement-gunshot = spit burst
+cm-chatsan-word-gunshot = постріл
+cm-chatsan-replacement-gunshot = звук плювка
 
-cm-chatsan-word-gunshots = gunshots
-cm-chatsan-replacement-gunshots = spit bursts
+cm-chatsan-word-gunshots = постріли
+cm-chatsan-replacement-gunshots = звуки плювків
 
 cm-chatsan-word-paper = paper
 cm-chatsan-replacement-paper = message sheet
@@ -761,11 +764,11 @@ cm-chatsan-word-replacement-hivey = hivelord
 cm-chatsan-word-hiveys = hiveys
 cm-chatsan-word-replacement-hiveys = hivelords
 
-cm-chatsan-word-cap = cap
-cm-chatsan-word-replacement-cap = capture
+cm-chatsan-word-cap = кап
+cm-chatsan-word-replacement-cap = захоплений
 
-cm-chatsan-word-caps = caps
-cm-chatsan-word-replacement-caps = captures
+cm-chatsan-word-caps = капи
+cm-chatsan-word-replacement-caps = захоплені
 
 cm-chatsan-word-capped = capped
 cm-chatsan-word-replacement-capped = captured
@@ -788,47 +791,47 @@ cm-chatsan-word-replacement-batonged = daze spitted
 cm-chatsan-word-xover = xover
 cm-chatsan-word-replacement-xover = over
 
-cm-chatsan-word-m13 = m13
-cm-chatsan-word-replacement-m13 = fast spitter
+cm-chatsan-word-m13 = м13
+cm-chatsan-word-replacement-m13 = швидкий плювака
 
-cm-chatsan-word-m63 = m63
-cm-chatsan-word-replacement-m63 = fast spitter
+cm-chatsan-word-m63 = м63
+cm-chatsan-word-replacement-m63 = швидкий плювака
 
-cm-chatsan-word-p90 = p90
-cm-chatsan-word-replacement-p90 = fast spitter
+cm-chatsan-word-p90 = п90
+cm-chatsan-word-replacement-p90 = швидкий плювака
 
-cm-chatsan-word-m54c = m54c
-cm-chatsan-word-replacement-m54c = spitter
+cm-chatsan-word-m54c = м54с
+cm-chatsan-word-replacement-m54c = плювака
 
-cm-chatsan-word-m42a2 = m42a2
-cm-chatsan-word-replacement-m42a2 = scatter spitter
+cm-chatsan-word-m42a2 = м42а2
+cm-chatsan-word-replacement-m42a2 = розкидний плювака
 
-cm-chatsan-word-m34 = m34
-cm-chatsan-word-replacement-m34 = fire spitter
+cm-chatsan-word-m34 = м34
+cm-chatsan-word-replacement-m34 = вогняний плювака
 
-cm-chatsan-word-c4 = c4
-cm-chatsan-word-replacement-c4 = boom node
+cm-chatsan-word-c4 = с4
+cm-chatsan-word-replacement-c4 = вибуховий вузол
 
 cm-chatsan-word-ap = ap
 cm-chatsan-word-replacement-ap = armor piercing
 
-cm-chatsan-word-alpha = alpha
-cm-chatsan-word-replacement-alpha = red hosts
+cm-chatsan-word-alpha = альфа
+cm-chatsan-word-replacement-alpha = червоні інкубатори
 
-cm-chatsan-word-bravo = bravo
-cm-chatsan-word-replacement-bravo = yellow hosts
+cm-chatsan-word-bravo = браво
+cm-chatsan-word-replacement-bravo = жовті інкубатори
 
-cm-chatsan-word-charlie = charlie
-cm-chatsan-word-replacement-charlie = purple hosts
+cm-chatsan-word-charlie = чарлі
+cm-chatsan-word-replacement-charlie = фіолетові інкубатори
 
-cm-chatsan-word-delta = delta
-cm-chatsan-word-replacement-delta = blue hosts
+cm-chatsan-word-delta = дельта
+cm-chatsan-word-replacement-delta = сині інкубатори
 
-cm-chatsan-word-echo = echo
-cm-chatsan-word-replacement-echo = green hosts
+cm-chatsan-word-echo = ехо
+cm-chatsan-word-replacement-echo = зелені інкубатори
 
-cm-chatsan-word-foxtrot = foxtrot
-cm-chatsan-word-replacement-foxtrot = brown hosts
+cm-chatsan-word-foxtrot = фокс
+cm-chatsan-word-replacement-foxtrot = коричневі інкубатори
 
 cm-chatsan-word-thru = thru
 cm-chatsan-replacement-thru = through
